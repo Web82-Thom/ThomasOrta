@@ -18,6 +18,11 @@ class Router
 
                     header ("Location: index.php");
                 }
+                //REDIRECTION SUR LA PAGE SHOWCASE
+                elseif (isset($_GET['objet']) && ($_GET['objet'] === 'showcase')) {
+                    $showcaseController = new ShowcaseController();
+                    $showcaseController->display();
+                }
             //SI L'UTILISATEUR FAIT RIEN "PAGE D'ACCUEIL"
             } else {
                 $homeController = new HomeController();
