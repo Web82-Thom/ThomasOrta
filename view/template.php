@@ -5,6 +5,7 @@
     
     <body>
 
+        <?php include("menu.php"); ?>
         
         <?= $content ?>
         
