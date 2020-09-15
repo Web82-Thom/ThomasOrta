@@ -64,7 +64,7 @@ class PostManager extends Database
      }
 
      //METHODE POUR RECUPERER LES POSTS WORDPRESS
-    public function getPosts()
+    public function getPostsWordpress()
     {
         $req = $this->getDataBase()->prepare(' SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM posts WHERE category = "wordpress" ');
         $req->execute();
