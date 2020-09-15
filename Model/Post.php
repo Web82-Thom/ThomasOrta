@@ -3,7 +3,7 @@
 namespace Model;
 
 // PERMET DE RECUPERER LES DONNEE EN PRIVER
-class PostBlog  
+class Post  
 {
     private $_id;
     private $_title;

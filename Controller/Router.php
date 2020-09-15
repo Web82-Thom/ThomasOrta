@@ -20,23 +20,23 @@ class Router
                 }
                 //REDIRECTION SUR LA PAGE SHOWCASE
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'showcase')) {
-                    $postShowcaseController = new PostShowcaseController();
-                    $postShowcaseController->displayPosts();
+                    $postController = new PostController();
+                    $postController->displayPostsShowcase();
                 }
                 //REDIRECTION SUR LA PAGE INTEGRATOR WEB
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'integrator')) {
-                    $postIntegratorController = new PostIntegratorController();
-                    $postIntegratorController->displayPosts();
+                    $postController = new PostController();
+                    $postController->displayPostsIntegrator();
                 }
                 //REDIRECTION SUR LA PAGE BLOG
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'blog')) {
-                    $postBlogController = new PostBlogController();
-                    $postBlogController->displayPosts();
+                    $postController = new PostController();
+                    $postController->displayPostsBlog();
                 }
                 //REDIRECTION SUR LA PAGE WORDPRESS
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'wordPress')) {
-                    $postWordPressController = new PostWordPressController();
-                    $postWordPressController->displayPosts();
+                    $postController = new PostController();
+                    $postController->displayPostsWordpress();
                 }
             //SI L'UTILISATEUR FAIT RIEN "PAGE D'ACCUEIL"
             } else {
