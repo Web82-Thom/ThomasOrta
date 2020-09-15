@@ -12,21 +12,22 @@ class Router
                 $postController = new PostController();
                 //ROUTES
                 if ($_GET['objet'] === 'post')  {
-                    if (isset($getClean['action'])) {
+                    if (isset($_GET['action'])) {
+                        $commentController = new CommentController();
                         // AJOUT D'UN POST
-                        /*if ($getClean['action'] === 'add') {
+                        if ($_GET['action'] === 'add') {
                             $postController->add();
-                        // AFFICHAGE AVANT MODIF D'UN POST
+                        /*// AFFICHAGE AVANT MODIF D'UN POST
                         } elseif ($getClean['action'] === 'update' && isset($getClean['id'])) { 
                             $postController->update($getClean['id']);
                         // AFFICHAGE AVANT SUPPRESSION 
                         } elseif ($getClean['action'] === 'delete' && isset($getClean['id'])) { 
-                            $postController->delete($getClean['id']);
+                            $postController->delete($getClean['id']);*/
                         // AJOUT DE COMMENTAIRE
-                        } elseif ($getClean['action'] === 'addComment' && isset($getClean['id'])) {
-                            $commentController->add($getClean['id'], $postClean['author'], $postClean['comment']);
+                        } elseif ($_GET['action'] === 'addComment' && isset($_GET['id'])) {
+                            $commentController->add($_GET['id'], $_POST['author'], $_POST['comment']);
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
-                        } elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
+                        /*} elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
                             $commentController->delete($getClean['id']);
                         // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
@@ -36,8 +37,8 @@ class Router
                             $commentController->report($getClean['id'], $getClean['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'unReportComment' && isset($getClean['id'])) {
-                            $commentController->unReport($getClean['id']);
-                        }*/
+                            $commentController->unReport($getClean['id']);*/
+                        }
                     //AFFICHAGE D'1 POST ET SES COMMENTAIRES
                     } elseif (isset($_GET['id'])) {
                         $postController->display($_GET['id']);
