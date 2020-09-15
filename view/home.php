@@ -47,7 +47,7 @@
     </div>
     <hr>
     <div class="service">
-        <h3>Integration Web</h3>
+        <h3><a class='link' href="index.php?objet=integrator">Integration Web</a></h3>
         <p>
             Vous savez ce que vous voulez! A partir de vos maquettes, rédactions, et mutimédias je met votre projet en construction.
         </p>
@@ -77,7 +77,7 @@
     </div>
     <hr>
     <div class="service">
-        <h3>Blog</h3>
+        <h3><a class='link' href="index.php?objet=blog">Blog</a></h3>
         <p>
             Vous voulez partager vos connaissances, votre savoir-faire, publié un livre, booster vos contacts, c'est par ici! 
         </p>
@@ -107,7 +107,7 @@
     </div>
     <hr>
     <div class="service">
-        <h3>WordPress</h3>
+        <h3><a class='link' href="index.php?objet=wordPress">WordPress</a></h3>
         <p>
             Un site clef en main, WordPress propose une multitude d'outil qui vous permet de maintenir votre site à jour. 
         </p>
