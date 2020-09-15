@@ -26,7 +26,7 @@ class PostBlogManager extends Database
     //METHODE POUR RECUPERER LES POSTS
     public function getPosts()
     {
-        $req = $this->getDataBase()->prepare(' SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM postblog ');
+        $req = $this->getDataBase()->prepare(' SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM posts WHERE category = "blog" ');
         $req->execute();
         $posts = [];
         while($data = $req->fetch(PDO::FETCH_ASSOC)) {
@@ -40,7 +40,7 @@ class PostBlogManager extends Database
     //METHODE POUR RECUPERER 1 POSTS
     public function getPost($postId)
     {
-        $req = $this->getDataBase()->prepare('SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM postblog WHERE id = ?');
+        $req = $this->getDataBase()->prepare('SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM post WHERE id = ?');
         $req->execute(array($postId));
 
         return $this->hydrate($req->fetch(PDO::FETCH_ASSOC));

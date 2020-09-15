@@ -26,7 +26,7 @@ class PostShowcaseManager extends Database
     //METHODE POUR RECUPERER LES POSTS
     public function getPosts()
     {
-        $req = $this->getDataBase()->prepare(' SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM postshowcase ');
+        $req = $this->getDataBase()->prepare(' SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM posts WHERE category = "showcase" ');
         $req->execute();
         $posts = [];
         while($data = $req->fetch(PDO::FETCH_ASSOC)) {
