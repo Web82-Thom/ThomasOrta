@@ -9,10 +9,42 @@ class Router
         try {   
             // DETERMINE L'ACTION DE L'UTILISATEUR 
             if (isset($_GET['objet'])) {
+                $postController = new PostController();
                 //ROUTES
-                if ($_GET['objet'] === 'post') {
-                    
-                
+                if ($_GET['objet'] === 'post')  {
+                    if (isset($getClean['action'])) {
+                        // AJOUT D'UN POST
+                        /*if ($getClean['action'] === 'add') {
+                            $postController->add();
+                        // AFFICHAGE AVANT MODIF D'UN POST
+                        } elseif ($getClean['action'] === 'update' && isset($getClean['id'])) { 
+                            $postController->update($getClean['id']);
+                        // AFFICHAGE AVANT SUPPRESSION 
+                        } elseif ($getClean['action'] === 'delete' && isset($getClean['id'])) { 
+                            $postController->delete($getClean['id']);
+                        // AJOUT DE COMMENTAIRE
+                        } elseif ($getClean['action'] === 'addComment' && isset($getClean['id'])) {
+                            $commentController->add($getClean['id'], $postClean['author'], $postClean['comment']);
+                        // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
+                        } elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
+                            $commentController->delete($getClean['id']);
+                        // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE
+                        } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
+                            $commentController->update($getClean['id'], $getClean['postId']);
+                        // SIGNALEMENT D'UN COMMENTAIRE
+                        } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
+                            $commentController->report($getClean['id'], $getClean['postId']);
+                        // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE
+                        } elseif ($getClean['action'] === 'unReportComment' && isset($getClean['id'])) {
+                            $commentController->unReport($getClean['id']);
+                        }*/
+                    //AFFICHAGE D'1 POST ET SES COMMENTAIRES
+                    } elseif (isset($_GET['id'])) {
+                        $postController->display($_GET['id']);
+                    // AFFICHAGE DE TOUS LES POST
+                    } else {
+                        $postController->displayPosts();
+                    }
                 //REDIRECTION SUR L'INDEX.PHP
                 } elseif (isset($_GET['objet']) && ($_GET['objet'] === 'home')) {
 
@@ -20,22 +52,18 @@ class Router
                 }
                 //REDIRECTION SUR LA PAGE SHOWCASE
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'showcase')) {
-                    $postController = new PostController();
                     $postController->displayPostsShowcase();
                 }
                 //REDIRECTION SUR LA PAGE INTEGRATOR WEB
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'integrator')) {
-                    $postController = new PostController();
                     $postController->displayPostsIntegrator();
                 }
                 //REDIRECTION SUR LA PAGE BLOG
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'blog')) {
-                    $postController = new PostController();
                     $postController->displayPostsBlog();
                 }
                 //REDIRECTION SUR LA PAGE WORDPRESS
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'wordPress')) {
-                    $postController = new PostController();
                     $postController->displayPostsWordpress();
                 }
             //SI L'UTILISATEUR FAIT RIEN "PAGE D'ACCUEIL"
