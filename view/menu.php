@@ -9,7 +9,7 @@
                 <a class="link" href="index.php?objet=home"><i class="fas fa-home"></i> Accueil</a>
             </li>
             <li>
-                <a class="link" href="#myServices">Mes services</a> 
+                <a class="link" href="index.php?#myServices">Mes services</a> 
             </li>
             <li>
                 Porfolio
