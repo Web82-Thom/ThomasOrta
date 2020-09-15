@@ -24,7 +24,7 @@ class PostController
     
     public function displayPostsShowcase() 
     {
-        $posts = $this->_postManager->getPostsBlog();
+        $posts = $this->_postManager->getPostsShowcase();
 
         require_once('../view/showcase.php');
     }
@@ -41,5 +41,14 @@ class PostController
         $posts = $this->_postManager->getPostsWordpress();
 
         require_once('../view/wordPress.php');
+    }
+
+    // RECUPERATION D'UN POST
+    public function display($postId)
+    {
+        $post = $this->_postManager->getPost($postId);
+        //$comments = $this->_commentManager->getCommentsByPostId($postId);
+
+        require_once('../view/displayPost.php');
     }
 }
