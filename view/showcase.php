@@ -6,7 +6,7 @@
     <?php foreach ($posts as $post) { ?>
         <article class="contentPosts">
             <div class="titleTickets">
-                <h3 class="titleTicket"><a href="index.php?objet=post&amp;id=<?= $post->getId(); ?>"><?= $post->getTitle();?></a></h3>
+                <h3 class="titleTicket"><a href="index.php?objet=showcase&amp;id=<?= $post->getId(); ?>"><?= $post->getTitle();?></a></h3>
                 <p class="dateInfos">
                    publié le <?= $post->getCreationDate();?>
                 </p>
