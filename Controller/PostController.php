@@ -3,22 +3,23 @@
 namespace Controller;
 
 use Model\PostManager;
+use Model\CommentManager;
 
 class PostController
 {
     private $_postManager;
-    /*private $_commentShowcaseManager;*/
+    private $_commentManager;
 
     public function __construct()
     {
         $this->_postManager = new PostManager();
-        /*$this->_commentManager = new CommentManager();*/
+        $this->_commentManager = new CommentManager();
     }
 
     public function displayPostsBlog() 
     {
         $posts = $this->_postManager->getPostsBlog();
-
+        
         require_once('../view/blog.php');
     }
     
@@ -47,7 +48,7 @@ class PostController
     public function display($postId)
     {
         $post = $this->_postManager->getPost($postId);
-        //$comments = $this->_commentManager->getCommentsByPostId($postId);
+        $comments = $this->_commentManager->getCommentsByPostId($postId);
 
         require_once('../view/displayPost.php');
     }
