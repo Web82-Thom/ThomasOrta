@@ -64,7 +64,7 @@ class PostManager extends Database
      }
 
      //METHODE POUR RECUPERER LES POSTS WORDPRESS
-    public function getPostsWordpress()
+    public function getPosts()
     {
         $req = $this->getDataBase()->prepare(' SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM posts WHERE category = "wordpress" ');
         $req->execute();
@@ -75,5 +75,14 @@ class PostManager extends Database
         $req->closeCursor();
         
         return $posts;
+    }
+
+    //METHODE POUR RECUPERER 1 POSTS
+    public function getPost($postId)
+    {
+        $req = $this->getDataBase()->prepare('SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM posts WHERE id = ? ');
+        $req->execute(array($postId));
+
+        return $this->hydrate($req->fetch(PDO::FETCH_ASSOC));
     }
 }
