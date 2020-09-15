@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 <section>
-    <h2 class='titleSection'> Le site vitrine</h2>
+    <h2 class='titleSection'> Votre site maquette </h2>
     <?php foreach ($posts as $post) { ?>
         <article class="contentPosts">
             <div class="titleTickets">
