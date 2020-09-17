@@ -12,13 +12,13 @@
                 <a class="link" href="index.php?#myServices">Mes services</a> 
             </li>
             <li>
-                <a class="link" href="index.php?#projects">Portfolio
+                <a class="link" href="index.php?#projects">Portfolio</a>
             </li>
             <li>
-                CV
+                <a class="link" href="index.php?#cVitae">CV</a>
             </li>
             <li>
-                Contact
+                <a class="link" href="index.php?#formContact">Contact</a> 
             </li>
             <li class="menuAdmin">
                 <a href="index.php?objet=admin&amp;action=login">Admin</a>
