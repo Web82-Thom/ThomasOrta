@@ -46,4 +46,25 @@ class CommentController
         
         require_once('../view/noAccess.php');
     }
+
+    // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
+    public function delete($commentId)
+    {   if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
+            if ($commentId >= 0 && !empty($_POST['author']) && !empty($_POST['comment'])) {
+                $this->_commentManager->delete($commentId);
+                if ($commentId > 0) {
+                    header('Location: index.php?objet=admin');
+                }
+
+                throw new Exception('Impossible de supprimer le commentaire !');
+            }
+            $comments = $this->_commentManager->getComment($commentId);
+
+            require_once('../view/formDeleteComment.php');
+        }
+
+        require_once('../view/noAccess.php');
+    }
+
+    
 }

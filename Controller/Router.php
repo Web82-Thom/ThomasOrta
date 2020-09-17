@@ -30,10 +30,10 @@ class Router
                         } elseif ($_GET['action'] === 'updateComment' && isset($_GET['id'])) {
                             $commentController->update($_GET['id'], $_GET['postId']);
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
-                        /*} elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
-                            $commentController->delete($getClean['id']);
+                        } elseif ($_GET['action'] === 'deleteComment' && isset($_GET['id'])) {
+                            $commentController->delete($_GET['id']);
                         
-                       // SIGNALEMENT D'UN COMMENTAIRE
+                       /*// SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
                             $commentController->report($getClean['id'], $getClean['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE

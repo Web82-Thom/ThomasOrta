@@ -35,7 +35,7 @@ class CommentManager extends Database
         
         return $comments;
     }
-    
+
     //RECUPERATION DES COMMENTAIRES PAR LE POST ID
     public function getCommentsByPostId($postId)
     {
@@ -78,5 +78,13 @@ class CommentManager extends Database
         $req = $this->getdataBase()->prepare('UPDATE comments SET author = ?, comment = ?, comment_date = NOW() WHERE id = ? LIMIT 1');
 
         return $req->execute(array($author, $comment, $commentId));
+    }
+
+    // SUPPRESSION DES COMMENTAIRES
+    public function delete($commentId)
+    {
+        $req = $this->getDataBase()->prepare('DELETE FROM comments WHERE id= ?');
+        
+        return $req->execute(array($commentId));
     }
 }
