@@ -27,8 +27,8 @@ class Router
                         } elseif ($_GET['action'] === 'addComment' && isset($_GET['id'])) {
                             $commentController->add($_GET['id'], $_POST['author'], $_POST['comment']);
                         // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE*/
-                        } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
-                            $commentController->update($getClean['id'], $getClean['postId']);
+                        } elseif ($_GET['action'] === 'updateComment' && isset($_GET['id'])) {
+                            $commentController->update($_GET['id'], $_GET['postId']);
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
                         /*} elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
                             $commentController->delete($getClean['id']);

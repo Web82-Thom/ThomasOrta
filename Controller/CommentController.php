@@ -29,4 +29,21 @@ class CommentController
         } 
         header('Location: index.php?objet=post&id=' . $postId);
     }
+
+    // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE
+    public function update($commentId, $postId)
+    {
+        if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
+            if (!empty($_POST['author']) && !empty($_POST['comment']) && isset($_SESSION['pseudo'])) {                          
+                $this->_commentManager->update($commentId, $_POST['author'], $_POST['comment']);
+                
+                header('Location: index.php?objet=post&id=' . $postId);
+            } 
+            $comments = $this->_commentManager->getComment($commentId);
+
+            require_once('../view/formUpdateComment.php');
+        }   
+        
+        require_once('../view/noAccess.php');
+    }
 }
