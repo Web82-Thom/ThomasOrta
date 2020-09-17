@@ -111,4 +111,12 @@ class PostManager extends Database
 
         return (int) $req->fetch()[0];
     }
+
+    // METHODE DE MODIFICATION D'UN POST
+    public function update($postId, $title, $content)
+    {
+        $req = $this->getDataBase()->prepare('UPDATE posts SET title = ?, content = ?, creation_date = NOW() WHERE id = ? LIMIT 1');
+
+        return $req->execute(array($title, $content, $postId));
+    } 
 }
