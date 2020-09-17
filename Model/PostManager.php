@@ -99,4 +99,16 @@ class PostManager extends Database
         
         return $posts;
     }
+
+    // METHODE AJOUT D'UN POSTE
+    public function add($title, $content, $category)
+    {
+        $req = $this->getDataBase()->prepare('INSERT INTO posts (title, content, category, creation_date) VALUES(?, ?, ?, NOW())');
+        $req->execute(array($title, $content, $category));
+
+        $req = $this->getDataBase()->prepare('SELECT LAST_INSERT_ID();');
+        $req->execute();
+
+        return (int) $req->fetch()[0];
+    }
 }
