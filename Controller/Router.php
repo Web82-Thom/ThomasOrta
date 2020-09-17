@@ -46,6 +46,17 @@ class Router
                     } else {
                         $postController->displayPosts();
                     }
+                //REDIRECTION SUR L'ADMIN
+                } elseif ($_GET['objet'] === 'admin') {
+                    $adminController = new AdminController();
+                    if (isset($_GET['action'])) {
+                        if ($_GET['action'] === 'login') {
+                            $adminController->login();
+                        } elseif ($_GET['action'] === 'destroy') { 
+                            $adminController->destroy();
+                        }
+                    }
+                    $adminController->display();
                 //REDIRECTION SUR L'INDEX.PHP
                 } elseif (isset($_GET['objet']) && ($_GET['objet'] === 'home')) {
 
