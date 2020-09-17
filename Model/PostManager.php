@@ -85,4 +85,18 @@ class PostManager extends Database
 
         return $this->hydrate($req->fetch(PDO::FETCH_ASSOC));
     }
+
+    //METHODE POUR RECUPERER LES POSTS
+    public function getPosts()
+    {
+        $req = $this->getDataBase()->prepare(' SELECT id, title, content, category, DATE_FORMAT(creation_date, \'%d/%m/%Y <em>à</em> %Hh%imin\') AS creation_date FROM posts ');
+        $req->execute();
+        $posts = [];
+        while($data = $req->fetch(PDO::FETCH_ASSOC)) {
+            $posts[] = $this->hydrate($data);
+        }
+        $req->closeCursor();
+        
+        return $posts;
+    }
 }
