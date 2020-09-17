@@ -87,4 +87,20 @@ class CommentManager extends Database
         
         return $req->execute(array($commentId));
     }
+
+    // SIGNALER UN COMMENTAIRE
+    public function report($commentId)
+    {   
+        $req = $this->getDataBase()->prepare('UPDATE comments SET report = ? WHERE id = ?');
+        
+        return $req->execute(array('1', $commentId));
+    }
+
+    // ENLEVER LE SIGNALEMENT
+    public function unReport($commentId)
+    {   
+        $req = $this->getDataBase()->prepare('UPDATE comments SET report = ? WHERE id = ?');
+        
+        return $req->execute(array('0', $commentId));
+    }
 }

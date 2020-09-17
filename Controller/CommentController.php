@@ -66,5 +66,38 @@ class CommentController
         require_once('../view/noAccess.php');
     }
 
-    
+    // SIGNALER UN COMMENTAIRE
+    public function report($commentId, $postId)
+    {  
+        $comments = $this->_commentManager->getComment($commentId);
+        foreach ($comments as $comment) {
+            $report = $comment->getReport($commentId);
+            if ($report == 0) {
+                $this->_commentManager->report($commentId);
+                $report ++ ;
+            } elseif ($report == 1) {
+                echo 'déjà signaler';
+            }
+            header('Location: index.php?objet=post&id=' . $postId);
+        }
+    }
+
+    // ENLEVER LE SIGNALEMENT
+    public function unReport($commentId)
+    {   
+        if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
+            $comments = $this->_commentManager->getComment($commentId);
+            foreach ($comments as $comment) {
+                $report = $comment->getReport($commentId);
+                if ($report == 1) {
+                    $this->_commentManager->unReport($commentId);
+                    $report -- ;
+
+                    header('Location: index.php?objet=admin');
+                } 
+            }
+        }
+
+        require_once('../view/noAccess.php');
+    }
 }

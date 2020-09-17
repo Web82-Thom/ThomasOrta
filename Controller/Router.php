@@ -32,13 +32,12 @@ class Router
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
                         } elseif ($_GET['action'] === 'deleteComment' && isset($_GET['id'])) {
                             $commentController->delete($_GET['id']);
-                        
-                       /*// SIGNALEMENT D'UN COMMENTAIRE
-                        } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
-                            $commentController->report($getClean['id'], $getClean['postId']);
+                        // SIGNALEMENT D'UN COMMENTAIRE
+                        } elseif ($_GET['action'] === 'reportComment' && isset($_GET['id'])) {
+                            $commentController->report($_GET['id'], $_GET['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE
-                        } elseif ($getClean['action'] === 'unReportComment' && isset($getClean['id'])) {
-                            $commentController->unReport($getClean['id']);*/
+                        } elseif ($_GET['action'] === 'unReportComment' && isset($_GET['id'])) {
+                            $commentController->unReport($_GET['id']);
                         }
                     //AFFICHAGE D'1 POST ET SES COMMENTAIRES
                     } elseif (isset($_GET['id'])) {
