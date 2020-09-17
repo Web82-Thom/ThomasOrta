@@ -134,6 +134,52 @@
         L'étude de votre projet permettra de fixer un budget personnel
     </p>
 </section>
+<section id="projects">
+    <h2>Mes réalisations</h2>
+    <p id="infoProjects">Retrouvez tous mes projets créés : sites vitrine, office de tourisme...</p>
+    <div id="portfolio">
+        <figure>
+            <img src="images/webAgency.jpg" alt="WebAgency" class="projet1">
+            <figcaption>
+                <i class="fas fa-check-double"></i>
+                <h3><a href="http://webagency-thomas.com/">WebAgency</a></h3>
+                <p>Site vitrine pour une agence Web</p> 
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/officeIreki.jpg" alt="Office du tourisme d'Ireki" class="projet2">
+            <figcaption>
+                <i class="fas fa-check-double"></i>
+                <h3><a href="http://office-ireki-projet-formation-thomas-orta.com/">Office du tourisme d'Ireki</a></h3>
+                <p>Devélopper avec wordPress</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/velok31.jpg" alt="VéloK 31" class="projet3">
+            <figcaption>
+                <i class="fas fa-check-double"></i>
+                <h3><a href="http://www.location-velo-toulouse.com/">Vélok 31</a></h3>
+                <p>Application Location de vélos sur Toulouse</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/jeanForteroche.jpg" alt="Blog pour un ecrivain" class="projet4">
+            <figcaption>
+                <i class="fas fa-check-double"></i>
+                <h3><a href="http://www.jf-blog.com/">publier un livre</a></h3>
+                <p>Blog pour un écrivain</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/thomasOrta.jpg" alt="Thomas ORTA" class="projet5">
+            <figcaption>
+                <i class="fas fa-check-double"></i>
+                <h3><a href=""></a>Developpeur Thomas ORTA</h3>
+                <p>Site vitrine Thomas ORTA</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
 
 <script src="js/slider.js"></script>
 <script src="js/main.js"></script>
