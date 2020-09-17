@@ -69,4 +69,20 @@ class PostController
         }
         require_once('../view/noAccess.php');
     }
+
+     // AFFICHAGE et MODIFICATION
+    public function update($postId) 
+    {   
+        if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
+            if (!empty($_POST['title']) && !empty($_POST['content'])) {
+                $this->_postManager->update($postId, $_POST['title'], $_POST['content']);
+
+                header('Location: index.php?objet=post&id=' . $postId);
+            } 
+            $post = $this->_postManager->getPost($postId);
+
+            require_once('../view/formUpdatePost.php');
+        }
+        require_once('../view/noAccess.php');
+    }
 }
