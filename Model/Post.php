@@ -9,7 +9,8 @@ class Post
     private $_title;
     private $_content;
     private $_creation_date;
-   
+    private $_category;
+
     //SETTER
     public function setId($id)
     {
@@ -46,6 +47,15 @@ class Post
 
         return $this;
     }
+
+    public function setCategory($category)
+    {
+        if (is_string($category)) { 
+            $this->_category = $category;
+        }
+
+        return $this;
+    }
     
     //GETTERS RECUPER LES DONNEES
     public function getId()
@@ -66,5 +76,10 @@ class Post
     public function getCreationDate()
     {
         return $this->_creation_date;
+    }
+
+    public function getCategory()
+    {
+        return $this->_category;
     }
 }
