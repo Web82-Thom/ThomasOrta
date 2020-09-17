@@ -17,10 +17,10 @@ class Router
                         // AJOUT D'UN POST
                         if ($_GET['action'] === 'add') {
                             $postController->add();
-                        /*// AFFICHAGE AVANT MODIF D'UN POST
-                        } elseif ($getClean['action'] === 'update' && isset($getClean['id'])) { 
-                            $postController->update($getClean['id']);
-                        // AFFICHAGE AVANT SUPPRESSION 
+                        // AFFICHAGE AVANT MODIF D'UN POST
+                        } elseif ($_GET['action'] === 'update' && isset($_GET['id'])) { 
+                            $postController->update($_GET['id']);
+                        /*// AFFICHAGE AVANT SUPPRESSION 
                         } elseif ($getClean['action'] === 'delete' && isset($getClean['id'])) { 
                             $postController->delete($getClean['id']);*/
                         // AJOUT DE COMMENTAIRE
