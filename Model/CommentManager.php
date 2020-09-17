@@ -36,6 +36,20 @@ class CommentManager extends Database
         return $comments;
     }
 
+    //RECUPERATION DES COMMENTAIRES
+    public function getComments()
+    {
+        $req = $this->getDataBase()->prepare('SELECT id, author, comment, report, post_id, DATE_FORMAT(comment_date, \'%d/%m/%Y <em>à</em>à %Hh%imin\') AS comment_date FROM comments ORDER BY comment_date DESC /*LIMIT 5*/ ');
+        $req->execute();
+        $comments = [];
+        while($data = $req->fetch(PDO::FETCH_ASSOC)) {
+            $comments[] = $this->hydrate($data);
+        }
+        $req->closeCursor();
+        
+        return $comments;
+    }
+    
     // AJOUT DES COMMENTAIRES
     public function add($postId, $author, $comment)
     {
