@@ -77,6 +77,10 @@ class Router
                 //REDIRECTION SUR LA PAGE WORDPRESS
                 elseif (isset($_GET['objet']) && ($_GET['objet'] === 'wordPress')) {
                     $postController->displayPostsWordpress();
+                // PAGE CONTACT
+                } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'contact'))) {
+                    $contactController = new ContactController;
+                    $contactController->display();
                 }
             //SI L'UTILISATEUR FAIT RIEN "PAGE D'ACCUEIL"
             } else {
