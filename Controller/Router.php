@@ -20,19 +20,20 @@ class Router
                         // AFFICHAGE AVANT MODIF D'UN POST
                         } elseif ($_GET['action'] === 'update' && isset($_GET['id'])) { 
                             $postController->update($_GET['id']);
-                        /*// AFFICHAGE AVANT SUPPRESSION 
-                        } elseif ($getClean['action'] === 'delete' && isset($getClean['id'])) { 
-                            $postController->delete($getClean['id']);*/
+                        // AFFICHAGE AVANT SUPPRESSION 
+                        } elseif ($_GET['action'] === 'delete' && isset($_GET['id'])) { 
+                            $postController->delete($_GET['id']);
                         // AJOUT DE COMMENTAIRE
                         } elseif ($_GET['action'] === 'addComment' && isset($_GET['id'])) {
                             $commentController->add($_GET['id'], $_POST['author'], $_POST['comment']);
+                        // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE*/
+                        } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
+                            $commentController->update($getClean['id'], $getClean['postId']);
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
                         /*} elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
                             $commentController->delete($getClean['id']);
-                        // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE
-                        } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
-                            $commentController->update($getClean['id'], $getClean['postId']);
-                        // SIGNALEMENT D'UN COMMENTAIRE
+                        
+                       // SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
                             $commentController->report($getClean['id'], $getClean['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE

@@ -119,4 +119,12 @@ class PostManager extends Database
 
         return $req->execute(array($title, $content, $postId));
     } 
+
+    // METHODE DE SUPPRESSION D'UN POST
+    public function delete($postId)
+    {   
+        $req = $this->getDataBase()->prepare('DELETE FROM posts WHERE id = ?');
+        
+        return $req->execute(array($postId));
+    }
 }

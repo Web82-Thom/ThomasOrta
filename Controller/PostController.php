@@ -85,4 +85,20 @@ class PostController
         }
         require_once('../view/noAccess.php');
     }
+
+    // AFFICHAGE et SUPPRESSION
+    public function delete($postId)
+    {
+        if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
+            if (!empty($_POST['title']) && !empty($_POST['content'])) {
+                $this->_postManager->delete($postId);
+
+                header('Location: index.php?objet=admin');
+            }
+            $post = $this->_postManager->getPost($postId);
+
+            require_once('../view/formDeletePost.php');
+        }
+        require_once('../view/noAccess.php');
+    }
 }
