@@ -52,4 +52,21 @@ class PostController
 
         require_once('../view/displayPost.php');
     }
+
+    // AJOUT D'UN POST
+    public function add()
+    {   
+        if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
+            if (!empty($_POST['title']) && !empty($_POST['content'])) {
+                $postId = $this->_postManager->add($_POST['title'], $_POST['content'], $_POST['category']);
+                if ($postId > 0) {
+                    header('Location: index.php?objet=post&id=' . $postId);
+                }
+
+                throw new Exception('Impossible d\'ajouter le post !');
+            } 
+            require_once('../view/formAddPost.php');
+        }
+        require_once('../view/noAccess.php');
+    }
 }
