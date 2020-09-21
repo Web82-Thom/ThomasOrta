@@ -7,128 +7,137 @@
         <div class="slideTitle">
             <h2>Developpeur Web</h2>
         </div>
-        <img src="images/computerCodeOne" alt="ecran coder">
+        <img src="images/computerCodeOne.jpg" alt="ecran coder">
     </div>
     <div class="slide">
         <div class="slideTitle">
             <h2>Hébergement Web</h2>
         </div>
-        <img src="images/computerCodeTwo" alt="ecran coder">
+        <img src="images/serveur.jpg" alt="ecran coder">
+    </div>
+    <div class="slide">
+        <div class="slideTitle">
+            <h2>Objectifs et solutions</h2>
+        </div>
+        <img src="images/objectif.jpg" alt="ecran coder">
     </div>
 </section>
 <section id="myServices">
     <h2>Mes services</h2>
+    <p id="mission">
+            Ma mission est bien plus que le developpement de votre site internet, je suis là pour vous accompagner à la reussite de votre activitée.
+        </p>
     <article>
-    <div class="service">
-        <h3><a class='link' href="index.php?objet=showcase">Site Vitrine</a></h3>
-        <p>
-            Ce type de site présente l'entrepise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
-        </p>
-        <ul>
-            <li>
-                Étude de votre projet / Cahier des charges
-            </li>
-            <li>
-                Html, CSS, JavaScript
-            </li>
-            <li>
-                Validation W3C
-            </li>
-            <li>
-                Hébergement
-            </li>
-            <li>
-                Référencement Naturel
-            </li>
-            <li>
-                Responsive smartphones/tablettes
-            </li>
-        </ul>
-    </div>
-    <hr>
-    <div class="service">
-        <h3><a class='link' href="index.php?objet=integrator">Integration Web</a></h3>
-        <p>
-            Vous savez ce que vous voulez! A partir de vos maquettes, rédactions, et mutimédias je met votre projet en construction.
-        </p>
-        <ul>
-            <li>
-                Étude de votre projet / Cahier des charges
-            </li>
-            <li>
-                Si besoin création d'une base de donné (PHP, MySql) 
-            </li>
-            <li>
-                Html, CSS, JavaScript 
-            </li>
-            <li>
-                Validation W3C
-            </li>
-            <li>
-                Hébergement
-            </li>
-            <li>
-                Référencement Naturel
-            </li>
-            <li>
-                Responsive smartphones/tablettes
-            </li>
-        </ul>
-    </div>
-    <hr>
-    <div class="service">
-        <h3><a class='link' href="index.php?objet=blog">Blog</a></h3>
-        <p>
-            Vous voulez partager vos connaissances, votre savoir-faire, publié un livre, booster vos contacts, c'est par ici! 
-        </p>
-        <ul>
-            <li>
-                Étude de votre projet / Cahier des charges 
-            </li>
-            <li>
-                Création d'une base de donné (PHP, MySql)
-            </li>
-            <li>
-                Html, CSS, JavaScript 
-            </li>
-            <li>
-                Validation W3C
-            </li>
-            <li>
-                Hébergement
-            </li>
-            <li>
-                Référencement Naturel
-            </li>
-            <li>
-                Responsive smartphones/tablettes
-            </li>
-        </ul>
-    </div>
-    <hr>
-    <div class="service">
-        <h3><a class='link' href="index.php?objet=wordPress">WordPress</a></h3>
-        <p>
-            Un site clef en main, WordPress propose une multitude d'outil qui vous permet de maintenir votre site à jour. 
-        </p>
-        <ul>
-            <li>
-                Étude de votre projet / Cahier des charges 
-            </li>
-            <li>
-                Validation W3C
-            </li>
-            <li>
-                Hébergement
-            </li>
-            <li>
-                Référencement Naturel
-            </li>
-            <li>
-                Responsive smartphones/tablettes
-            </li>
-        </ul>
-    </div>
+        <div class="service">
+            <h3><a class='link' href="index.php?objet=showcase">Site Vitrine</a></h3>
+            <p>
+                Ce type de site présente l'entrepise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
+            </p>
+            <ul>
+                <li>
+                    Étude de votre projet / Cahier des charges
+                </li>
+                <li>
+                    Html, CSS, JavaScript
+                </li>
+                <li>
+                    Validation W3C
+                </li>
+                <li>
+                    Hébergement
+                </li>
+                <li>
+                    Référencement Naturel
+                </li>
+                <li>
+                    Responsive smartphones/tablettes
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="service">
+            <h3><a class='link' href="index.php?objet=integrator">Integration Web</a></h3>
+            <p>
+                Vous savez ce que vous voulez! A partir de vos maquettes, rédactions, et mutimédias je met votre projet en construction.
+            </p>
+            <ul>
+                <li>
+                    Étude de votre projet / Cahier des charges
+                </li>
+                <li>
+                    Si besoin création d'une base de donné (PHP, MySql) 
+                </li>
+                <li>
+                    Html, CSS, JavaScript 
+                </li>
+                <li>
+                    Validation W3C
+                </li>
+                <li>
+                    Hébergement
+                </li>
+                <li>
+                    Référencement Naturel
+                </li>
+                <li>
+                    Responsive smartphones/tablettes
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="service">
+            <h3><a class='link' href="index.php?objet=blog">Blog</a></h3>
+            <p>
+                Vous voulez partager vos connaissances, votre savoir-faire, publié un livre, booster vos contacts, c'est par ici! 
+            </p>
+            <ul>
+                <li>
+                    Étude de votre projet / Cahier des charges 
+                </li>
+                <li>
+                    Création d'une base de donné (PHP, MySql)
+                </li>
+                <li>
+                    Html, CSS, JavaScript 
+                </li>
+                <li>
+                    Validation W3C
+                </li>
+                <li>
+                    Hébergement
+                </li>
+                <li>
+                    Référencement Naturel
+                </li>
+                <li>
+                    Responsive smartphones/tablettes
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="service">
+            <h3><a class='link' href="index.php?objet=wordPress">WordPress</a></h3>
+            <p>
+                Un site clef en main, WordPress propose une multitude d'outil qui vous permet de maintenir votre site à jour. 
+            </p>
+            <ul>
+                <li>
+                    Étude de votre projet / Cahier des charges 
+                </li>
+                <li>
+                    Validation W3C
+                </li>
+                <li>
+                    Hébergement
+                </li>
+                <li>
+                    Référencement Naturel
+                </li>
+                <li>
+                    Responsive smartphones/tablettes
+                </li>
+            </ul>
+        </div>
     </article>
     <p id="infoServices">
         L'étude de votre projet permettra de fixer un budget personnel
@@ -181,17 +190,11 @@
     </div>
 </section>
 <section id="cVitae">
-    <h2>À propos de moi, mon Cv...</h2>
-    <div id="myCv">
-        <div id="infosMyCv">
+    <h2 id="titleCVitae">À propos de moi, mon Cv...</h2>
+    <article id="myCv">
+        <article id="infosMyCv">
             <div id="myPicture">
                 <img src="images/identite.jpg" alt="Thomas ORTA">
-            </div>
-            <div id="banner"> 
-                <h2>Thomas ORTA</h2>
-                <p>
-                    Freelance / Developper Back-End et Front-End
-                </p>
             </div>
             <div id="myProfile">
                 <h4>PROFIL</h4>
@@ -215,8 +218,9 @@
                     </li>
                 </ul>
             </div>
+            <hr class="separatorCvInfos">
             <div id="myLog">
-                <h4>PROFIL</h4>
+                <h4>Logiciel</h4>
                 <ul id="log">
                     <li>
                         GitBash / GitHub
@@ -243,6 +247,7 @@
                     </li>
                 </ul>
             </div>
+            <hr class="separatorCvInfos">
             <div id="myLanguage">
                 <h4>Langues</h4>
                 <ul id="language">
@@ -254,6 +259,7 @@
                     </li>
                 </ul>
             </div>
+            <hr class="separatorCvInfos">
             <div id="myInterest">
                 <h4>Intérêts</h4>
                 <ul id="interest">
@@ -271,176 +277,211 @@
                     </li>
                 </ul>
             </div>
-
-        </div>
-        <div id=training>
-            <table class="tableTraining">
-                <caption>Formations</caption>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p>1999 - 2001</p>
-                            <p>Montauban</p> 
-                        </td>
-                        <td>
-                            <p>Diplôme BEP Prod Méca Option Usinage</p>
-                            <p>Lycée Antoine Bourdelle</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2001 - 2003</p>
-                            <p>Toulouse</p> 
-                        </td>
-                        <td>
-                            <p>Diplôme BAC Prod Méca Option Usinage</p>
-                            <p>CFAI Midi-Pyrénné</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2003</p>
-                            <p>Toulouse</p> 
-                        </td>
-                        <td>
-                            <p>Diplôme BTS Prod Méca Option Usinage</p>
-                            <p>CFAI Midi-Pyrénné</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2006 - 2007</p>
-                            <p>Montauban</p> 
-                        </td>
-                        <td>
-                            <p>Diplôme Professionnel de Route FIMO-PL-SPL-CACES</p>
-                            <p>ECF</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2019 - 2020</p>
-                            <p>Léojac</p> 
-                        </td>
-                        <td>
-                            <p>Diplôme Developpeur Web Junior en cours d'aquisition</p>
-                            <p>OpenClassroom.com</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="experience">
-            <table class="tableExperience">
-                <caption>Expériences proféssionnelles</caption>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p>1999 - 2003</p>
-                            <p>Cugnaux</p> 
-                        </td>
-                        <td>
-                            <p>Dedienne Industrie,</p>
-                            <p>Apprenti pour le BAC et le BTS</p>
-                            <p>Missons ou taches réalisées:</p>
-                            <ul>
-                                <li>Usinages conventionnel et numérique</li>
-                                <li>Ajustage</li>
-                                <li>Programation numérique</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2003 - 2004</p>
-                            <p>Midi-Pyrénées</p> 
-                        </td>
-                        <td>
-                            <p>Confort Général Européen,</p>
-                            <p>Commercial</p>
-                            <p>Missions ou tâches réalisées:</p>
-                            <ul>
-                                <li>prise de contact</li>
-                                <li>démonstration et vente d'affineur d'eau</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2004 - 2006</p>
-                            <p>Montauban</p> 
-                        </td>
-                        <td>
-                            <p>Farella</p>
-                            <p>Ouvrier qualifié</p>
-                            <p>Missions ou tâches réalisées:</p>
-                            <ul>
-                                <li>Réalisation de pièces usinées</li>
-                                <li>Contrôles</li>
-                                <li>Ajustages</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2007 - 20018</p>
-                            <p>Bressols</p> 
-                        </td>
-                        <td>
-                            <p>Bergo fruits / Satar</p>
-                            <p>Chauffeur SPL National</p>
-                            <p>Missions ou tâches réalisées:</p>
-                            <ul>
-                                <li>Chargement / Déchargement</li>
-                                <li>Conduite National</li>
-                                <li>Entretien du véhicule</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2018 - 2020</p>
-                            <p>Léojac</p> 
-                        </td>
-                        <td>
-                            <p>OpenClassroom</p>
-                            <p>Formation en ligne Développeur Web Junior</p>
-                            <p>Missions ou tâches réalisées:</p>
-                            <ul>
-                                <li>Réalisation de 5 projets</li>
-                                <li>Langages HTML, CSS, JavaScript, PHP, SQL, CMS</li>
-                                <li>Étude de marché / Business Model Canvas</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2020</p>
-                            <p>Léojac</p> 
-                        </td>
-                        <td>
-                            <p>Freelance</p>
-                            <p>Développeur de site Web</p>
-                            <p>Missions ou tâches réalisées:</p>
-                            <ul>
-                                <li>Etude de votre projet</li>
-                                <li>Cahiers des charges</li>
-                                <li>Langages HTML, CSS, JavaScript, PHP, SQL, CMS</li>
-                                <li>site Vitrine</li>
-                                <li>site blog</li>
-                                <li>site sur mesure</li>
-                                <li>...tous les nouveaux projets</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>    
-        </div>
-    </div>
+        </article>
+        <article id=tables>
+            <div id=training>
+                <div id="banner">
+                    <h2 id="titleBanner">Thomas ORTA</h2>
+                    <p>
+                        Freelance / Developper Back-End et Front-End
+                    </p>
+                </div>
+                <table class="tableTraining">
+                    <caption>Formations</caption>
+                    <tbody>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2019 - 2020</p>
+                                <p class="city">Léojac</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="diploma">Diplôme Developpeur Web Junior en cours d'aquisition</p>
+                                <p class="school">OpenClassroom.com</p>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2006 - 2007</p>
+                                <p class="city">Montauban</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="diploma">Diplôme Professionnel de Route FIMO-PL-SPL-CACES</p>
+                                <p class="school">ECF</p>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2003</p>
+                                <p class="city">Toulouse</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="diploma">Diplôme BTS Prod Méca Option Usinage</p>
+                                <p class="school">CFAI Midi-Pyrénné</p>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2001 - 2003</p>
+                                <p class="city">Toulouse</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="diploma">Diplôme BAC Prod Méca Option Usinage</p>
+                                <p class="school">CFAI Midi-Pyrénné</p>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">1999 - 2001</p>
+                                <p class="city">Montauban</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="diploma">Diplôme BEP Prod Méca Option Usinage</p>
+                                <p class="school">Lycée Antoine Bourdelle</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr class="separatorCvTable">
+            <div id="experience">
+                <table class="tableExperience">
+                    <caption>Expériences proféssionnelles</caption>
+                    <tbody>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2020</p>
+                                <p class="city">Léojac</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="enterprise">Freelance</p>
+                                <p class="function">Développeur de site Web</p>
+                                <ul>
+                                    <li>Etude de votre projet</li>
+                                    <li>Cahiers des charges</li>
+                                    <li>Langages HTML, CSS, JavaScript, PHP, SQL, CMS</li>
+                                    <li>site Vitrine</li>
+                                    <li>site blog</li>
+                                    <li>site sur mesure</li>
+                                    <li>...tous les nouveaux projets</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2018 - 2020</p>
+                                <p class="city">Léojac</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="enterprise">OpenClassroom</p>
+                                <p class="function">Formation en ligne Développeur Web Junior</p>
+                                <ul>
+                                    <li>Réalisation de 5 projets</li>
+                                    <li>Langages HTML, CSS, JavaScript, PHP, SQL, CMS</li>
+                                    <li>Étude de marché / Business Model Canvas</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2007 - 20018</p>
+                                <p class="city">Bressols</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="enterprise">Bergo fruits / Satar</p>
+                                <p class="function">Chauffeur SPL National</p>
+                                <ul>
+                                    <li>Chargement / Déchargement</li>
+                                    <li>Conduite National</li>
+                                    <li>Entretien du véhicule</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2004 - 2006</p>
+                                <p class="city">Montauban</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="enterprise">Farella</p>
+                                <p class="function">Ouvrier qualifié</p>
+                                <ul>
+                                    <li>Réalisation de pièces usinées</li>
+                                    <li>Contrôles</li>
+                                    <li>Ajustages</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">2003 - 2004</p>
+                                <p class="city">Midi-Pyrénées</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="enterprise">Confort Général Européen,</p>
+                                <p class="function">Commercial</p>
+                                <ul>
+                                    <li>prise de contact</li>
+                                    <li>démonstration et vente d'affineur d'eau</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="trCv">
+                            <td class="yearCity">
+                                <p class="year">1999 - 2003</p>
+                                <p class="city">Cugnaux</p> 
+                            </td>
+                            <td class="experienceCv">
+                                <p class="enterprise">Dedienne Industrie,</p>
+                                <p class="role">Apprenti pour le BAC et le BTS</p>
+                                <ul>
+                                    <li>Usinages conventionnel et numérique</li>
+                                    <li>Ajustage</li>
+                                    <li>Programation numérique</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </article>
+    </article>
 </section>
 <section id="formContact">
-    <h2 class="titleSection">Des questions, une étude de votre projet, un devis? contactez moi§</h2>
-    <a href="index.php?objet=contact">Entrez ici pour me conctacter!!</a>
+    <h2 class="titleFormContact">Formulaire de contact</h2>
+    <div class="form ">
+		<div class="hedding-title">
+			<h1><a href="index.php?objet=contact">Contactez moi !</a></h1>
+		</div>
+		<div class="hedding-description">
+            <p>
+                <a href="index.php?objet=contact">
+                    Ma mission est bien plus que le developpement de votre site internet, je suis là pour vous accompagner à la reussite de votre activitée. Contactez moi par ce formulaire ou par téléphone.
+                </a>
+            </p>
+            <p>
+                Thomas ORTA : 06.12.14.92.55
+            </p>
+		</div>
+		<div class="form-input">
+            <form method="POST" action="index?objet=contact">
+                <label for="name">Votre nom :</label><br>
+                <input type="text" placeholder="Entrez votre nom" name="name"><br>
+                
+                <label for="firstName">Votre Prenom :</label><br>
+				<input type="text" placeholder="Entrez votre prénom" name="firstName"><br>
+                
+                <label for="title">Titre de votre message :</label>
+                <input type="text" name="title" placeholder="Titre"><br>
+
+                <label for="email"> Votre Em@il :</label><br>
+				<input type="text" placeholder="Email..." name='email'></br>
+                
+                <label for="message">Votre message :</label>
+				<textarea rows="4" placeholder="Message.." name="message"></textarea>
+				<button class="button">Send Message</button>
+			</form> 
+		</div>
+	</div>
 </section>
 
 <script src="js/slider.js"></script>
