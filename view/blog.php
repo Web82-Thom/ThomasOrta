@@ -1,7 +1,7 @@
 <?php $title = "Site Blog"; ?>
 
 <?php ob_start(); ?>
-<section>
+<section class="posts">
     <h2 class='titleSection'> Votre site Blog </h2>
     <?php foreach ($posts as $post) { ?>
         <article class="contentPosts">
