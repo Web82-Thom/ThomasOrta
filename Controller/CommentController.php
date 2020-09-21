@@ -65,7 +65,7 @@ class CommentController
 
         require_once('../view/noAccess.php');
     }
-
+    
     // SIGNALER UN COMMENTAIRE
     public function report($commentId, $postId)
     {  
