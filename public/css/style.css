@@ -44,23 +44,85 @@ body {
 *   Menu navigation
 *
 */
-#menu {
-    display: flex;
-    width: 100%;
+header {
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
     background-image: linear-gradient(50deg, black, white, black);
+    display: flex;
+    padding: 10px;
+}
+
+#menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    z-index: 20;
+    
+}
+
+#menuNavigation {	
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
+}
+
+#menuNavigation li {	
+    font-size: 20px;
+}
+
+.menuAdmin:hover > ul {
+    background-color:white;
+    padding: 5px;
+    display: block;
+}
+
+.sousMenu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.sousMenu a {
+    font-size: 10px;
+    z-index: 5;
 }
 
 #thomasOrta {
     text-align: center;
-    margin-bottom: 15px;
+    width: 30%;
+    animation: spinner 5s infinite;
+    animation-delay: 5s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+from { -webkit-transform: rotateY(0deg);    }
+to   { -webkit-transform: rotateY(-360deg); }
+}
+
+/* all other browsers */
+@keyframes spinner {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
 }
 
 #thomasOrta h1 {
-    margin-bottom: 0;
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
     color: #464646
 
@@ -72,30 +134,9 @@ body {
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 
 }
-#menuNavigation ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-}
 
 .fas {
     color: white;
-}
-
-#menuNavigation li{
-    
-    margin-right: 60px;
-    font-size: 25px;
-    font-weight: 100;
-    color: #ffffff;
-    text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
-    border: 1px solid transparent;
-}
-
-#menu li:hover {
-    border-bottom: 1px solid white;
 }
 
 #menuNavigation a {
@@ -103,26 +144,9 @@ body {
     color: currentColor;
 }
 
-.sousMenu a {
-    font-size: 15px;
-}
-
-.sousMenu li {
-    display: flex;
-    flex-direction: column;
-}
-
-ul .sousMenu {
-    display: none;
-    flex-direction: column;
-}
-
-ul .sousMenu:hover {
-    display: block;
-}
-
 a {
     text-decoration: none;
+    color: currentColor;
 }
 /*
 *   
@@ -153,6 +177,38 @@ a {
     left: 20%;
     margin-top: 11%;
     width: 60%;
+    animation: slide 5s infinite; /* version simplifié*/
+    animation-delay: 5s;
+}
+
+@keyframes slide {
+    0%{ 
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-140%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0%{ 
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-moz-keyframes slide {
+    0%{ 
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .slide img {
@@ -172,13 +228,25 @@ a {
     margin-top: 30px;
 }
 
+#mission {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff5ee;
+    margin: auto;
+}
+
 #myServices article {
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#myServices h2 {
+#myServices h2, #myServices h2, #projects h2, #titleCVitae, #titleFormContat {
     text-align: center;
     font-size: 35px;
     color: white;
@@ -186,8 +254,7 @@ a {
 }
 
 .service {
-
-    width: 100%;
+    width: 250px;
     text-align: center;
 }
 
@@ -198,7 +265,6 @@ a {
 }
 
 hr {
-    min-height: 400px;
     margin: auto;
     margin-left: 10px;
     margin-right: 10px;
@@ -408,13 +474,6 @@ figure:hover figcaption {
     color: red;
 }
 
-table {
-    width:100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    padding: 8px;
-}
-
 table th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -424,7 +483,133 @@ table th {
     font-size: 17px;
     overflow: hidden;
     font-weight: 500;
-    }
+}
+
+.tableAdmin {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 8px;
+}
+
+.tableAdminTd {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    overflow: hidden;
+}
+/*
+*
+*   CV
+*
+*/
+#cVitae {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white
+}
+
+#infosMyCv {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#infosMyCv div {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#infosMyCv ul {
+    padding: 0px;
+}
+
+
+#infosMyCv h4 {
+    font-size: 20px;
+}
+
+.separatorCvInfos {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 69%;
+    height: 1px;
+}
+
+.separatorCvTable {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 69%;
+    height: 1px;
+}
+
+#banner {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+#titleBanner {
+    text-shadow: unset;
+    color: black;
+    font-size: 40px;
+}
+
+#banner p {
+    font-size: 25px;
+}
+
+#myCv {
+    display: flex;
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+#myPicture {
+    position: relative;
+    margin: 1em;
+    display: flex;
+    border: 2px solid gold;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#myPicture img {
+    width: 100%;
+    border-radius: 10px
+}
+
+#tables {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f8ff;
+}
+
+.tableTraining, .tableExperience {
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+caption {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
 
 table tr:hover {
     background-color:rgb(73, 169, 225);
@@ -441,7 +626,7 @@ table tr:hover {
     border: 1px solid rgba(255,255,255,0.3);
 }
 
-td{
+.yearCity, .experienceCv {
     padding: 15px;
     text-align: center;
     vertical-align:middle;
@@ -449,4 +634,150 @@ td{
     font-size: 18px;
     border-bottom: solid 1px rgba(255,255,255,0.1);
     overflow: hidden;
+}
+
+.trCv {
+    width: 100%;
+    display: flex;
+}
+
+.trCv:hover {
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+}
+
+.yearCity {
+    width: 25%;
+}
+
+.yearCity p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.experienceCv {
+    width: 75%;
+    text-align: start;
+    font-size: 15px;
+}
+
+.experienceCv p {
+    margin: 0px;
+}
+
+.experienceCv ul {
+    margin-top: 0;
+}
+/*
+*
+*   CONTACT HOME
+*
+*/
+.formContact, #formContact {
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(50deg, black, white, black);
+}
+
+.titleFormContact {
+    color: white;
+    font-size: 35px;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    text-align: center;
+}
+
+#formContactLink {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*
+*
+*
+*   formulaire 
+*
+*/
+.form{
+	padding:30px;
+	width:50%;
+	margin:0 auto;
+	color:#fff;
+	margin-top:30px;
+	border:1px solid #FF9656;
+	border-radius: 5px;
+	background-color: #333;
+}
+.hedding-title{
+	font-size:25px;
+	text-align: center;
+}
+.hedding-title h1{
+	margin:0px;
+	color:#ff9656;
+	font-weight: normal;
+}
+.hedding-description{
+	text-align: center;
+}
+.form-input input,
+.form-input textarea{
+	width:100%;
+	margin: 15px 0px;
+	font-size:18px;
+	font-family:"Barlow Semi Condensed",sans-serif;
+	border-radius: 0px;
+	border: 1px solid #c1c1c1;
+}
+.button{
+	padding:8px 0px;
+	width: 100%;
+	margin-top:15px;
+	background-color:#FF9656;
+	border: none;
+	color: #fff;
+}
+/*
+*
+*
+*   displayPosts.php
+*
+*/
+.posts {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.titleSection {
+    font-size: 35px;
+}
+
+.titleTickets {
+    display: flex;
+    align-items: baseline;
+}
+
+.titleTicket {
+    margin-top: 0;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+
+.contentPosts {
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
