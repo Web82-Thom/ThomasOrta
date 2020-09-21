@@ -1,7 +1,7 @@
 <?php $title = "Site Vitrine"; ?>
 
 <?php ob_start(); ?>
-<section>
+<section class="posts">
     <h2 class='titleSection'> Votre site maquette </h2>
     <?php foreach ($posts as $post) { ?>
         <article class="contentPosts">
