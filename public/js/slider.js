@@ -18,7 +18,7 @@ class slider {
     
     autoMove() {
         this.interval = setInterval(() => {
-            this.nextSlide()
+            this.nextSlide();
         }, this.time);
     }
 
