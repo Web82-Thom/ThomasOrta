@@ -48,11 +48,12 @@ header {
     align-items: center;
     background-image: linear-gradient(50deg, black, white, black);
     display: flex;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #menu {
-    width: 100%;
+    width: auto;
     height: 100px;
     display: flex;
     z-index: 20;
@@ -65,18 +66,22 @@ header {
     justify-content: space-around;
     font-weight: bold;
     color: white;
-    width: 100%;
     margin: auto;
     padding: 0;
     align-items: center;
     text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
 }
 
-#menuNavigation li {	
+.listMenu {	
+    font-size: 20px;
+    padding: 25px;
+}
+
+#menuAdmin {
     font-size: 20px;
 }
 
-.menuAdmin:hover > ul {
+#menuAdmin:hover > ul {
     background-color:white;
     padding: 5px;
     display: block;
@@ -96,7 +101,7 @@ header {
 
 #thomasOrta {
     text-align: center;
-    width: 30%;
+    width: 20%;
     animation: spinner 5s infinite;
     animation-delay: 5s;
 }
@@ -510,7 +515,8 @@ table th {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: white
+    background-color: white;
+    margin-bottom: 30px;
 }
 
 #infosMyCv {
@@ -754,30 +760,238 @@ table tr:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 100%;
+    width: 90%;
     align-items: center;
+    margin-top: 30px;
 }
 
-.titleSection {
-    font-size: 35px;
+.titleService {
+    font-size: 30px;
 }
 
 .titleTickets {
+    background-color: #B7C9F3;
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
 }
 
 .titleTicket {
-    margin-top: 0;
-    margin-top: 0;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    font-size: 25px;
+    text-align: center;
 }
 
 
 .contentPosts {
     width: 90%;
+    margin: auto;
+    margin-top: 40px;
     border: 2px solid black;
-    border-radius: 15px;
     margin-bottom: 20px;
-    padding: 20px;
+    background-color: white;
+}
+
+.postContent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*
+*
+*   WEATHER
+*
+*/
+#forecast {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+.input{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cityValue{
+    height: 30px;
+    width: 600px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#button {
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.display {
+    text-align: center;
+}
+
+.displayWeather {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+}
+
+#imgWeather {
+    background-color: rgb(105, 105, 105);
+}
+/*
+*
+*       displayPost.php
+*
+*/
+.titleSection {
+    margin-left: 15%;
+}
+
+#commentDisplay {
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 0px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+#formAddComment {
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: ghostwhite;
+}
+
+#formAddComment p {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#citation {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    width: 65%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#formTitle {
+    margin: 0;
+    padding: 10px;
+    background-color: #B7C9F3;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+#formContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.dateInfos {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#submitComment {
+    width: 60%;
+    font-size: 15px;
+    padding: 5px;
+    margin: 20px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #90abea;
+}
+
+#AllCommentDisplay {
+    margin-bottom: 10px;
+}
+
+#commentAuthorContent {
+    background-color: #B7C9F3;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#commentAuthor {
+    padding-left: 5%;
+    
+}
+
+#commentAuthor strong {
+    font-size: 15px;
+}
+
+#commentContent {
+    padding-left: 5%;
+    font-size: 15px;
+}
+
+#comment {
+    width: 80%;
+    height: 90px;
+}
+
+#actionComment {
+    display: flex;
+    justify-content: flex-end;
+    background-color: aliceblue;
+}
+
+#actionComment p {
+    padding-right: 10px;
+}
+
+#linkDeleteComment {
+    color: black;
+    margin-left : 10px;
+}
+
+#blocPagePost {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+
+#report {
+    color: green;
+}
+
+#reportSignal {
+    color:red;
 }
