@@ -1,4 +1,4 @@
-class slider {
+class Slider {
     constructor(slider) {
         this.index = 0;
         this.time = 8000;
