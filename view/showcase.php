@@ -2,10 +2,7 @@
 
 <?php ob_start(); ?>
 <section class="posts">
-    <h2 class='titleSection'> Le site vitrine</h2>
-    <article class="imgArticle">
-        <img src="" alt="le site vitrine" />
-    </article>
+    <h2 class='titleService'> Le site vitrine</h2>
     <?php foreach ($posts as $post) { ?>
         <article class="contentPosts">
             <div class="titleTickets">

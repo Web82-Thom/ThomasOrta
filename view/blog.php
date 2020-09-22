@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 <section class="posts">
-    <h2 class='titleSection'> Votre site Blog </h2>
+    <h2 class='titleService'> Votre site Blog </h2>
     <?php foreach ($posts as $post) { ?>
         <article class="contentPosts">
             <div class="titleTickets">
