@@ -22,6 +22,25 @@
         <img src="images/objectif.jpg" alt="ecran coder">
     </div>
 </section>
+
+
+<section id="forecast">
+    <h2>Le petit coin météo...</h2>
+    <div class="input">
+        <input for="button"type="text" id="cityValue" placeholder="Entrez votre ville">
+        <input type="submit" value="Rechercher" id="button">
+    </div>
+    <div class="displayWeather">
+        <div id="imgWeather">
+            <img id="icon" src="" alt="">
+        </div>
+        <h4 id="nameCity">Ville :</h1>
+        <p id="description">Description :</p>
+        <p id="temperature">Température :</p>
+    </div>
+</section>
+
+
 <section id="myServices">
     <h2>Mes services</h2>
     <p id="mission">
@@ -485,6 +504,7 @@
 </section>
 
 <script src="js/slider.js"></script>
+<script src="js/forecast.js"></script>
 <script src="js/main.js"></script>
 
 <?php 
