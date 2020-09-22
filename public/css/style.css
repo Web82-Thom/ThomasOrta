@@ -54,8 +54,8 @@ header {
 
 #menu {
     width: auto;
-    height: 100px;
-    display: flex;
+    height: auto;
+    margin-right: 10px;
     z-index: 20;
     
 }
@@ -70,6 +70,8 @@ header {
     padding: 0;
     align-items: center;
     text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .listMenu {	
@@ -85,6 +87,8 @@ header {
     background-color:white;
     padding: 5px;
     display: block;
+    position: absolute;
+    right: 0;
 }
 
 .sousMenu {
@@ -167,13 +171,13 @@ a {
 
 #slider {
     width: 100%;
-    height: 678px;
+    /*height: 678px;*/
     margin: auto;
 }
 
 .slide{
     overflow: hidden;
-    height: 678px;
+    /*height: 678px;*/
     display: none;
 }
 
@@ -577,7 +581,9 @@ table th {
     position: relative;
     width: 60%;
     margin: auto;
+    margin-bottom: 30px;
 }
+
 #myPicture {
     position: relative;
     margin: 1em;
@@ -816,17 +822,19 @@ table tr:hover {
 .input{
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #cityValue{
     height: 30px;
-    width: 600px;
+    width: 100%;
     background: #e7e7e7;
     font-weight: bold;
     font-size: 15px;
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
+
 }
 
 #button {
@@ -994,4 +1002,8 @@ table tr:hover {
 
 #reportSignal {
     color:red;
+}
+
+.displayWeather {
+   /* display: none;*/
 }
