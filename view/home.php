@@ -22,8 +22,6 @@
         <img src="images/objectif.jpg" alt="ecran coder">
     </div>
 </section>
-
-
 <section id="forecast">
     <h2>Le petit coin météo...</h2>
     <div class="input">
@@ -37,10 +35,10 @@
         <h4 id="nameCity">Ville :</h1>
         <p id="description">Description :</p>
         <p id="temperature">Température :</p>
+        <p id="temperatureMax">Température-maxi :</p>
+        <p id="temperatureMin">Température-mini :</p>
     </div>
 </section>
-
-
 <section id="myServices">
     <h2>Mes services</h2>
     <p id="mission">

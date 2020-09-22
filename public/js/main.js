@@ -1,4 +1,5 @@
 if (document.getElementById('slider')) {
     new Slider();
-    new Forecast();
 }
+
+new Forecast();
