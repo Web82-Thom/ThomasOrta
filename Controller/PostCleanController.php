@@ -2,8 +2,6 @@
 
 namespace Controller;
 
-
-
 class PostCleanController
 { 
     function postClean()
