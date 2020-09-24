@@ -47,19 +47,35 @@
                         <tbody>
                             <tr>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a>
-                                </td class="tableAdminTd">
-                                <td>
-                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>"><?= substr( $post->getContent(),0, 50), '...'; ?></a>
-                                </td class="tableAdminTd">
-                                <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>"><button class="buttonActionAdmin"><i class="fab fa-readme"></i></button></a>
+                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>">
+                                        <?= $post->getTitle(); ?>
+                                    </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;&action=update&id=<?= $post->getId(); ?>"><button class="buttonActionAdmin"><i class="fas fa-keyboard"></i></button></a>
+                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>">
+                                        <?= substr( $post->getContent(),0, 50), '...'; ?>
+                                    </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;&action=delete&id=<?= $post->getId(); ?>"><button class="buttonActionAdmin"><i class="fas fa-trash-alt"></i></button></a>
+                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>">
+                                        <button class="buttonActionAdmin">
+                                            <i class="fab fa-readme"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                                <td class="tableAdminTd">
+                                    <a class="adminLink" href="index.php?objet=post&amp;&action=update&id=<?= $post->getId(); ?>">
+                                        <button class="buttonActionAdmin">
+                                            <i class="fas fa-keyboard"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                                <td class="tableAdminTd">
+                                    <a class="adminLink" href="index.php?objet=post&amp;&action=delete&id=<?= $post->getId(); ?>">
+                                        <button class="buttonActionAdmin">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
@@ -104,14 +120,24 @@
                                     <?= htmlspecialchars($comment->getAuthor());?>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;&action=updateComment&id=<?= $comment->getId(); ?>&postId=<?= $comment->getPostId(); ?>"><button class="buttonActionAdmin"><i class="fas fa-keyboard"></i></button></a>
+                                    <a class="adminLink" href="index.php?objet=post&amp;&action=updateComment&id=<?= $comment->getId(); ?>&postId=
+                                        <?= $comment->getPostId(); ?>">
+                                        <button class="buttonActionAdmin">
+                                            <i class="fas fa-keyboard"></i>
+                                        </button>
+                                    </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLinkReport" href="index.php?objet=post&amp;&action=unReportComment&id=<?= $comment->getId(); ?>" onclick="window.location.reload(false)"><?php if ($comment->getreport() == 1)  echo 'Approuvez le commentaire'; ?></a>
+                                    <a class="adminLinkReport" href="index.php?objet=post&amp;&action=unReportComment&id=<?= $comment->getId(); ?>" onclick="window.location.reload(false)">
+                                        <?php if ($comment->getreport() == 1)  echo 'Approuvez le commentaire'; ?>
+                                    </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLinkDelete" href="index.php?objet=post&amp;&action=deleteComment&id=<?= $comment->getId(); ?>&postId=<?= $comment->getPostId(); ?>">
-                                        <button class="buttonActionAdmin"><i class="fas fa-trash-alt"></i></button>
+                                    <a class="adminLinkDelete" href="index.php?objet=post&amp;&action=deleteComment&id=<?= $comment->getId(); ?>&postId=
+                                        <?= $comment->getPostId(); ?>">
+                                        <button class="buttonActionAdmin">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
                                     </a>
                                 </td>
                             </tr>

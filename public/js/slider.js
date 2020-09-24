@@ -3,9 +3,7 @@ class Slider {
         this.index = 0;
         this.time = 8000;
         this.interval = 0; 
-
         this.slides = document.getElementsByClassName('slide');
-
         
         this.display();
         this.autoMove();
@@ -23,10 +21,10 @@ class Slider {
     }
 
     nextSlide() {
-        if (this.index < this.slides.length - 1 ) { // si l'index est inférieur au nombre de slides
+        if (this.index < this.slides.length - 1 ) { 
             this.index++;
         } else {
-            this.index = 0; // sinon, on revient au premier slide (dernier slide => premier slide)
+            this.index = 0;
         }
 
         this.display();
