@@ -1,0 +1,111 @@
+header {
+    display: unset;
+}
+
+#thomasOrta {
+    width: 100%;
+}
+
+#menu {
+    display: none;
+}
+
+#menuNavigation {
+    display: none;
+}
+
+#littleMenu:hover > #menuNavigation {
+    background-color:white;
+    padding: 5px;
+    display: flex;
+    margin: auto;
+    z-index: 100;
+    width: 87%;
+    text-align: center;
+}
+
+#littleMenu {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+#littleMenu p {
+    font-size: 25px;
+}
+
+.listMenu, #menuAdmin {
+    font-size: 15px;
+    padding: 13px;
+}
+
+#menuAdmin:hover > ul {
+    position: absolute;
+    background-color: bisque;
+    right: unset;
+    z-index: 5;
+}
+
+.fa-bars {
+    font-size: 35px;
+}
+
+.slideTitle h2 {
+    font-size: 25px;
+}
+
+#portfolio figure {
+    width: 90%;
+}
+
+#myCv {
+    width: 100%;
+    display: unset;
+}
+
+#infosMyCv {
+    width: 100%; 
+}
+
+#tables {
+    width: 100%;
+}
+
+#titleBanner {
+    font-size: 30px;
+}
+
+#banner {
+margin-top: 5%;
+}
+
+#banner p {
+    font-size: 20px;
+}
+
+caption {
+    font-size: 25px;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.form {
+    padding: 0;
+    width: 90%;
+}
+
+.titleFormContact {
+    font-size: 30px;
+}
+
+.hedding-description {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+#myPicture {
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+}
