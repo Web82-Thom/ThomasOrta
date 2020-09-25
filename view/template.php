@@ -5,6 +5,7 @@
     
     <body>
 
+        <?php include("scrollTop.php"); ?>
         <?php include("menu.php"); ?>
         
         <?= $content ?>
