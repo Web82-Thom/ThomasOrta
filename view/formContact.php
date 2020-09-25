@@ -19,18 +19,29 @@
             </p>
 		</div>
 		<div class="formInput">
-            <form method="POST" action="index?objet=contact">
+            <form method="POST" action="index?objet=contact"><br>
                 <label for="name">Votre nom :</label><br>
-                <input type="text" placeholder="Entrez votre nom" name="name"><br>
+                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" /><br>
+                
                 <label for="firstName">Votre Prenom :</label><br>
-				<input type="text" placeholder="Entrez votre prénom" name="firstName"><br>
-                <label for="title">Titre de votre message :</label>
-                <input type="text" name="title" placeholder="Titre"><br>
+				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" /><br>
+                
+                <label for="title">Titre de votre message :</label><br>
+                <input id="inputContactTitle" type="text" name="title" placeholder="Titre"><br>
+
                 <label for="email"> Votre Em@il :</label><br>
-				<input type="text" placeholder="Email..." name='email'></br>
+				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
+                
                 <label for="message">Votre message :</label>
-				<textarea rows="4" placeholder="Message.." name="message"></textarea>
-				<button class="button">Envoyez votre message</button>
+                <textarea id="inputContactMessage" rows="4" placeholder="Message.." name="message" maxlength="150"></textarea>
+                
+                <div>
+                    <input id="inputContactCheck" type="checkbox" id="acceptSend" value="0" name="acceptSend">
+                    <label for="acceptSend">
+                        En cochant cette case vous acceptez de me communiquer vos informations.
+                    </label>
+                </div>
+				<button id="formButton">Envoyez votre message</button>
 			</form> 
 		</div>
 	</div>
