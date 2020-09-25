@@ -121,7 +121,7 @@ header {
 }
 
 .listMenu:hover, #menuAdmin:hover {
-    border-bottom: 2px solid yellow;;
+    border-bottom: 2px solid rgb(63, 76, 86);;
 }
 
 #menuAdmin:hover > ul {
@@ -314,12 +314,6 @@ a {
     color: white;
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
     font-size: 25px;
-}
-
-hr {
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .service ul {
@@ -774,7 +768,8 @@ table tr:hover {
 	width:50%;
 	margin:0 auto;
 	color:#fff;
-	margin-top:30px;
+    margin-top:30px;
+    margin-bottom: 20px;
 	border:1px solid #FF9656;
 	border-radius: 5px;
 	background-color: #333;
@@ -1065,4 +1060,91 @@ table tr:hover {
 
 #reportSignal {
     color:red;
+}
+/*
+*
+*
+*       FOOTER
+*
+*/
+footer {
+    color: white;
+    background-color: black;
+
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerIntro {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid orange;
+    color: black;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#contactInfos {
+    margin: 20px;
+}
+
+.titleContact {
+    display: none;
+}
+
+#contactInfos ul {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+#contactInfos article{
+    width: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h4, #moreInfos h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: flex-start ;
+}
+
+F#webCreator {
+    font-size: 15px;
+}
+
+#contactInfos li{
+    padding-bottom: 10px;
+}
+/*
+*
+*       legalNotice.php /  cookie.php
+*
+*/
+#identification, #cookie {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+#identification h1, #cookie h1 {
+    font-size: 40px;
+}
+
+#identification a, #cookie a {
+    text-decoration: underline;
+}
+
+#identification ul, #cookie ul {
+    list-style-type: none;
 }
