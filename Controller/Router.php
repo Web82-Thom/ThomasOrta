@@ -81,6 +81,14 @@ class Router
                 } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'contact'))) {
                     $contactController = new ContactController;
                     $contactController->display();
+                // PAGE MENTIONS LEGALES
+                } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'legalNotice'))) {
+                    $legalController = new LegalController;
+                    $legalController->displayMentions();
+                // PAGE COOKIE
+                } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'cookie'))) {
+                    $legalController = new LegalController;
+                    $legalController->displayCookie();
                 }
             //SI L'UTILISATEUR FAIT RIEN "PAGE D'ACCUEIL"
             } else {
