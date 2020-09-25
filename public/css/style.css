@@ -52,6 +52,29 @@ body {
     text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
     
 }
+
+.cookieAlert {
+    background-color: black;
+    color: white;
+    padding-bottom: 18px;
+    position: fixed;
+    opacity: 1;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.cookieAlert p {
+    padding: 10px;
+}
+
+#cookieButton {
+    width: 14%;
+    display: block;
+    margin: auto;
+    margin-right: 0;
+}
 /*
 *
 *   Header / Menu / navigation
@@ -106,7 +129,6 @@ header {
     padding: 5px;
     display: block;
     position: absolute;
-    right: 0;
 }
 
 .sousMenu {
@@ -736,6 +758,10 @@ table tr:hover {
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+#inputContactCheck {
+    width: 10%;
 }
 /*
 *
