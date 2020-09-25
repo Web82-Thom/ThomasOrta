@@ -15,10 +15,10 @@
         <button id="formButton" type="submit" name="submit" value="Se connecter">Se connecter</button>
     </form>
 </section>
-
+<!--
 <script src="js/formConnection.js"></script>
 <script src="js/main.js"></script>
-
+-->
 <?php 
     $content = ob_get_clean(); 
 
