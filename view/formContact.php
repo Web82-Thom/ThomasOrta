@@ -21,13 +21,13 @@
 		<div class="formInput">
             <form method="POST" action="index?objet=contact"><br>
                 <label for="name">Votre nom :</label><br>
-                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" /><br>
+                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" /><br>
                 
                 <label for="firstName">Votre Prenom :</label><br>
-				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" /><br>
+				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" maxlength="20" /><br>
                 
                 <label for="title">Titre de votre message :</label><br>
-                <input id="inputContactTitle" type="text" name="title" placeholder="Titre"><br>
+                <input id="inputContactTitle" type="text" name="title" placeholder="Titre" maxlength="20"><br>
 
                 <label for="email"> Votre Em@il :</label><br>
 				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
