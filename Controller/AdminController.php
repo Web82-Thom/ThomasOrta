@@ -10,7 +10,7 @@ class AdminController
 {   
     // TRAITEMENT DU LOGIN
     public function login()
-    {   
+    {   $message = '';
         $this->_adminManager = new AdminManager(); 
         if (!empty($_POST['email']) && !empty($_POST['password'])) { 
             $admins = $this->_adminManager->getAdmins();
@@ -21,14 +21,10 @@ class AdminController
                     $_SESSION['email'] = $admin->getEmail();
                     
                     $this->display();
-                    
-                    require_once('../view/admin.php');
                 } 
             };
         } elseif (isset($_SESSION['firstAdmin'])) {
             $this->display();
-
-            require_once('../view/admin.php');
         } 
         require_once('../view/adminLogin.php');
     }

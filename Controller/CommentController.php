@@ -8,12 +8,10 @@ use Model\CommentManager;
 class CommentController 
 {
     private $_commentManager;
-    //private $_adminController;
 
     public function __construct()
     {
         $this->_commentManager = new CommentManager();
-        //$this->_adminController = new AdminController();
     }
 
     // AJOUT D'UN COMMENTAIRE
