@@ -19,20 +19,20 @@
             </p>
 		</div>
 		<div class="formInput">
-            <form method="POST" action="index?objet=contact"><br>
-                <label for="name">Votre nom :</label><br>
+            <form method="POST" action="index?objet=contact">
+                <label for="inputContactName">Votre nom :</label><br>
                 <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" /><br>
                 
-                <label for="firstName">Votre Prenom :</label><br>
+                <label for="inputContactFirstName">Votre Prenom :</label><br>
 				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" maxlength="20" /><br>
                 
-                <label for="title">Titre de votre message :</label><br>
+                <label for="inputContactTitle">Titre de votre message :</label><br>
                 <input id="inputContactTitle" type="text" name="title" placeholder="Titre" maxlength="20"><br>
 
-                <label for="email"> Votre Em@il :</label><br>
+                <label for="inputContactEmail"> Votre Em@il :</label><br>
 				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
                 
-                <label for="message">Votre message :</label>
+                <label for="inputContactMessage">Votre message :</label>
                 <textarea id="inputContactMessage" rows="4" placeholder="Message.." name="message" maxlength="150"></textarea>
                 
                 <div>
@@ -41,7 +41,7 @@
                         En cochant cette case vous acceptez de me communiquer vos informations.
                     </label>
                 </div>
-				<button id="formButton">Envoyez votre message</button>
+				<button id="formButton" name="mailForm" type="submit"  title="Envoyer" >Envoyez votre message</button>
 			</form> 
 		</div>
 	</div>
