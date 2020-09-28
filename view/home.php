@@ -42,20 +42,20 @@
 <section id="myServices">
     <h2>Mes services</h2>
     <p id="mission">
-            Ma mission est bien plus que le developpement de votre site internet, je suis là pour vous accompagner à la reussite de votre activitée.
+            Ma mission est bien plus que le développement de votre site internet, je suis là pour vous accompagner à la réussite de votre activité.
         </p>
     <article>
         <div class="service">
             <h3><a class='link' href="index.php?objet=showcase">Site Vitrine</a></h3>
             <p>
-                Ce type de site présente l'entrepise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
+                Ce type de site présente l'entreprise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
             </p>
             <ul>
                 <li>
-                    Étude de votre projet / Cahier des charges
+                    Étude de votre projet / cahier des charges
                 </li>
                 <li>
-                    Html, CSS, JavaScript
+                    HTML, CSS, Javascript
                 </li>
                 <li>
                     Validation W3C
@@ -67,24 +67,24 @@
                     Référencement Naturel
                 </li>
                 <li>
-                    Responsive smartphones/tablettes
+                    Responsifs smartphones/tablettes
                 </li>
             </ul>
         </div>
         <div class="service">
             <h3><a class='link' href="index.php?objet=integrator">Integration Web</a></h3>
             <p>
-                Vous savez ce que vous voulez! A partir de vos maquettes, rédactions, et mutimédias je met votre projet en construction.
+                Vous savez ce que vous voulez! À partir de vos maquettes, rédactions, et multimédias je mets votre projet en construction.
             </p>
             <ul>
                 <li>
-                    Étude de votre projet / Cahier des charges
+                    Étude de votre projet / cahier des charges
                 </li>
                 <li>
                     Si besoin création d'une base de donné (PHP, MySql) 
                 </li>
                 <li>
-                    Html, CSS, JavaScript 
+                    HTML, CSS, Javascript 
                 </li>
                 <li>
                     Validation W3C
@@ -96,7 +96,7 @@
                     Référencement Naturel
                 </li>
                 <li>
-                    Responsive smartphones/tablettes
+                    Responsifs smartphones/tablettes
                 </li>
             </ul>
         </div>
@@ -107,13 +107,13 @@
             </p>
             <ul>
                 <li>
-                    Étude de votre projet / Cahier des charges 
+                    Étude de votre projet / cahier des charges 
                 </li>
                 <li>
                     Création d'une base de donné (PHP, MySql)
                 </li>
                 <li>
-                    Html, CSS, JavaScript 
+                    HTML, CSS, Javascript 
                 </li>
                 <li>
                     Validation W3C
@@ -125,7 +125,7 @@
                     Référencement Naturel
                 </li>
                 <li>
-                    Responsive smartphones/tablettes
+                    Responsifs smartphones/tablettes
                 </li>
             </ul>
         </div>
@@ -136,7 +136,7 @@
             </p>
             <ul>
                 <li>
-                    Étude de votre projet / Cahier des charges 
+                    Étude de votre projet / cahier des charges 
                 </li>
                 <li>
                     Validation W3C
@@ -148,7 +148,7 @@
                     Référencement Naturel
                 </li>
                 <li>
-                    Responsive smartphones/tablettes
+                    Responsifs smartphones/tablettes
                 </li>
             </ul>
         </div>
@@ -159,7 +159,7 @@
 </section>
 <section id="projects">
     <h2>Mes réalisations</h2>
-    <p id="infoProjects">Retrouvez tous mes projets créés : sites vitrine, office de tourisme...</p>
+    <p id="infoProjects">Retrouvez tous mes projets créés : sites vitrine, office du tourisme...</p>
     <div id="portfolio">
         <figure>
             <img src="images/webAgency.jpg" alt="WebAgency" class="projet1">
@@ -182,7 +182,7 @@
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3><a href="http://www.location-velo-toulouse.com/" target="_blank">Vélok 31</a></h3>
-                <p>Application Location de vélos sur Toulouse</p>
+                <p>Application location de vélos sur Toulouse</p>
             </figcaption>
         </figure>
         <figure>
@@ -278,7 +278,7 @@
                 <h4>Intérêts</h4>
                 <ul id="interest">
                     <li>
-                        peche
+                        Pêche
                     </li>
                     <li>
                         Nature
@@ -469,7 +469,7 @@
 		<div class="heddingDescription">
             <p>
                 <a href="index.php?objet=contact">
-                    Ma mission est bien plus que le developpement de votre site internet, je suis là pour vous accompagner à la reussite de votre activitée. Contactez moi par ce formulaire ou par téléphone.
+                    Ma mission est bien plus que le développement de votre site internet, je suis là pour vous accompagner à la réussite de votre activité. Contactez-moi par ce formulaire ou par téléphone.
                 </a>
             </p>
             <p>
@@ -478,28 +478,28 @@
 		</div>
 		<div class="formInput">
             <form method="POST" action="index?objet=contact"><br>
-                <label for="name">Votre nom :</label><br>
+                <label for="inputContactName">Votre nom :</label><br>
                 <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" /><br>
                 
-                <label for="firstName">Votre Prenom :</label><br>
+                <label for="inputContactFirstName">Votre Prénom :</label><br>
 				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" /><br>
                 
-                <label for="title">Titre de votre message :</label><br>
+                <label for="inputContactTitle">Titre de votre méssage :</label><br>
                 <input id="inputContactTitle" type="text" name="title" placeholder="Titre"><br>
 
-                <label for="email"> Votre Em@il :</label><br>
+                <label for="inputContactEmail"> Votre Em@il :</label><br>
 				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
                 
-                <label for="message">Votre message :</label>
-                <textarea id="inputContactMessage" rows="4" placeholder="Message.." name="message" maxlength="150"></textarea>
+                <label for="inputContactMessage">Votre méssage :</label>
+                <textarea id="inputContactMessage" type="text" rows="4" placeholder="Méssage.." name="message" maxlength="150"></textarea>
                 
                 <div>
                     <input id="inputContactCheck" type="checkbox" id="acceptSend" value="0" name="acceptSend">
-                    <label for="acceptSend">
+                    <label for="inputContactCheck">
                         En cochant cette case vous acceptez de me communiquer vos informations.
                     </label>
                 </div>
-				<button id="formButton">Envoyez votre message</button>
+				<button id="formButton" type="submit" name="mailForm" title="Envoyer" >Envoyez votre message</button>
 			</form> 
 		</div>
 	</div>
