@@ -11,7 +11,7 @@ class ContactManager
         if (isset($_POST['mailForm'])) {
             if (!empty($_POST['name']) AND !empty($_POST['firstName']) AND !empty($_POST['email']) AND !empty($_POST['title']) AND !empty($_POST['message'])) {
                 $header="MIME-Version: 1.0\r\n";
-                $header .='From:"jf-blog.com"<support@thomasorta.com>'."\n";
+                $header .='From:"thomas-orta.com"<support@thomas-orta.com>'."\n";
                 $header .='Content-Type:text/html; charset="uft-8"'."\n";
                 $header .='Content-Transfer-Encoding: 8bit';
 
