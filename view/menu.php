@@ -13,7 +13,7 @@
     <?php if ($showCookie) { ?>
         <div class="cookieAlert">
             <p>
-                En poursuivant votre navigation sur ce site, vous accepter l'utilisation de cookie, stocker sur votre ordinateur, pour vous proposer des contenues et services adaptés à vos besoins. 
+                En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookie, stocker sur votre ordinateur, pour vous proposer des contenues et services adaptés à vos besoins. 
             </p></br>
             <button id="cookieButton" type="submit" value ="cookie">
                 <a href="acceptCookie.php">ok</a>

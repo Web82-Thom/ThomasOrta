@@ -8,7 +8,7 @@
             <a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F31228">
                 Réglementation des mentions relatives à l'utilisation de cookies
             </a></br>
-            <a href="../public/index.php">
+            <a href="index.php?objet=home">
                 Retour sur le site
             </a>
             <p>
@@ -19,13 +19,13 @@
             </p></br>
             <ul>
                 <li>
-                    informer les internautes de la finalité des cookies,
+                    la finalité des cookies à pour but de vous faciliter le remplissage du formulaire de contact.
                 </li>
                 <li>
-                    obtenir leur consentement,
+                    En acceptant les cookies vous donnez votre consentement.
                 </li>
                 <li>
-                    fournir aux internautes un moyen de les refuser.
+                    si vous refusez je vous devez quitter le site.
                 </li>
                 <li>
                     La durée de validité du consentement donné dans ce cadre est de 13 mois maximum.
@@ -38,28 +38,24 @@
                 Les sites qui utilisent des données personnelles doivent obligatoires mentionner les informations suivantes :
             </p></br>
             <p>
-                Coordonnées du délégué à la protection des données (DPO ou DPD) de l'organisme, s'il a été désigné, ou d'un point de contact sur les questions de protection des données personnelles
-            </p>
-            <p>
-                Finalité poursuivie par le traitement auquel les données sont destinées
+                finalité poursuivie par le traitement auquel les données sont destinées: </br>
+                par l'envoi du formulaire de contact, aucune donné est enregistré sur le serveur, vos informations me sont envoyées par mail afin de vous répondre, seules vos informations Nom, Prénom et Email sont stockés sur votre navigateur. Pour les supprimer veuillez vider vos cookies via les options de votre navigateur.</br>
+                Par participation des commentaires, sont données sont stockés sur une base de donnés, héberger par Ionos 1&1.
             </p>
             <p>
                 Caractère obligatoire ou facultatif des réponses et conséquences éventuelles à l'égard de l'internaute d'un défaut de réponse
             </p>
             <p>
-                Destinataires ou catégories de destinataires des données
+                Destinataires des données : mail et base de donné Ionos.
             </p>
             <p>
-                Droits d'opposition, d'interrogation, d'accès et de rectification
+                Droits d'opposition, d'interrogation, d'accès et de rectification <a href="https://www.cnil.fr/fr/le-droit-dopposition-refuser-lutilisation-de-vos-donnees">Cnil</a>
             </p>
             <p>
-                Au besoin, les transferts de données à caractère personnel envisagés à destination d'un État n'appartenant pas à l'Union européenne
+                Base juridique du traitement de données <a href="https://www.cnil.fr/fr/definition/base-legale#:~:text=La%20base%20l%C3%A9gale%20d'un,%C2%AB%20base%20juridique%20%C2%BB%20du%20traitement.">Cnil</a>
             </p>
             <p>
-                Base juridique du traitement de données (c'est-à-dire ce qui autorise légalement le traitement : il peut s'agir du consentement des personnes concernées, du respect d'une obligation prévue par un texte, de l'exécution d'un contrat notamment)
-            </p>
-            <p>
-                Mention du droit d'introduire une réclamation (plainte) auprès de la Cnil
+                Formalité pour une réclamation (plainte) auprès de la <a href="https://www.cnil.fr/fr/cnil-direct/question/adresser-une-reclamation-plainte-la-cnil-quelles-conditions-et-comment">Cnil</a>
             </p>
         </article>
     </section>

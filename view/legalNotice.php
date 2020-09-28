@@ -72,12 +72,14 @@
                         Développeur Web Junior
                     </li>
                     <li>
-                        En cours de préraration à l'obtention
+                        En cours de préparation à l'obtention
                         <!--Le titre professionnel a été octroyé en FRANCE-->
                     </li>
                     <li>
-                        L'organisme auprès duquel une inscription a été faite est 
-                        <a href="https://openclassrooms.com/">openclassrooms</a> 
+                        L'organisme auprès duquel une inscription a été faite: 
+                        <a href="https://openclassrooms.com/">
+                            openclassrooms
+                        </a> 
                     </li>
                 </ul>
             </article>

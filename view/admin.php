@@ -7,13 +7,13 @@
         <div class="blockAdmin">                
             <h3 id="titleAdmin">Administrateur</h3>
             <p class="welcomeAdmin">
-                Bonjour Mr <?= $_SESSION['pseudo']; ?>, cette page vous est consacré pour gerer votre site.
+                Bonjour Mr <?= $_SESSION['pseudo']; ?>, cette page vous est consacrée pour grer votre site.
             </p>
         </div>
         <div class="blockAdmin">
             <h3>Création d'un chapitre</h3>
             <p>
-                <a id="addPost" href="index.php?objet=post&amp;action=add">Ajouter un chapitre <i class="fas fa-plus"></i></a>
+                <a id="addPost" href="index.php?objet=post&amp;action=add">Ajoutez un chapitre <i class="fas fa-plus"></i></a>
             </p>
         </div>
         <div class="blockAdmin">
