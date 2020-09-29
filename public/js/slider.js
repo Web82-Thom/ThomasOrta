@@ -3,7 +3,7 @@ class Slider {
         this.index = 0;
         this.time = 8000;
         this.interval = 0; 
-        this.slides = document.getElementsByClassName('slide');
+        this.slides = document.getElementsByClassName("slide");
         
         this.display();
         this.autoMove();

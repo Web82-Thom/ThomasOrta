@@ -8,7 +8,7 @@ class Forecast {
     }
 
     eventListener() {
-        document.getElementById("button").addEventListener('click', () => this.verification());
+        document.getElementById("button").addEventListener("click", () => this.verification());
     }
 
     verification() {
@@ -25,7 +25,7 @@ class Forecast {
         let self = this;
         // Requête XMLHttp JSON
         let requete = new XMLHttpRequest(); 
-        requete.open('GET', this.urlCity); 
+        requete.open("GET", this.urlCity); 
         requete.send();
         requete.onload = function(e) {
             if (requete.readyState === XMLHttpRequest.DONE) {
@@ -34,17 +34,17 @@ class Forecast {
                     let object = JSON.parse(this.responseText);
                     let image = object.weather[0].icon;
 
-                    document.getElementById("icon").src = ('src', 'http://openweathermap.org/img/wn/'+ image + '.png');
-                    document.getElementById("nameCity").textContent = 'Ville de ' + object.name + '.' ;
-                    document.getElementById("description").textContent = 'Description : ' + object.weather[0].description + '.' ;
-                    document.getElementById("temperature").textContent = 'Température : ' + Math.round(object.main.temp) + '°C.' ;
-                    document.getElementById("temperatureMax").textContent = 'Température-maxi : ' + Math.round(object.main.temp_max) + '°C.' ;
-                    document.getElementById("temperatureMin").textContent = 'Température-mini : ' + Math.round(object.main.temp_min) + '°C.' ;
+                    document.getElementById("icon").src = ("src", "http://openweathermap.org/img/wn/"+ image + ".png");
+                    document.getElementById("nameCity").textContent = "Ville de " + object.name + "." ;
+                    document.getElementById("description").textContent = "Description : " + object.weather[0].description + "." ;
+                    document.getElementById("temperature").textContent = "Température : " + Math.round(object.main.temp) + "°C." ;
+                    document.getElementById("temperatureMax").textContent = "Température-maxi : " + Math.round(object.main.temp_max) + "°C." ;
+                    document.getElementById("temperatureMin").textContent = "Température-mini : " + Math.round(object.main.temp_min) + "°C." ;
                 } else if (requete.status === 404) { 
-                    alert(" Veuillez vérifier l'ortographe' ou ville introuvable ");
+                    alert(" Veuillez vérifier l'ortographe ou ville introuvable ");
                 }
             } else {
-                alert('Un problème est intervenu, merci de revenir plus tard.');
+                alert("Un problème est intervenu, merci de revenir plus tard.");
             }
         };
     }
