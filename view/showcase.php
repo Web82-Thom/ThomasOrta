@@ -1,6 +1,7 @@
 <?php $title = "Site Vitrine"; ?>
 
 <?php ob_start(); ?>
+
 <section class="posts">
     <h2 class='titleService'> Le site vitrine</h2>
     <?php foreach ($posts as $post) { ?>

@@ -47,7 +47,8 @@
             </ul>
         </article>
     </section>
-	<section id=infosFooter>
+	<section id="infosFooter">
+        <h2>Thomas ORTA</h2>
 		<p id="webCreator">
             © 2020 Thomas ORTA
         </p>

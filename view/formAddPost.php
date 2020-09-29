@@ -10,7 +10,7 @@
 });
 </script>
 
-<div id ="form">
+<section id ="form">
 	<form method="post" action="index.php?objet=post&action=add">
 		<h2>Rédaction de vos chapitres</h2>
 		<div class='labelCategory'>
@@ -33,7 +33,7 @@
 		</div>
 			<button id="formButton" type="submit" value ="Envoyer un nouveau post!">Envoyer un nouveau post!</button>
 	</form>
-</div>
+</section>
 
 <?php 
 	$content = ob_get_clean(); 

@@ -10,17 +10,18 @@ header {
     display: none;
 }
 
-#menuNavigation {
+.menuNavigation {
     display: none;
 }
 
-#littleMenu:hover > #menuNavigation {
-    background-color:white;
+#littleMenu:hover > .menuNavigation {
+    background-color: white;
     padding: 5px;
     display: flex;
+    flex-direction: column;
     margin: auto;
     z-index: 100;
-    width: 87%;
+    width: 40%;
     text-align: center;
 }
 

@@ -14,7 +14,7 @@
         <div class="cookieAlert">
             <p>
                 En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookie, stocker sur votre ordinateur, pour vous proposer des contenues et services adaptés à vos besoins. 
-            </p></br>
+            </p><br>
             <button id="cookieButton" type="submit" value ="cookie">
                 <a href="acceptCookie.php">ok</a>
             </button>
@@ -22,11 +22,16 @@
     <?php } ?>
     
     <div id="thomasOrta">
-        <h1><a class="link" href="index.php?objet=home">Thomas ORTA</a></h1>
-        <strong>Freelance</strong>
+        <h1><strong><a class="link" href="index.php?objet=home">Thomas ORTA</a></strong></h1>
+        <p>
+            <strong>tel: 06.12.14.92.55</strong>
+        </p>
+        <p>
+            <strong>Freelance</strong>
+        </p>
     </div>
     <nav id="menu">
-        <ul id="menuNavigation">
+        <ul class="menuNavigation">
             <li class="listMenu">
                 <a class="link" href="index.php?objet=home"><i class="fas fa-home"></i> Accueil</a>
             </li>
@@ -35,14 +40,14 @@
             </li>
             <li class="listMenu">
                 <a class="link" href="index.php?#projects">Portfolio</a>
-            </li >
+            </li>
             <li class="listMenu">
                 <a class="link" href="index.php?#cVitae">CV</a>
             </li>
             <li class="listMenu">
                 <a class="link" href="index.php?#formContact">Contact</a> 
             </li>
-            <li id="menuAdmin">
+            <li class="menuAdmin">
                 <a href="index.php?objet=admin&amp;action=login">Admin</a>
                 <ul class="sousMenu">
                     <li>
@@ -61,7 +66,7 @@
     </nav>
     <nav id="littleMenu">
         <p><i class="fas fa-bars"></i> Menu</p> 
-        <ul id="menuNavigation">
+        <ul class="menuNavigation">
             <li class="listMenu">
                 <a class="link" href="index.php?objet=home"><i class="fas fa-home"></i> Accueil</a>
             </li>
@@ -70,14 +75,14 @@
             </li>
             <li class="listMenu">
                 <a class="link" href="index.php?#projects">Portfolio</a>
-            </li >
+            </li>
             <li class="listMenu">
                 <a class="link" href="index.php?#cVitae">CV</a>
             </li>
             <li class="listMenu">
                 <a class="link" href="index.php?#formContact">Contact</a> 
             </li>
-            <li id="menuAdmin">
+            <li class="menuAdmin">
                 <a href="index.php?objet=admin&amp;action=login">Admin</a>
                 <ul class="sousMenu">
                     <li>

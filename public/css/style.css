@@ -100,7 +100,7 @@ header {
     display: none;
 }
 
-#menuNavigation {	
+.menuNavigation {	
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -114,17 +114,17 @@ header {
     flex-wrap: wrap;
 }
 
-.listMenu, #menuAdmin {	
+.listMenu, .menuAdmin {	
     font-size: 20px;
     padding: 25px;
     border: 2px solid transparent;;
 }
 
-.listMenu:hover, #menuAdmin:hover {
+.listMenu:hover, .menuAdmin:hover {
     border-bottom: 2px solid rgb(63, 76, 86);;
 }
 
-#menuAdmin:hover > ul {
+.menuAdmin:hover > ul {
     background-color:white;
     padding: 5px;
     display: block;
@@ -146,7 +146,6 @@ header {
 #thomasOrta {
     text-align: center;
     margin-bottom: 20px;
-    width: 20%;
     animation: spinner 5s infinite;
     animation-delay: 5s;
 }
@@ -172,11 +171,15 @@ to   { -webkit-transform: rotateY(-360deg); }
 }
 
 #thomasOrta h1 {
-    font-size: 30px;
     text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
     color: #464646
 
 }
+
+#thomasOrta a {
+    font-size: 30px;
+}
+
 
 #thomasOrta strong {
     font-size: 20px;
@@ -189,7 +192,7 @@ to   { -webkit-transform: rotateY(-360deg); }
     color: white;
 }
 
-#menuNavigation a {
+.menuNavigation a {
     text-decoration: none;
     color: currentColor;
 }
@@ -292,8 +295,6 @@ a {
 
 #myServices article {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -305,9 +306,18 @@ a {
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
+.titleCVitae { 
+    display: none;
+}
+
 .service {
-    width: 250px;
+    width: 450px;
     text-align: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: white;
+    margin: 20px;
 }
 
 .service h3 {
@@ -338,6 +348,7 @@ a {
 
 #infoServices {
     text-align: center;
+    font-size: 25px;
 }
 /*
 *
@@ -725,6 +736,14 @@ table tr:hover {
 .experienceCv ul {
     margin-top: 0;
 }
+
+#downloadCv {
+    border: 2px solid orangered;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
 /*
 *
 *   CONTACT HOME
@@ -914,6 +933,10 @@ table tr:hover {
 #imgWeather {
     background-color: rgb(105, 105, 105);
 }
+
+#nameCity {
+    font-weight: bolder;
+}
 /*
 *
 *       displayPost.php
@@ -1067,6 +1090,10 @@ table tr:hover {
 *       FOOTER
 *
 */
+#infosFooter h2 {
+    display: none;
+}
+
 footer {
     color: white;
     background-color: black;

@@ -7,7 +7,7 @@
         <div class="slideTitle">
             <h2>Developpeur Web</h2>
         </div>
-        <img src="images/computerCodeOne.jpg" alt="ecran code">
+        <img src="images/computerCode.jpg" alt="ecran code">
     </div>
     <div class="slide">
         <div class="slideTitle">
@@ -30,9 +30,9 @@
     </div>
     <div class="displayWeather">
         <div id="imgWeather">
-            <img id="icon" src="" alt="">
+            <img id="icon" src="" alt="image du ciel">
         </div>
-        <h4 id="nameCity"></h1>
+        <p id="nameCity"><p>
         <p id="description"></p>
         <p id="temperature"></p>
         <p id="temperatureMax"></p>
@@ -159,46 +159,74 @@
 </section>
 <section id="projects">
     <h2>Mes réalisations</h2>
-    <p id="infoProjects">Retrouvez tous mes projets créés : sites vitrine, office du tourisme...</p>
+    <p id="infoProjects">
+        Retrouvez tous mes projets créés : sites vitrine, office du tourisme...
+    </p>
     <div id="portfolio">
         <figure>
             <img src="images/webAgency.jpg" alt="WebAgency" class="projet1">
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3><a href="http://webagency-thomas.com/" target="_blank">WebAgency</a></h3>
-                <p>Site vitrine pour une agence Web</p> 
+                <p>
+                    Site vitrine pour une agence Web
+                </p> 
             </figcaption>
         </figure>
         <figure>
             <img src="images/officeIreki.jpg" alt="Office du tourisme d'Ireki" class="projet2">
             <figcaption>
                 <i class="fas fa-check-double"></i>
-                <h3><a href="http://office-ireki-projet-formation-thomas-orta.com/" target="_blank">Office du tourisme d'Ireki</a></h3>
-                <p>Devélopper avec wordPress</p>
+                <h3>
+                    <a href="http://office-ireki-projet-formation-thomas-orta.com/" target="_blank">
+                        Office du tourisme d'Ireki
+                    </a>
+                </h3>
+                <p>
+                    Devélopper avec wordPress
+                </p>
             </figcaption>
         </figure>
         <figure>
             <img src="images/velok31.jpg" alt="VéloK 31" class="projet3">
             <figcaption>
                 <i class="fas fa-check-double"></i>
-                <h3><a href="http://www.location-velo-toulouse.com/" target="_blank">Vélok 31</a></h3>
-                <p>Application location de vélos sur Toulouse</p>
+                <h3>
+                    <a href="http://www.location-velo-toulouse.com/" target="_blank">
+                        Vélok 31
+                    </a>
+                </h3>
+                <p>
+                    Application location de vélos sur Toulouse
+                </p>
             </figcaption>
         </figure>
         <figure>
             <img src="images/jeanForteroche.jpg" alt="Blog pour un ecrivain" class="projet4">
             <figcaption>
                 <i class="fas fa-check-double"></i>
-                <h3><a href="http://www.jf-blog.com/" target="_blank">publier un livre</a></h3>
-                <p>Blog pour un écrivain</p>
+                <h3>
+                    <a href="http://www.jf-blog.com/" target="_blank">
+                        publier un livre
+                    </a>
+                </h3>
+                <p>
+                    Blog pour un écrivain
+                </p>
             </figcaption>
         </figure>
         <figure>
             <img src="images/thomasOrta.jpg" alt="Thomas ORTA" class="projet5">
             <figcaption>
                 <i class="fas fa-check-double"></i>
-                <h3><a href="" target="_blank">Developpeur Thomas ORTA</a></h3>
-                <p>Site vitrine Thomas ORTA</p>
+                <h3>
+                    <a href="" target="_blank">
+                        Developpeur Thomas ORTA
+                    </a>
+                </h3>
+                <p>
+                    Site vitrine Thomas ORTA
+                </p>
             </figcaption>
         </figure>
     </div>
@@ -206,6 +234,7 @@
 <section id="cVitae">
     <h2 id="titleCVitae">À propos de moi, mon Cv...</h2>
     <article id="myCv">
+        <h2 class="titleCVitae">À propos de moi, mon Cv...</h2>
         <article id="infosMyCv">
             <div id="myPicture">
                 <img src="images/identite.jpg" alt="Thomas ORTA">
@@ -455,16 +484,24 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>    
+                </table>  
             </div>
         </article>
+    </article>
+    <article id="downloadCv">
+        <h3>Mon Cv en téléchargement</h3>
+        <p>
+            <a href="/doc/cvThomasOrta.pdf" target="_blank">
+                Télécharger mon Curiculum Vitaé au format pdf.
+            </a>
+        </p>  
     </article>
 </section>
 <section id="formContact">
     <h2 class="titleFormContact">Formulaire de contact</h2>
-    <div class="form ">
+    <article class="form ">
 		<div class="heddingTitle">
-			<h1><a href="index.php?objet=contact">Contactez moi !</a></h1>
+			<h3><a href="index.php?objet=contact">Contactez moi !</a></h3>
 		</div>
 		<div class="heddingDescription">
             <p>
@@ -480,29 +517,20 @@
             <form method="POST" action="index?objet=contact"><br>
                 <label for="inputContactName">Votre nom :</label><br>
                 <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" /><br>
-                
                 <label for="inputContactFirstName">Votre Prénom :</label><br>
 				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" /><br>
-                
                 <label for="inputContactTitle">Titre de votre méssage :</label><br>
                 <input id="inputContactTitle" type="text" name="title" placeholder="Titre"><br>
-
                 <label for="inputContactEmail"> Votre Em@il :</label><br>
 				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
-                
                 <label for="inputContactMessage">Votre méssage :</label>
-                <textarea id="inputContactMessage" type="text" rows="4" placeholder="Méssage.." name="message" maxlength="150"></textarea>
-                
-                <div>
-                    <input id="inputContactCheck" type="checkbox" id="acceptSend" value="0" name="acceptSend">
-                    <label for="inputContactCheck">
-                        En cochant cette case vous acceptez de me communiquer vos informations.
-                    </label>
-                </div>
+                <textarea id="inputContactMessage" rows="4" placeholder="Méssage.." name="message" maxlength="150"></textarea>
+                <input id="inputContactCheck" type="checkbox" value="0" name="acceptSend">
+                <label for="inputContactCheck">En cochant cette case vous acceptez de me communiquer vos informations.</label>
 				<button id="formButton" type="submit" name="mailForm" title="Envoyer" >Envoyez votre message</button>
 			</form> 
 		</div>
-	</div>
+    </article>
 </section>
 
 <script src="js/slider.js"></script>
