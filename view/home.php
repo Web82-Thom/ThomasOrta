@@ -7,13 +7,13 @@
         <div class="slideTitle">
             <h2>Developpeur Web</h2>
         </div>
-        <img src="images/computerCode.jpg" alt="ecran code">
+        <img src="images/computercode.jpg" alt="ecran code">
     </div>
     <div class="slide">
         <div class="slideTitle">
             <h2>Objectifs et solutions</h2>
         </div>
-        <img src="images/objectifsSolutions.jpg" alt="srabble code">
+        <img src="images/objectifsolutions.jpg" alt="srabble code">
     </div>
     <div class="slide">
         <div class="slideTitle">
@@ -174,7 +174,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="images/officeIreki.jpg" alt="Office du tourisme d'Ireki" class="projet2">
+            <img src="images/officeireki.jpg" alt="Office du tourisme d'Ireki" class="projet2">
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3>
@@ -202,7 +202,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="images/jeanForteroche.jpg" alt="Blog pour un ecrivain" class="projet4">
+            <img src="images/jeanforteroche.jpg" alt="Blog pour un ecrivain" class="projet4">
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3>
@@ -216,7 +216,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="images/thomasOrta.jpg" alt="Thomas ORTA" class="projet5">
+            <img src="images/thomasorta.jpg" alt="Thomas ORTA" class="projet5">
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3>
@@ -491,7 +491,7 @@
     <article id="downloadCv">
         <h3>Mon Cv en téléchargement</h3>
         <p>
-            <a href="/doc/cvThomasOrta.pdf" target="_blank">
+            <a href="/doc/cvthomasorta.pdf" target="_blank">
                 Télécharger mon Curiculum Vitaé au format pdf.
             </a>
         </p>  
