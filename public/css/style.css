@@ -58,9 +58,10 @@ body {
     color: white;
     padding-bottom: 18px;
     position: fixed;
+    display: flex;
     opacity: 1;
     bottom: 0;
-    width: 100%;
+    border: 10px solid red;
     height: auto;
     z-index: 5;
 }
@@ -69,11 +70,14 @@ body {
     padding: 10px;
 }
 
-#cookieButton {
-    width: 14%;
-    display: block;
-    margin: auto;
-    margin-right: 0;
+#actionCookie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+#refuseCookieButton {
+    margin-top: 10px;
 }
 /*
 *
@@ -275,7 +279,7 @@ a {
 *   SECTION MES SERVICES
 *
 */
-#myServices {
+#mes-services {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -293,13 +297,13 @@ a {
     margin: auto;
 }
 
-#myServices article {
+#mes-services article {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#myServices h2, #myServices h2, #projects h2, #titleCVitae, #titleFormContat {
+#mes-services h2, #mes-services h2, #projects h2, #titleCVitae, #titleFormContat {
     text-align: center;
     font-size: 35px;
     color: white;

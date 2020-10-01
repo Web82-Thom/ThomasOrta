@@ -6,87 +6,99 @@ class Router
 {   
     public function requete()
     {
+        $options = [
+            'id'=> FILTER_VALIDATE_INT,
+            'objet'=> FILTER_SANITIZE_STRING,
+            'action'=> FILTER_SANITIZE_STRING,
+        ];
+        $getClean = filter_var_array($_GET, $options);
+        $postClean = filter_var_array($_POST);
         try {   
             // DETERMINE L'ACTION DE L'UTILISATEUR 
-            if (isset($_GET['objet'])) {
+            if (isset($getClean['objet'])) {
                 $postController = new PostController();
                 //ROUTES
-                if ($_GET['objet'] === 'post')  {
-                    if (isset($_GET['action'])) {
+                if ($getClean['objet'] === 'post')  {
+                    if (isset($getClean['action'])) {
                         $commentController = new CommentController();
                         // AJOUT D'UN POST
-                        if ($_GET['action'] === 'add') {
-                            $postController->add();
+                        if ($getClean['action'] === 'add') {
+                            $postController->add($postClean);
                         // AFFICHAGE AVANT MODIF D'UN POST
-                        } elseif ($_GET['action'] === 'update' && isset($_GET['id'])) { 
-                            $postController->update($_GET['id']);
+                        } elseif ($getClean['action'] === 'update' && isset($getClean['id'])) { 
+                            $postController->update($getClean['id'], $postClean);
                         // AFFICHAGE AVANT SUPPRESSION 
-                        } elseif ($_GET['action'] === 'delete' && isset($_GET['id'])) { 
-                            $postController->delete($_GET['id']);
+                        } elseif ($getClean['action'] === 'delete' && isset($getClean['id'])) { 
+                            $postController->delete($getClean['id'], $postClean);
                         // AJOUT DE COMMENTAIRE
-                        } elseif ($_GET['action'] === 'addComment' && isset($_GET['id'])) {
-                            $commentController->add($_GET['id'], $_POST['author'], $_POST['comment']);
+                        } elseif ($getClean['action'] === 'addComment' && isset($getClean['id'])) {
+                            $commentController->add($getClean['id'], $postClean['author'], $postClean['comment'], $postClean);
                         // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE*/
-                        } elseif ($_GET['action'] === 'updateComment' && isset($_GET['id'])) {
-                            $commentController->update($_GET['id'], $_GET['postId']);
+                        } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
+                            $commentController->update($getClean['id'], $_GET['postId'], $postClean);
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
-                        } elseif ($_GET['action'] === 'deleteComment' && isset($_GET['id'])) {
-                            $commentController->delete($_GET['id']);
+                        } elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
+                            $commentController->delete($getClean['id'], $postClean);
                         // SIGNALEMENT D'UN COMMENTAIRE
-                        } elseif ($_GET['action'] === 'reportComment' && isset($_GET['id'])) {
-                            $commentController->report($_GET['id'], $_GET['postId']);
+                        } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
+                            $commentController->report($getClean['id'], $getClean['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE
-                        } elseif ($_GET['action'] === 'unReportComment' && isset($_GET['id'])) {
-                            $commentController->unReport($_GET['id']);
+                        } elseif ($getClean['action'] === 'unReportComment' && isset($getClean['id'])) {
+                            $commentController->unReport($getClean['id']);
                         }
                     //AFFICHAGE D'1 POST ET SES COMMENTAIRES
-                    } elseif (isset($_GET['id'])) {
-                        $postController->display($_GET['id']);
+                    } elseif (isset($getClean['id'])) {
+                        $postController->display($getClean['id']);
                     // AFFICHAGE DE TOUS LES POST
                     } else {
                         $postController->displayPosts();
                     }
+                // VALIDATION COOKIE
+                } elseif ($getClean['objet'] === 'cookie') {
+                    $cookieController = new CookieController();
+                    $cookieController->acceptCookie();
+                
                 //REDIRECTION SUR L'ADMIN
-                } elseif ($_GET['objet'] === 'admin') {
+                } elseif ($getClean['objet'] === 'admin') {
                     $adminController = new AdminController();
-                    if (isset($_GET['action'])) {
-                        if ($_GET['action'] === 'login') {
+                    if (isset($getClean['action'], $postClean)) {
+                        if ($getClean['action'] === 'login') {
                             $adminController->login();
-                        } elseif ($_GET['action'] === 'destroy') { 
+                        } elseif ($getClean['action'] === 'destroy') { 
                             $adminController->destroy();
                         }
                     }
                     $adminController->display();
                 //REDIRECTION SUR L'INDEX.PHP
-                } elseif (isset($_GET['objet']) && ($_GET['objet'] === 'home')) {
+                } elseif (isset($getClean['objet']) && ($getClean['objet'] === 'home')) {
 
                     header ("Location: index.php");
                 }
                 //REDIRECTION SUR LA PAGE SHOWCASE
-                elseif (isset($_GET['objet']) && ($_GET['objet'] === 'showcase')) {
+                elseif (isset($getClean['objet']) && ($getClean['objet'] === 'showcase')) {
                     $postController->displayPostsShowcase();
                 }
                 //REDIRECTION SUR LA PAGE INTEGRATOR WEB
-                elseif (isset($_GET['objet']) && ($_GET['objet'] === 'integrator')) {
+                elseif (isset($getClean['objet']) && ($getClean['objet'] === 'integrator')) {
                     $postController->displayPostsIntegrator();
                 }
                 //REDIRECTION SUR LA PAGE BLOG
-                elseif (isset($_GET['objet']) && ($_GET['objet'] === 'blog')) {
+                elseif (isset($getClean['objet']) && ($getClean['objet'] === 'blog')) {
                     $postController->displayPostsBlog();
                 }
                 //REDIRECTION SUR LA PAGE WORDPRESS
-                elseif (isset($_GET['objet']) && ($_GET['objet'] === 'wordPress')) {
+                elseif (isset($getClean['objet']) && ($getClean['objet'] === 'wordPress')) {
                     $postController->displayPostsWordpress();
                 // PAGE CONTACT
-                } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'contact'))) {
+                } elseif ((isset($getClean['objet']) && ($getClean['objet'] === 'contact'))) {
                     $contactController = new ContactController;
                     $contactController->display();
                 // PAGE MENTIONS LEGALES
-                } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'legalNotice'))) {
+                } elseif ((isset($getClean['objet']) && ($getClean['objet'] === 'mentionsLegales'))) {
                     $legalController = new LegalController;
                     $legalController->displayMentions();
                 // PAGE COOKIE
-                } elseif ((isset($_GET['objet']) && ($_GET['objet'] === 'cookie'))) {
+                } elseif ((isset($getClean['objet']) && ($getClean['objet'] === 'mentionsCookies'))) {
                     $legalController = new LegalController;
                     $legalController->displayCookie();
                 }

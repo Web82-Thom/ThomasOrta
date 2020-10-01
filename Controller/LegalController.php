@@ -6,11 +6,11 @@ class LegalController
 { 
     function displayMentions()
     {
-        require_once('../view/legalNotice.php');
+        require_once('../view/mentionsLegales.php');
     }  
     
     function displayCookie()
     {
-        require_once('../view/cookie.php');
+        require_once('../view/mentionsCookies.php');
     }
 }
