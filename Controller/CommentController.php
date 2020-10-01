@@ -15,12 +15,12 @@ class CommentController
     }
 
     // AJOUT D'UN COMMENTAIRE
-    public function add($postId, $author, $comment)
+    public function add($postId, $author, $comment, $postClean)
     {   
         if (!empty($author) && !empty($comment)) {
             $this->_commentManager->add($postId, $author, $comment);
             if ($postId > 0) {
-                header('Location: index.php?objet=post&id=' . $postId);
+                header('Location: article-' . $postId);
             }
 
             throw new Exception('Impossible d\'ajouter le commentaire !');
@@ -29,13 +29,13 @@ class CommentController
     }
 
     // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE
-    public function update($commentId, $postId)
+    public function update($commentId, $postId, $postClean)
     {
         if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
-            if (!empty($_POST['author']) && !empty($_POST['comment']) && isset($_SESSION['pseudo'])) {                          
-                $this->_commentManager->update($commentId, $_POST['author'], $_POST['comment']);
+            if (!empty($postClean['author']) && !empty($postClean['comment']) && isset($_SESSION['pseudo'])) {                          
+                $this->_commentManager->update($commentId, $postClean['author'], $postClean['comment']);
                 
-                header('Location: index.php?objet=post&id=' . $postId);
+                header('Location: /article-' . $postId);
             } 
             $comments = $this->_commentManager->getComment($commentId);
 
@@ -46,12 +46,12 @@ class CommentController
     }
 
     // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
-    public function delete($commentId)
+    public function delete($commentId, $postClean)
     {   if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
-            if ($commentId >= 0 && !empty($_POST['author']) && !empty($_POST['comment'])) {
+            if ($commentId >= 0 && !empty($postClean['author']) && !empty($postClean['comment'])) {
                 $this->_commentManager->delete($commentId);
                 if ($commentId > 0) {
-                    header('Location: index.php?objet=admin');
+                    header('Location: /login');
                 }
 
                 throw new Exception('Impossible de supprimer le commentaire !');
@@ -73,10 +73,11 @@ class CommentController
             if ($report == 0) {
                 $this->_commentManager->report($commentId);
                 $report ++ ;
+
+                header('Location: /article-' . $postId);
             } elseif ($report == 1) {
                 echo 'déjà signaler';
             }
-            header('Location: index.php?objet=post&id=' . $postId);
         }
     }
 
@@ -91,7 +92,7 @@ class CommentController
                     $this->_commentManager->unReport($commentId);
                     $report -- ;
 
-                    header('Location: index.php?objet=admin');
+                    header('Location: /login');
                 } 
             }
         }

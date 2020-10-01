@@ -54,13 +54,13 @@ class PostController
     }
 
     // AJOUT D'UN POST
-    public function add()
+    public function add($postClean)
     {   
         if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
-            if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                $postId = $this->_postManager->add($_POST['title'], $_POST['content'], $_POST['category']);
+            if (!empty($postClean['title']) && !empty($postClean['content'])) {
+                $postId = $this->_postManager->add($postClean['title'], $postClean['content'], $postClean['category']);
                 if ($postId > 0) {
-                    header('Location: index.php?objet=post&id=' . $postId);
+                    header('Location: /article-' . $postId);
                 }
 
                 throw new Exception('Impossible d\'ajouter le post !');
@@ -71,13 +71,13 @@ class PostController
     }
 
      // AFFICHAGE et MODIFICATION
-    public function update($postId) 
+    public function update($postId, $postClean) 
     {   
         if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
-            if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                $this->_postManager->update($postId, $_POST['title'], $_POST['content']);
+            if (!empty($postClean['title']) && !empty($postClean['content'])) {
+                $this->_postManager->update($postId, $postClean['title'], $postClean['content']);
 
-                header('Location: index.php?objet=post&id=' . $postId);
+                header('Location: /article-' . $postId);
             } 
             $post = $this->_postManager->getPost($postId);
 
@@ -87,13 +87,13 @@ class PostController
     }
 
     // AFFICHAGE et SUPPRESSION
-    public function delete($postId)
+    public function delete($postId, $postClean)
     {
         if (isset($_SESSION['firstAdmin']) && $_SESSION['firstAdmin'] == 1 ) {
-            if (!empty($_POST['title']) && !empty($_POST['content'])) {
+            if (!empty($postClean['title']) && !empty($postClean['content'])) {
                 $this->_postManager->delete($postId);
 
-                header('Location: index.php?objet=admin');
+                header('Location: /login');
             }
             $post = $this->_postManager->getPost($postId);
 
