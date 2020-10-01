@@ -35,12 +35,12 @@
             <h4>Informations pratiques</h4>
             <ul >
                 <li>
-                    <a href="index.php?objet=legalNotice">
+                    <a href="/mentions-legales">
                         Mentions légales
                     </a> 
                 </li>
                 <li>
-                    <a href="index.php?objet=cookie">
+                    <a href="/protection-des-donnees">
                         Protection des données
                     </a>
                 </li>

@@ -39,14 +39,14 @@
         <p id="temperatureMin"></p>
     </div>
 </section>
-<section id="myServices">
+<section id="mes-services">
     <h2>Mes services</h2>
     <p id="mission">
             Ma mission est bien plus que le développement de votre site internet, je suis là pour vous accompagner à la réussite de votre activité.
         </p>
     <article>
         <div class="service">
-            <h3><a class='link' href="index.php?objet=showcase">Site Vitrine</a></h3>
+            <h3><a class='link' href="/le-site-vitrine">Site Vitrine</a></h3>
             <p>
                 Ce type de site présente l'entreprise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
             </p>
@@ -72,7 +72,7 @@
             </ul>
         </div>
         <div class="service">
-            <h3><a class='link' href="index.php?objet=integrator">Integration Web</a></h3>
+            <h3><a class='link' href="/integrateur-web">Integration Web</a></h3>
             <p>
                 Vous savez ce que vous voulez! À partir de vos maquettes, rédactions, et multimédias je mets votre projet en construction.
             </p>
@@ -101,7 +101,7 @@
             </ul>
         </div>
         <div class="service">
-            <h3><a class='link' href="index.php?objet=blog">Blog</a></h3>
+            <h3><a class='link' href="/blog">Blog</a></h3>
             <p>
                 Vous voulez partager vos connaissances, votre savoir-faire, publié un livre, booster vos contacts, c'est par ici! 
             </p>
@@ -130,7 +130,7 @@
             </ul>
         </div>
         <div class="service">
-            <h3><a class='link' href="index.php?objet=wordPress">WordPress</a></h3>
+            <h3><a class='link' href="/wordPress">WordPress</a></h3>
             <p>
                 Un site clef en main, WordPress propose une multitude d'outil qui vous permet de maintenir votre site à jour. 
             </p>
@@ -339,7 +339,7 @@
                             </td>
                             <td class="experienceCv">
                                 <p class="diploma">Diplôme Developpeur Web Junior en cours d'aquisition</p>
-                                <p class="school">OpenClassroom.com</p>
+                                <p class="school">OpenClassrooms.com</p>
                             </td>
                         </tr>
                         <tr class="trCv">
@@ -415,7 +415,7 @@
                                 <p class="city">Léojac</p> 
                             </td>
                             <td class="experienceCv">
-                                <p class="enterprise">OpenClassroom</p>
+                                <p class="enterprise">OpenClassrooms</p>
                                 <p class="function">Formation en ligne Développeur Web Junior</p>
                                 <ul>
                                     <li>Réalisation de 5 projets</li>
@@ -505,7 +505,7 @@
 		</div>
 		<div class="heddingDescription">
             <p>
-                <a href="index.php?objet=contact">
+                <a href="/formulaire-de-contact">
                     Ma mission est bien plus que le développement de votre site internet, je suis là pour vous accompagner à la réussite de votre activité. Contactez-moi par ce formulaire ou par téléphone.
                 </a>
             </p>

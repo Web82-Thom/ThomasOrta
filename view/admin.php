@@ -13,7 +13,7 @@
         <div class="blockAdmin">
             <h3>Création d'un chapitre</h3>
             <p>
-                <a id="addPost" href="index.php?objet=post&amp;action=add">Ajoutez un chapitre <i class="fas fa-plus"></i></a>
+                <a id="addPost" href="/edition-article">Ajoutez un chapitre <i class="fas fa-plus"></i></a>
             </p>
         </div>
         <div class="blockAdmin">
@@ -47,31 +47,31 @@
                         <tbody>
                             <tr>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>">
+                                    <a class="adminLink" href="/article-<?= $post->getId(); ?>">
                                         <?= $post->getTitle(); ?>
                                     </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>">
+                                    <a class="adminLink" href="/article-<?= $post->getId(); ?>">
                                         <?= substr( $post->getContent(),0, 50), '...'; ?>
                                     </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;id=<?= $post->getId(); ?>">
+                                    <a class="adminLink" href="/article-<?= $post->getId(); ?>">
                                         <button class="buttonActionAdmin">
                                             <i class="fab fa-readme"></i>
                                         </button>
                                     </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;&action=update&id=<?= $post->getId(); ?>">
+                                    <a class="adminLink" href="modifier-article-<?= $post->getId(); ?>">
                                         <button class="buttonActionAdmin">
                                             <i class="fas fa-keyboard"></i>
                                         </button>
                                     </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;&action=delete&id=<?= $post->getId(); ?>">
+                                    <a class="adminLink" href="supprimer-article-<?= $post->getId(); ?>">
                                         <button class="buttonActionAdmin">
                                             <i class="fas fa-trash-alt"></i>
                                         </button>
@@ -120,8 +120,7 @@
                                     <?= htmlspecialchars($comment->getAuthor());?>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLink" href="index.php?objet=post&amp;&action=updateComment&id=<?= $comment->getId(); ?>&postId=
-                                        <?= $comment->getPostId(); ?>">
+                                    <a class="adminLink" href="modifier-commentaire-<?= $comment->getId(); ?>-de-article-<?= $comment->getPostId(); ?>">
                                         <button class="buttonActionAdmin">
                                             <i class="fas fa-keyboard"></i>
                                         </button>
@@ -133,8 +132,7 @@
                                     </a>
                                 </td>
                                 <td class="tableAdminTd">
-                                    <a class="adminLinkDelete" href="index.php?objet=post&amp;&action=deleteComment&id=<?= $comment->getId(); ?>&postId=
-                                        <?= $comment->getPostId(); ?>">
+                                    <a class="adminLinkDelete" href="supprimer-commentaire-<?= $comment->getId(); ?>-de-article-<?= $comment->getPostId(); ?>">
                                         <button class="buttonActionAdmin">
                                             <i class="fas fa-trash-alt"></i>
                                         </button>

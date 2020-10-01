@@ -16,7 +16,7 @@
                 En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookie, stocker sur votre ordinateur, pour vous proposer des contenues et services adaptés à vos besoins. 
             </p><br>
             <button id="cookieButton" type="submit" value ="cookie">
-                <a href="acceptCookie.php">ok</a>
+                <a href="index.php?objet=cookie">ok</a>
             </button>
         </div>
     <?php } ?>
@@ -33,30 +33,30 @@
     <nav id="menu">
         <ul class="menuNavigation">
             <li class="listMenu">
-                <a class="link" href="index.php?objet=home"><i class="fas fa-home"></i> Accueil</a>
+                <a class="link" href="/accueil"><i class="fas fa-home"></i> Accueil</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#myServices">Mes services</a> 
+                <a class="link" href="/accueil#mes-services">Mes services</a> 
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#projects">Portfolio</a>
+                <a class="link" href="/accueil#projects">Portfolio</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#cVitae">CV</a>
+                <a class="link" href="/accueil#cVitae">CV</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#formContact">Contact</a> 
+                <a class="link" href="/accueil#formContact">Contact</a> 
             </li>
             <li class="menuAdmin">
-                <a href="index.php?objet=admin&amp;action=login">Admin</a>
+                <a href="/login">Admin</a>
                 <ul class="sousMenu">
                     <li>
-                        <a href="index.php?objet=admin&amp;action=destroy">
+                        <a href="/deconnecter">
                             <?php if (isset($_SESSION['firstAdmin'])) {echo 'Se déconnecter';} ?>
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?objet=admin&amp;action=login">
+                        <a href="/login">
                             <?php if (!isset($_SESSION['firstAdmin'])) {echo 'Se connecter';}?>
                         </a>
                     </li>
@@ -68,30 +68,30 @@
         <p><i class="fas fa-bars"></i> Menu</p> 
         <ul class="menuNavigation">
             <li class="listMenu">
-                <a class="link" href="index.php?objet=home"><i class="fas fa-home"></i> Accueil</a>
+                <a class="link" href="/accueil"><i class="fas fa-home"></i> Accueil</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#myServices">Mes services</a> 
+                <a class="link" href="#myServices">Mes services</a> 
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#projects">Portfolio</a>
+                <a class="link" href="#projects">Portfolio</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#cVitae">CV</a>
+                <a class="link" href="#cVitae">CV</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="index.php?#formContact">Contact</a> 
+                <a class="link" href="#formContact">Contact</a> 
             </li>
             <li class="menuAdmin">
-                <a href="index.php?objet=admin&amp;action=login">Admin</a>
+                <a href="/login">Admin</a>
                 <ul class="sousMenu">
                     <li>
-                        <a href="index.php?objet=admin&amp;action=destroy">
+                        <a href="/destroy">
                             <?php if (isset($_SESSION['firstAdmin'])) {echo 'Se déconnecter';} ?>
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?objet=admin&amp;action=login">
+                        <a href="/login">
                             <?php if (!isset($_SESSION['firstAdmin'])) {echo 'Se connecter';}?>
                         </a>
                     </li>

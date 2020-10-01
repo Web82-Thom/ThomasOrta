@@ -4,7 +4,7 @@
 
 <section id="formConnection">
     <h2 class="titleFormConnection">Formulaire de connection</h2>
-    <form id="formConnectionContent" method="post" action="index.php?objet=admin&action=login">
+    <form id="formConnectionContent" method="post" action="/login">
         <p>
             Veuillez remplir les champs avec vos identifiants de connection.
         </p>
