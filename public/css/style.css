@@ -61,7 +61,7 @@ body {
     display: flex;
     opacity: 1;
     bottom: 0;
-    border: 10px solid red;
+    border: 1px solid red;
     height: auto;
     z-index: 5;
 }
@@ -76,8 +76,8 @@ body {
     justify-content: center;
     margin: 10px;
 }
-#refuseCookieButton {
-    margin-top: 10px;
+#cookieButton {
+    margin: auto;
 }
 /*
 *
@@ -119,13 +119,13 @@ header {
 }
 
 .listMenu, .menuAdmin {	
-    font-size: 20px;
     padding: 25px;
-    border: 2px solid transparent;;
+    border: 5px solid transparent;
+    font-size: 20px;
 }
 
 .listMenu:hover, .menuAdmin:hover {
-    border-bottom: 2px solid rgb(63, 76, 86);;
+    border-bottom: 5px solid rgb(149, 155, 238);
 }
 
 .menuAdmin:hover > ul {
@@ -473,102 +473,12 @@ figure:hover figcaption {
 }
 /*
 *
-*   ADMIN.PHP
+*   formUpdateComment
 *
 */
-.blockAdmin {
-    padding-bottom: 25px;
-    border-bottom: 3px solid #B7C9F3;
-}
-
-.blockAdmin h3 {
-    font-size: 25px;
-    text-align: center;
-}
-
-#addPost, .fa-readme, .fa-keyboard, .fa-plus {
-    color: green;
-}
-
-#addPost {
-    margin-left: 10%;
-}
-
-.fa-plus {
-    font-size: 20px;
-    margin-left: 8px;
-}
-
-.welcomeAdmin {
-    text-align: center;
-}
-
-.adminPage {
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    border: 1px solid #FF9656;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-}
-
-.buttonActionAdmin {
-    min-width: 80%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.fab {
-    font-size: 20px;
-}
-
-.fa-trash-alt {
-    color: red;
-}
-
-.alertDelete {
-    color: red;
-}
-
-.adminLinkDelete {
-    color: orangered;
-}
-
-.adminLinkReport {
-    color: red;
-}
-
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    background-color: #f05d03;
-    color: white;
-    font-size: 17px;
-    overflow: hidden;
-    font-weight: 500;
-}
-
-.tableAdmin {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    padding: 8px;
-}
-
-.tableAdminTd {
-    padding: 15px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 15px;
-    border-bottom: solid 1px rgba(255,255,255,0.1);
-    overflow: hidden;
-    padding-top: 15px;
-    padding-bottom: 15px;
+#mytextarea {
+    width: 50%;
+    height: 100px;
 }
 /*
 *
@@ -870,6 +780,8 @@ table tr:hover {
     text-align: center;
 }
 
+
+
 .contentPosts {
     width: 90%;
     margin: auto;
@@ -947,7 +859,8 @@ table tr:hover {
 *
 */
 .titleSection {
-    margin-left: 15%;
+    text-align: center;
+    font-size: 25px;
 }
 
 #commentDisplay {
@@ -1041,7 +954,7 @@ table tr:hover {
 }
 
 #commentAuthor strong {
-    font-size: 15px;
+    font-size: 23px;
 }
 
 #commentContent {
@@ -1075,8 +988,7 @@ table tr:hover {
     width: 90%;
     margin: auto;
     margin-top: 30px;
-    border:1px solid #FF9656;
-	border-radius: 5px;
+    border-radius: 5px;
     background-color: #333;
     color:#fff;
 }
@@ -1090,11 +1002,125 @@ table tr:hover {
 }
 /*
 *
+*   ADMIN.PHP
+*
+*/
+.blockAdmin {
+    padding-bottom: 25px;
+    border-bottom: 3px solid #B7C9F3;
+}
+
+.blockAdmin h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#addPost, .fa-readme, .fa-keyboard, .fa-plus {
+    color: green;
+}
+
+#addPost {
+    margin-left: 10%;
+}
+
+.fa-plus {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.welcomeAdmin {
+    text-align: center;
+}
+
+.adminPage {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border: 1px solid #FF9656;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.buttonActionAdmin {
+    min-width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fab {
+    font-size: 20px;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.alertDelete {
+    color: red;
+}
+
+.adminLinkDelete {
+    color: orangered;
+}
+
+.adminLinkReport {
+    color: red;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #f05d03;
+    color: white;
+    font-size: 17px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.tableAdmin {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 8px;
+}
+
+.tableAdminTd {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*
+*
+*   formAddPost
+*
+*/
+#form form {
+    margin: 20px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px white;
+}
+
+#form form h2, .labelContent h3, .labelTitle label {
+    color: white;
+}
+
+/*
 *
 *       FOOTER
 *
 */
-#infosFooter h2 {
+#infosFooter h2, #titleSectionPost {
     display: none;
 }
 
