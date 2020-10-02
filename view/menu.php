@@ -14,10 +14,8 @@
         <div class="cookieAlert">
             <p>
                 En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookie, stocker sur votre ordinateur, pour vous proposer des contenues et services adaptés à vos besoins. 
-            </p><br>
-            <button id="cookieButton" type="submit" value ="cookie">
-                <a href="index.php?objet=cookie">ok</a>
-            </button>
+            </p>
+            <input  id="cookieButton" type="button" value="ok" onclick="window.location.href='index.php?objet=cookie';" />
         </div>
     <?php } ?>
     
@@ -71,7 +69,7 @@
                 <a class="link" href="/accueil"><i class="fas fa-home"></i> Accueil</a>
             </li>
             <li class="listMenu">
-                <a class="link" href="#myServices">Mes services</a> 
+                <a class="link" href="/accueil#mes-services">Mes services</a> 
             </li>
             <li class="listMenu">
                 <a class="link" href="#projects">Portfolio</a>
