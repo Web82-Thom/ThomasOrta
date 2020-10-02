@@ -46,111 +46,119 @@
         </p>
     <article>
         <div class="service">
-            <h3><a class='link' href="/le-site-vitrine">Site Vitrine</a></h3>
-            <p>
-                Ce type de site présente l'entreprise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
-            </p>
-            <ul>
-                <li>
-                    Étude de votre projet / cahier des charges
-                </li>
-                <li>
-                    HTML, CSS, Javascript
-                </li>
-                <li>
-                    Validation W3C
-                </li>
-                <li>
-                    Hébergement
-                </li>
-                <li>
-                    Référencement Naturel
-                </li>
-                <li>
-                    Responsifs smartphones/tablettes
-                </li>
-            </ul>
+            <a class='link' href="/le-site-vitrine">
+                <h3>Site Vitrine</h3>
+                <p>
+                    Ce type de site présente l'entreprise ou la marque et son activité. Il fait évolue votre connaissance et vos ventes.
+                </p>
+                <ul>
+                    <li>
+                        Étude de votre projet / cahier des charges
+                    </li>
+                    <li>
+                        HTML, CSS, Javascript
+                    </li>
+                    <li>
+                        Validation W3C
+                    </li>
+                    <li>
+                        Hébergement
+                    </li>
+                    <li>
+                        Référencement Naturel
+                    </li>
+                    <li>
+                        Responsifs smartphones/tablettes
+                    </li>
+                </ul>
+            </a>
         </div>
         <div class="service">
-            <h3><a class='link' href="/integrateur-web">Integration Web</a></h3>
-            <p>
-                Vous savez ce que vous voulez! À partir de vos maquettes, rédactions, et multimédias je mets votre projet en construction.
-            </p>
-            <ul>
-                <li>
-                    Étude de votre projet / cahier des charges
-                </li>
-                <li>
-                    Si besoin création d'une base de donné (PHP, MySql) 
-                </li>
-                <li>
-                    HTML, CSS, Javascript 
-                </li>
-                <li>
-                    Validation W3C
-                </li>
-                <li>
-                    Hébergement
-                </li>
-                <li>
-                    Référencement Naturel
-                </li>
-                <li>
-                    Responsifs smartphones/tablettes
-                </li>
-            </ul>
+            <a class='link' href="/integrateur-web">
+                <h3>Integration Web</h3>
+                <p>
+                    Vous savez ce que vous voulez! À partir de vos maquettes, rédactions, et multimédias je mets votre projet en construction.
+                </p>
+                <ul>
+                    <li>
+                        Étude de votre projet / cahier des charges
+                    </li>
+                    <li>
+                        Si besoin création d'une base de donné (PHP, MySql) 
+                    </li>
+                    <li>
+                        HTML, CSS, Javascript 
+                    </li>
+                    <li>
+                        Validation W3C
+                    </li>
+                    <li>
+                        Hébergement
+                    </li>
+                    <li>
+                        Référencement Naturel
+                    </li>
+                    <li>
+                        Responsifs smartphones/tablettes
+                    </li>
+                </ul>
+            </a>
         </div>
         <div class="service">
-            <h3><a class='link' href="/blog">Blog</a></h3>
-            <p>
-                Vous voulez partager vos connaissances, votre savoir-faire, publié un livre, booster vos contacts, c'est par ici! 
-            </p>
-            <ul>
-                <li>
-                    Étude de votre projet / cahier des charges 
-                </li>
-                <li>
-                    Création d'une base de donné (PHP, MySql)
-                </li>
-                <li>
-                    HTML, CSS, Javascript 
-                </li>
-                <li>
-                    Validation W3C
-                </li>
-                <li>
-                    Hébergement
-                </li>
-                <li>
-                    Référencement Naturel
-                </li>
-                <li>
-                    Responsifs smartphones/tablettes
-                </li>
-            </ul>
+            <a class='link' href="/blog">
+                <h3>Blog</h3>
+                <p>
+                    Vous voulez partager vos connaissances, votre savoir-faire, publié un livre, booster vos contacts, c'est par ici! 
+                </p>
+                <ul>
+                    <li>
+                        Étude de votre projet / cahier des charges 
+                    </li>
+                    <li>
+                        Création d'une base de donné (PHP, MySql)
+                    </li>
+                    <li>
+                        HTML, CSS, Javascript 
+                    </li>
+                    <li>
+                        Validation W3C
+                    </li>
+                    <li>
+                        Hébergement
+                    </li>
+                    <li>
+                        Référencement Naturel
+                    </li>
+                    <li>
+                        Responsifs smartphones/tablettes
+                    </li>
+                </ul>
+            </a>
         </div>
         <div class="service">
-            <h3><a class='link' href="/wordPress">WordPress</a></h3>
-            <p>
-                Un site clef en main, WordPress propose une multitude d'outil qui vous permet de maintenir votre site à jour. 
-            </p>
-            <ul>
-                <li>
-                    Étude de votre projet / cahier des charges 
-                </li>
-                <li>
-                    Validation W3C
-                </li>
-                <li>
-                    Hébergement
-                </li>
-                <li>
-                    Référencement Naturel
-                </li>
-                <li>
-                    Responsifs smartphones/tablettes
-                </li>
-            </ul>
+            <a class='link' href="/wordPress">
+                <h3>WordPress</h3>
+                <p>
+                    Un site clef en main, WordPress propose une multitude d'outil qui vous permet de maintenir votre site à jour. 
+                </p>
+                <ul>
+                    <li>
+                        Étude de votre projet / cahier des charges 
+                    </li>
+                    <li>
+                        Validation W3C
+                    </li>
+                    <li>
+                        Hébergement
+                    </li>
+                    <li>
+                        Référencement Naturel
+                    </li>
+                    <li>
+                        Responsifs smartphones/tablettes
+                    </li>
+                </ul>
+            </a>
         </div>
     </article>
     <p id="infoServices">
