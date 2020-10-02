@@ -12,13 +12,13 @@
 	<!-- La largeur de mon site = largeur de l'appareil -->
 	<meta name="viewport" content="width=device-width initial-scale=1.0" />
 	<!-- affichage Icon-Apple -->
-	<link rel="icon" type="image/x-icon" href="thomasOrta.ico" />
+	<link rel="icon" type="image/x-icon" href="thomasorta.jpg" />
 	<link rel="apple-touch-icon" href="apple-touch-icon-114-precomposed.png" />
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114-precomposed.png" />
 	<!-- description de la page web -->
 	<meta name="description" content="Conception de Site Web - Thomas ORTA -" />
 	<!-- pour les moteurs de recherches -->
-	<meta name="keywords" content="thomas, orta, conception, site, web, developpeur, integrateur, thomas, orta, Html, CSS, PHP, JavaScript, MySql" />
+	<meta name="keywords" content="thomas, orta, contact, formulaire, conception, site, web, developpeur, integrateur, Html, CSS, PHP, JavaScript, MySql" />
 	<!-- Créateur du site -->
 	<meta name="author" content="ORTA Thomas" />
 	<!-- Cela permet aux éditeurs du logiciel de faire des statistiques IBM -->
@@ -28,8 +28,13 @@
 	<!-- protocole Open Graph -->
 	<meta property="og:title" content="Conception Site Web" />
 	<meta property="og:type" content="Freelance" />
-	<meta property="og:image" content="http://thomas-orta.com/thomasOrta.ico" />
-	<meta property="og:url" content="http://thomas-orta.com" />
+	<meta property="og:image" content="https://thomas-orta.com/developpeurthomasorta.png" />
+	<meta property="og:image:secure_url" content="https://thomas-orta.com/developpeurthomasorta.png" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="627" />
+	<meta property="og:image:alt" content="Developpeur Web Thomas ORTA" />
+	<meta property="og:url" content="https://thomas-orta.com" />
 	<meta property="og:description" content="Développeur Site Web" />
 	<meta property="og:site_name" content="Thomas ORTA" />
 	<!-- contrôler la façon dont les moteurs de recherches explorent et indexent une page -->
