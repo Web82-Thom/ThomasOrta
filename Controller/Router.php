@@ -41,7 +41,7 @@ class Router
                             $commentController->delete($getClean['id'], $postClean);
                         // SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
-                            $commentController->report($getClean['id'], $getClean['postId']);
+                            $commentController->report($getClean['id'], $_GET['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'unReportComment' && isset($getClean['id'])) {
                             $commentController->unReport($getClean['id']);
