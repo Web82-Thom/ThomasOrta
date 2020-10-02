@@ -3,6 +3,7 @@
 <?php ob_start(); ?>
 
 <section id="blocPagePost">
+    <h2 id=titleSectionPost><?= $post->getTitle(); ?></h2>
     <article class="contentPosts"> 
         <div class="titleTickets">
             <h3 class="titleTicket"><?= $post->getTitle(); ?></h3>
@@ -11,9 +12,7 @@
             </p> 
         </div>
         <div class="postContent">
-            <p class="postText">
-                <?= $post->getContent();?>
-            </p>
+            <?= $post->getContent();?>
         </div>
     </article>
     <article id="formAddComment">
@@ -55,9 +54,9 @@
                         publié le <?= $comment->getCommentDate(); ?>
                     </p>
                 </div>
-                <p id="commentContent">
-                    <?= htmlspecialchars($comment->getComment()); ?>
-                </p>
+                    <p id="commentContent">
+                        <?= htmlspecialchars($comment->getComment()); ?>
+                    </p>
                 <div id="actionComment">
                     <p>
                         <a id="report" class="adminLink" href="signaler-commentaire-<?= $comment->getId(); ?>-de-article-<?= $comment->getPostId(); ?>" onclick="return(confirm('Etes-vous sûr de vouloir signaler ce commentaire ?')); window.location.reload(false)" >
