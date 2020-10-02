@@ -11,6 +11,6 @@ class LegalController
     
     function displayCookie()
     {
-        require_once('../view/mentionsCookies.php');
+        require_once('../view/protectionsDesDonnees.php');
     }
 }
