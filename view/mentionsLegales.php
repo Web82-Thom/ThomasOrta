@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <section id="identification">
-    <h1>Identification</h1>
+    <h1>Mentions légales</h1>
     <a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F31228">
         Réglementation des mentions légales
     </a></br>
