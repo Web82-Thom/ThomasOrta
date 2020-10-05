@@ -35,8 +35,6 @@ class FormContact {
 
             this.eventListenerMethod();
             alert("Votre message à été envoyer avec succes!");
-        } else {
-            alert("Veuillez remplir tous les champs correctement.");
-        }
+        } 
     }
 }

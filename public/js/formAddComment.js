@@ -16,8 +16,6 @@ class FormAddComment {
 
         if (author !== "" && comment !== "" ) {
             this.eventListenerMethod();
-        } else {
-            alert("Veuillez remplir tous les champs correctement.");
-        }
+        } 
     }
 }
