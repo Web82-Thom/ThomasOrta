@@ -31,11 +31,11 @@
         <form id="formContent" method="post" action="index.php?objet=post&action=addComment&id=<?= $postId ?>">
             <div>
                 <label for="author">Auteur</label><br />
-                <input type="text" id="author" name="author" maxlength="20"/>
+                <input type="text" id="author" name="author" maxlength="20" required="required"/>
             </div>
             <div>
                 <label for="comment">Commentaire</label><br />
-                <textarea id="comment" name="comment" maxlength="150"></textarea>
+                <textarea id="comment" name="comment" maxlength="150" required="required"></textarea>
             </div>
             <div>
                 <button id="submitComment" type="submit">Poster votre commentaire</button>
