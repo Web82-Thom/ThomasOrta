@@ -524,15 +524,15 @@
 		<div class="formInput">
             <form method="POST" action="index?objet=contact"><br>
                 <label for="inputContactName">Votre nom :</label><br>
-                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" /><br>
+                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" required="required"/><br>
                 <label for="inputContactFirstName">Votre Prénom :</label><br>
-				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" /><br>
+				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" maxlength="20" required="required"/><br>
                 <label for="inputContactTitle">Titre de votre méssage :</label><br>
-                <input id="inputContactTitle" type="text" name="title" placeholder="Titre"><br>
+                <input id="inputContactTitle" type="text" name="title" placeholder="Titre" maxlength="20" required="required"><br>
                 <label for="inputContactEmail"> Votre Em@il :</label><br>
-				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
+				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" required="required"/><br>
                 <label for="inputContactMessage">Votre méssage :</label>
-                <textarea id="inputContactMessage" rows="4" placeholder="Méssage.." name="message" maxlength="150"></textarea>
+                <textarea id="inputContactMessage" rows="4" placeholder="Méssage.." name="message" maxlength="150" required="required"></textarea>
                 <input id="inputContactCheck" type="checkbox" value="0" name="acceptSend">
                 <label for="inputContactCheck">En cochant cette case vous acceptez de me communiquer vos informations.</label>
 				<button id="formButton" type="submit" name="mailForm" title="Envoyer" >Envoyez votre message</button>
