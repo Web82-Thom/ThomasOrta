@@ -15,69 +15,69 @@
 */
 @font-face
 {
-    font-family :'NotoSerif';
-    src : url('../fonts/NotoSerif-Regular.ttf') format('truetype');
-    font-weight : normal;
-    font-style : normal;
+    font-family:'NotoSerif';
+    src: url('../fonts/NotoSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    background-size : cover;
-    background-repeat : no-repeat;
-    background-attachment : fixed;
-    background-color :#464646;
-    width : 100%;
-    color : black;
-    display : flex;
-    flex-direction : column;
-    overflow-x : hidden;
-    font-family : 'NotoSerif';
-    margin : 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#464646;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'NotoSerif';
+    margin: 0;
 }
 
 .link {
-    text-decoration : none;
-    color : currentColor;
+    text-decoration: none;
+    color: currentColor;
 }
 
 #scrollToTop {
-    position : fixed;
-    bottom : 50px;
-    right : 30px;
-    z-index : 3;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 3;
 }
 
 .fa-arrow-circle-up {
-    font-size : 30px;
-    text-shadow : #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
+    font-size: 30px;
+    text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
     
 }
 
 .cookieAlert {
-    background-color : black;
-    color : white;
-    padding-bottom : 18px;
-    position : fixed;
-    display : flex;
-    opacity : 1;
-    bottom : 0;
-    border : 1px solid red;
-    height : auto;
-    z-index : 5;
+    background-color: black;
+    color: white;
+    padding-bottom: 18px;
+    position: fixed;
+    display: flex;
+    opacity: 1;
+    bottom: 0;
+    border: 1px solid red;
+    height: auto;
+    z-index: 5;
 }
 
 .cookieAlert p {
-    padding : 10px;
+    padding: 10px;
 }
 
 #actionCookie {
-    display : flex;
-    flex-direction : column;
-    justify-content : center;
-    margin : 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
 }
 #cookieButton {
-    margin : auto;
+    margin: auto;
 }
 /*
 *
@@ -85,125 +85,125 @@ body {
 *
 */
 header {
-    align-items : center;
-    background-image : linear-gradient(50deg, black, white, black);
-    display : flex;
-    flex-wrap : wrap;
-    justify-content : space-around;
+    align-items: center;
+    background-image: linear-gradient(50deg, black, white, black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #menu {
-    width : auto;
-    height : auto;
-    margin-right : 10px;
-    z-index : 20;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    z-index: 20;
     
 }
 
 #littleMenu {
-    display : none;
+    display: none;
 }
 
 .menuNavigation {	
-    list-style-type : none;
-    display : flex;
-    justify-content : space-around;
-    font-weight : bold;
-    color : white;
-    margin : auto;
-    padding : 0;
-    align-items : center;
-    text-shadow : #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
-    overflow : hidden;
-    flex-wrap : wrap;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .listMenu, .menuAdmin {	
-    padding : 25px;
-    border : 5px solid transparent;
-    font-size : 20px;
+    padding: 25px;
+    border: 5px solid transparent;
+    font-size: 20px;
 }
 
 .listMenu:hover, .menuAdmin:hover {
-    border-bottom : 5px solid rgb(149, 155, 238);
+    border-bottom: 5px solid rgb(149, 155, 238);
 }
 
 .menuAdmin:hover > ul {
-    background-color :white;
-    padding : 5px;
-    display : block;
-    position : absolute;
+    background-color:white;
+    padding: 5px;
+    display: block;
+    position: absolute;
 }
 
 .sousMenu {
-    display : none;
-    position : absolute;
-    list-style-type : none;
-    font-size : 15px;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    font-size: 15px;
 }
 
 .sousMenu a {
-    font-size : 10px;
-    z-index : 5;
+    font-size: 10px;
+    z-index: 5;
 }
 
 #thomasOrta {
-    text-align : center;
-    margin-bottom : 20px;
-    animation : spinner 5s infinite;
-    animation-delay : 5s;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: spinner 5s infinite;
+    animation-delay: 5s;
 }
 
 /* WebKit and Opera browsers */
 @-webkit-keyframes spinner {
-from { -webkit-transform : rotateY(0deg);    }
-to   { -webkit-transform : rotateY(-360deg); }
+from { -webkit-transform: rotateY(0deg);    }
+to   { -webkit-transform: rotateY(-360deg); }
 }
 
 /* all other browsers */
 @keyframes spinner {
     from {
-        -moz-transform : rotateY(0deg);
-        -ms-transform : rotateY(0deg);
-        transform : rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
     to {
-        -moz-transform : rotateY(-360deg);
-        -ms-transform : rotateY(-360deg);
-        transform : rotateY(-360deg);
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
     }
 }
 
 #thomasOrta h1 {
-    text-shadow : #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
-    color : #464646
+    text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+    color: #464646
 
 }
 
 #thomasOrta a {
-    font-size : 30px;
+    font-size: 30px;
 }
 
 
 #thomasOrta strong {
-    font-size : 20px;
-    color : white;
-    text-shadow : #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    font-size: 20px;
+    color: white;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 
 }
 
 .fas {
-    color : white;
+    color: white;
 }
 
 .menuNavigation a {
-    text-decoration : none;
-    color : currentColor;
+    text-decoration: none;
+    color: currentColor;
 }
 
 a {
-    text-decoration : none;
-    color : currentColor;
+    text-decoration: none;
+    color: currentColor;
 }
 /*
 *   
@@ -211,67 +211,67 @@ a {
 *
 */
 #slider h2 {
-    color : white;
-    text-shadow : 1px 1px 2px rgb(115, 103, 82);
-    font-size : 7vw;
-    font-weight : bolder;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(115, 103, 82);
+    font-size: 7vw;
+    font-weight: bolder;
 }
 
 #slider {
-    width : 100%;
-    /*height : 678px;*/
-    margin : auto;
-    z-index : 4;
+    width: 100%;
+    /*height: 678px;*/
+    margin: auto;
+    z-index: 4;
 }
 
 .slide{
-    overflow : hidden;
-    /*height : 678px;*/
-    display : none;
-    position : relative;
+    overflow: hidden;
+    /*height: 678px;*/
+    display: none;
+    position: relative;
 }
 
 .slideTitle {
-    position : absolute;
-    left : 20%;
-    margin-top : 11%;
-    width : auto;
-    animation : slide 5s infinite; /* version simplifié*/
-    animation-delay : 5s;
+    position: absolute;
+    left: 20%;
+    margin-top: 11%;
+    width: auto;
+    animation: slide 5s infinite; /* version simplifié*/
+    animation-delay: 5s;
 }
 
 @keyframes slide {
     0%{ 
-        transform : translateX(0%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform : translateX(-140%);
+        transform: translateX(-140%);
     }
 }
 
 @-webkit-keyframes slide {
     0%{ 
-        transform : translateX(0%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform : translateX(-100%);
+        transform: translateX(-100%);
     }
 }
 
 @-moz-keyframes slide {
     0%{ 
-        transform : translateX(0%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform : translateX(-50%);
+        transform: translateX(-50%);
     }
 }
 
 .slide img {
-    width : 100%;
+    width: 100%;
 }
 
 /*
@@ -280,79 +280,79 @@ a {
 *
 */
 #mes-services {
-    display : flex;
-    flex-direction : column;
-    width : 100%;
-    background-image : linear-gradient(45deg, white, transparent);
-    margin-top : 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(45deg, white, transparent);
+    margin-top: 30px;
 }
 
 #mission {
-    font-size : 20px;
-    width : 80%;
-    text-align : center;
-    border-radius : 10px;
-    padding : 10px;
-    background-color : #fff5ee;
-    margin : auto;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff5ee;
+    margin: auto;
 }
 
 #mes-services article {
-    display : flex;
-    justify-content : space-around;
-    flex-wrap : wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #mes-services h2, #mes-services h2, #projects h2, #titleCVitae, #titleFormContat {
-    text-align : center;
-    font-size : 35px;
-    color : white;
-    text-shadow : #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
 .titleCVitae { 
-    display : none;
+    display: none;
 }
 
 .service {
-    width : 450px;
-    text-align : center;
-    border : 2px solid white;
-    border-radius : 40px;
-    padding : 10px;
-    background-color : white;
-    margin : 20px;
+    width: 450px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: white;
+    margin: 20px;
 }
 
 .service h3 {
-    color : white;
-    text-shadow : #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-    font-size : 25px;
+    color: white;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    font-size: 25px;
 }
 
 .service ul {
-    list-style-type : none;
-    text-align : left;
+    list-style-type: none;
+    text-align: left;
 }
 
 .service li {
-    padding-bottom : 20px;
+    padding-bottom: 20px;
 }
 
-.service li:before {
-    content : "•"; 
-    color : red;
-    margin-right : 5px;
+.service li::before {
+    content: "•"; 
+    color: red;
+    margin-right: 5px;
 
 }
 
 .service p {
-    text-align : justify;
+    text-align: justify;
 }
 
 #infoServices {
-    text-align : center;
-    font-size : 25px;
+    text-align: center;
+    font-size: 25px;
 }
 /*
 *
@@ -360,79 +360,79 @@ a {
 *
 */
 #projects {
-    width : 96%;
-    border : black 2px solid;
-    background-color : white;
-    margin : 30px auto; 
+    width: 96%;
+    border: black 2px solid;
+    background-color: white;
+    margin: 30px auto; 
 }
 
 #projects h2 {
-    text-align : center;
+    text-align: center;
 }
 
 #infoProjects {
-    text-align : center;
+    text-align: center;
 }
 
 #portfolio {
-    display : flex;
-    flex-wrap : wrap;
-    justify-content : center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #portfolio figure {
-    position : relative;
-    margin : 1em;
-    display : flex;
-    width : 35%;
-    border : 2px solid gold;
-    border-radius : 10px;
+    position: relative;
+    margin: 1em;
+    display: flex;
+    width: 35%;
+    border: 2px solid gold;
+    border-radius: 10px;
 }
 
 #portfolio img {
-    width : 100%;
-    border-radius : 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 figcaption {
-    position : absolute;
-    width : 100%;
-    height : 40%;
-    display : block;
-    background-color : #00000042;
-    color : white;
-    bottom : 0;
-    visibility : hidden;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    display: block;
+    background-color: #00000042;
+    color: white;
+    bottom: 0;
+    visibility: hidden;
 }
 
 figure:hover figcaption {
-    visibility : visible;
+    visibility: visible;
 }
 
 .fa-check-double {
-    right : 10px;
-    position : absolute;
-    margin-top : -15px;
-    color : white;
-    border : 2px solid white;
-    background-color : #48c663;
-    border-radius : 50px;
-    padding : 5px;
+    right: 10px;
+    position: absolute;
+    margin-top: -15px;
+    color: white;
+    border: 2px solid white;
+    background-color: #48c663;
+    border-radius: 50px;
+    padding: 5px;
 }
 
 #portfolio h3 {
-    font-size : 15px;
-    padding : 0;
-    margin : 0;
-    margin-left : 15px;
-    margin-top : 15px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 #portfolio p {
-    font-size : 15px;
-    padding : 0;
-    margin : 0;
-    margin-left : 15px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
 }
 /**
 *
@@ -440,36 +440,36 @@ figure:hover figcaption {
 *
 */
 #formConnection {
-    width : 70%;
-    margin : auto;
+    width: 70%;
+    margin: auto;
     
-    margin-top : 50px;
-    margin-bottom : 20px;
-    color : white;
-    border : 1px solid #FF9656;
-    border-radius : 5px;
-    background-color : #333;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+    border: 1px solid #FF9656;
+    border-radius: 5px;
+    background-color: #333;
 }
 
 .titleFormConnection {
-    text-align : center;
+    text-align: center;
 }
 
 #formConnectionContent {
-    display : flex;
-    flex-direction : column;
-    width : 80%;
-    margin : auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
 }
 
 #formButton {
-    display : flex;
-    margin : auto;
-    margin-bottom : 10px;
-    margin-top : 10px;
-    padding : 10px;
-    border-radius : 5px;
-    background-color : #FF9656;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF9656;
 }
 /*
 *
@@ -477,8 +477,8 @@ figure:hover figcaption {
 *
 */
 #mytextarea {
-    width : 50%;
-    height : 100px;
+    width: 50%;
+    height: 100px;
 }
 /*
 *
@@ -486,177 +486,177 @@ figure:hover figcaption {
 *
 */
 #cVitae {
-    display : flex;
-    flex-direction : column;
-    position : relative;
-    background-color : white;
-    margin-bottom : 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    margin-bottom: 30px;
 }
 
 #infosMyCv {
-    background-color : cornflowerblue;
-    display : flex;
-    flex-direction : column;
-    width : 30%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 #myProfile, #myLog, #myLanguage, #myInterest  {
-    margin-left : 30px;
-    margin-right : 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #infosMyCv ul {
-    padding : 0px;
+    padding: 0px;
 }
 
 
 #infosMyCv h4 {
-    font-size : 20px;
+    font-size: 20px;
 }
 
 .separatorCvInfos {
-    margin : auto;
-    margin-top : 0;
-    margin-bottom : 0;
-    width : 69%;
-    height : 1px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 69%;
+    height: 1px;
 }
 
 .separatorCvTable {
-    margin : auto;
-    margin-top : 0;
-    margin-bottom : 0;
-    width : 69%;
-    height : 1px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 69%;
+    height: 1px;
 }
 
 #banner {
-    text-align : center;
-    margin-top : 20%;
-    margin-bottom : 10%;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
 #titleBanner {
-    text-shadow : unset;
-    color : black;
-    font-size : 40px;
+    text-shadow: unset;
+    color: black;
+    font-size: 40px;
 }
 
 #banner p {
-    font-size : 25px;
+    font-size: 25px;
 }
 
 #myCv {
-    display : flex;
-    position : relative;
-    width : 80%;
-    margin : auto;
-    margin-bottom : 30px;
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 #myPicture {
-    position : relative;
-    margin : 1em;
-    display : flex;
-    border : 2px solid gold;
-    border-radius : 10px;
-    z-index : 1;
+    position: relative;
+    margin: 1em;
+    display: flex;
+    border: 2px solid gold;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 #myPicture img {
-    width : 100%;
-    border-radius : 10px
+    width: 100%;
+    border-radius: 10px
 }
 
 #tables {
-    width : 70%;
-    display : flex;
-    flex-direction : column;
-    background-color : #f0f8ff;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f8ff;
 }
 
 .tableTraining, .tableExperience {
-    width :100%;
-    border-collapse : collapse;
-    table-layout : fixed;
-    padding : 8px;
-    display : flex;
-    flex-direction : column;
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 caption {
-    font-size : 30px;
-    text-align : start;
-    margin-bottom : 30px;
-    margin-top : 30px;
-    font-weight : bolder;
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bolder;
 }
 
 table tr:hover {
-    background-color :#FF9656;
+    background-color:#FF9656;
 
 }
 
 .tableCommentHead{
-    background-color : rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.3);
 }
 
 .tableCommentContent{
-    overflow-x :auto;
-    margin-top : 0px;
-    border : 1px solid rgba(255,255,255,0.3);
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 .yearCity, .experienceCv {
-    padding : 15px;
-    text-align : center;
-    vertical-align :middle;
-    font-weight : 300;
-    font-size : 18px;
-    border-bottom : solid 1px rgba(255,255,255,0.1);
-    overflow : hidden;
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 18px;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    overflow: hidden;
 }
 
 .trCv {
-    width : 100%;
-    display : flex;
+    width: 100%;
+    display: flex;
 }
 
 .trCv:hover {
-    width : 100%;
-    display : flex;
-    background-color : aliceblue;
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
 }
 
 .yearCity {
-    width : 25%;
+    width: 25%;
 }
 
 .yearCity p {
-    font-size : 15px;
-    margin : 0;
+    font-size: 15px;
+    margin: 0;
 }
 
 .experienceCv {
-    width : 75%;
-    text-align : start;
-    font-size : 15px;
+    width: 75%;
+    text-align: start;
+    font-size: 15px;
 }
 
 .experienceCv p {
-    margin : 0px;
+    margin: 0px;
 }
 
 .experienceCv ul {
-    margin-top : 0;
+    margin-top: 0;
 }
 
 #downloadCv {
-    border : 2px solid orangered;
-    width : 60%;
-    text-align : center;
-    margin : auto;
-    margin-bottom : 20px;
+    border: 2px solid orangered;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
 /*
 *
@@ -664,31 +664,31 @@ table tr:hover {
 *
 */
 .formContact, #formContact {
-    width : 100%;
-    display : flex;
-    flex-direction : column;
-    text-align : center;
-    background-image : linear-gradient(50deg, black, white, black);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(50deg, black, white, black);
 }
 
 .titleFormContact {
-    color : white;
-    font-size : 35px;
-    text-shadow : #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-    text-align : center;
+    color: white;
+    font-size: 35px;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    text-align: center;
 }
 
 #formContactLink {
-    border : 2px solid white;
-    border-radius : 20px;
-    width : 60%;
-    margin : auto;
-    padding-top : 50px;
-    padding-bottom : 50px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #inputContactCheck {
-    width : 10%;
+    width: 10%;
 }
 /*
 *
@@ -697,48 +697,48 @@ table tr:hover {
 *
 */
 .form{
-	padding :30px;
-	width :50%;
-	margin :0 auto;
-	color :#fff;
-    margin-top :30px;
-    margin-bottom : 20px;
-	border :1px solid #FF9656;
-	border-radius : 5px;
-	background-color : #333;
+	padding:30px;
+	width:50%;
+	margin:0 auto;
+	color:#fff;
+    margin-top:30px;
+    margin-bottom: 20px;
+	border:1px solid #FF9656;
+	border-radius: 5px;
+	background-color: #333;
 }
 
 .heddingTitle{
-	font-size :25px;
-	text-align : center;
+	font-size:25px;
+	text-align: center;
 }
 
 .heddingTitle h1{
-	margin :0px;
-	color :#ff9656;
-	font-weight : normal;
+	margin:0px;
+	color:#ff9656;
+	font-weight: normal;
 }
 
 .heddingDescription{
-	text-align : center;
+	text-align: center;
 }
 
 .formInput input, .formInput textarea {
-	width :90%;
-	margin : 15px 0px;
-	font-size :18px;
-	font-family :"Barlow Semi Condensed",sans-serif;
-	border-radius : 0px;
-	border : 1px solid #c1c1c1;
+	width:90%;
+	margin: 15px 0px;
+	font-size:18px;
+	font-family:"Barlow Semi Condensed",sans-serif;
+	border-radius: 0px;
+	border: 1px solid #c1c1c1;
 }
 
 .button{
-	padding :8px 0px;
-	width : 100%;
-	margin-top :15px;
-	background-color :#FF9656;
-	border : none;
-	color : #fff;
+	padding:8px 0px;
+	width: 100%;
+	margin-top:15px;
+	background-color:#FF9656;
+	border: none;
+	color: #fff;
 }
 /*
 *
@@ -747,53 +747,53 @@ table tr:hover {
 *
 */
 .posts {
-    display : flex;
-    flex-direction : column;
-    margin : auto;
-    width : 90%;
-    align-items : center;
-    margin-top : 30px;
-    border :1px solid #FF9656;
-	border-radius : 5px;
-    background-color : #333;
-    color :#fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    margin-top: 30px;
+    border:1px solid #FF9656;
+	border-radius: 5px;
+    background-color: #333;
+    color:#fff;
 }
 
 .titleService {
-    font-size : 30px;
+    font-size: 30px;
 }
 
 .titleTickets {
-    background-color : #FF9656;
-    display : flex;
-    flex-wrap : wrap;
-    align-items : baseline;
-    justify-content : space-between;
-    border-bottom : 2px solid black;
+    background-color: #FF9656;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
 }
 
 .titleTicket {
-    margin-top : 10px;
-    margin-bottom : 10px;
-    padding-left : 40px;
-    font-size : 25px;
-    text-align : center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    font-size: 25px;
+    text-align: center;
 }
 
 
 
 .contentPosts {
-    width : 90%;
-    margin : auto;
-    margin-top : 40px;
-    border : 2px solid black;
-    margin-bottom : 20px;
-    background-color : rgb(155, 155, 155);
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: rgb(155, 155, 155);
 }
 
 .postContent {
-    margin-left : 30px;
-    margin-right : 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 /*
 *
@@ -801,57 +801,57 @@ table tr:hover {
 *
 */
 #forecast {
-    margin-top : 30px;
-    width : 100%;
-    display : flex;
-    flex-direction : column;
-    align-items : center;
-    background-color : aliceblue;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 .input{
-    text-align : center;
-    margin-top : 20px;
-    margin-bottom : 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #cityValue{
-    height : 30px;
-    width : auto;
-    background : #e7e7e7;
-    border : none;
-    border-radius : 5px;
-    padding : 10px 10px;
+    height: 30px;
+    width: auto;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
 
 }
 
 #button {
-    height : 50px;
-    width : 100px;
-    background : #e7e7e7;
-    font-weight : bold;
-    font-size : 15px;
-    border : none;
-    border-radius : 5px;
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
 }
 
 .display {
-    text-align : center;
+    text-align: center;
 }
 
 .displayWeather {
-    width : 50%;
-    text-align : center;
-    background-color : white;
-    margin : 20px;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
 }
 
 #imgWeather {
-    background-color : rgb(105, 105, 105);
+    background-color: rgb(105, 105, 105);
 }
 
 #nameCity {
-    font-weight : bolder;
+    font-weight: bolder;
 }
 /*
 *
@@ -859,146 +859,146 @@ table tr:hover {
 *
 */
 .titleSection {
-    text-align : center;
-    font-size : 25px;
+    text-align: center;
+    font-size: 25px;
 }
 
 #commentDisplay {
-    width : 70%;
-    margin : auto;
-    border : 2px solid black;
-    margin-bottom : 0px;
-    background-color : white;
-    margin-bottom : 5px;
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 0px;
+    background-color: white;
+    margin-bottom: 5px;
 }
 
 #formAddComment {
-    width : 70%;
-    margin : auto;
-    margin-bottom : 20px;
-    border :1px solid #FF9656;
-	border-radius : 5px;
-    background-color : #333;
-    color :#fff;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    border:1px solid #FF9656;
+	border-radius: 5px;
+    background-color: #333;
+    color:#fff;
 }
 
 #formAddComment p {
-    text-align : center;
-    margin-right : 20px;
-    margin-left : 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #citation {
-    border : 1px solid black;
-    border-radius : 5px;
-    text-align : center;
-    flex-direction : column;
-    margin : auto;
-    display : flex;
-    width : 65%;
-    margin-bottom : 20px;
-    padding : 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    width: 65%;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
 #formTitle {
-    margin : 0;
-    padding : 10px;
-    background-color :  #FF9656;
-    color : black;
-    font-size : 20px;
-    text-align : center;
+    margin: 0;
+    padding: 10px;
+    background-color:  #FF9656;
+    color: black;
+    font-size: 20px;
+    text-align: center;
     
 }
 
 #formContent {
-    display : flex;
-    flex-direction : column;
-    text-align : center;
-    padding-bottom : 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .dateInfos {
-    padding-left : 10px;
-    padding-right : 10px;
-    margin-top : 0;
-    font-size : 14px;
-    font-style : italic;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    font-style: italic;
 }
 
 #submitComment {
-    width : 60%;
-    font-size : 15px;
-    padding : 5px;
-    margin : 20px;
-    margin : auto;
-    border-radius : 5px;
-    background-color : #FF9656;
+    width: 60%;
+    font-size: 15px;
+    padding: 5px;
+    margin: 20px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #FF9656;
 }
 
 #AllCommentDisplay {
-    margin-bottom : 10px;
+    margin-bottom: 10px;
 }
 
 #commentAuthorContent {
-    background-color :  #FF9656;
-    margin : 0px;
-    display : flex;
-    flex-wrap : wrap;
-    align-items : baseline;
-    justify-content : space-between;
+    background-color:  #FF9656;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 #commentAuthor {
-    padding-left : 5%;
+    padding-left: 5%;
     
 }
 
 #commentAuthor strong {
-    font-size : 23px;
+    font-size: 23px;
 }
 
 #commentContent {
-    padding-left : 5%;
-    font-size : 15px;
-    color : black;
+    padding-left: 5%;
+    font-size: 15px;
+    color: black;
 }
 
 #comment {
-    width : 80%;
-    height : 90px;
+    width: 80%;
+    height: 90px;
 }
 
 #actionComment {
-    display : flex;
-    justify-content : flex-end;
-    background-color : rgb(155, 155, 155);
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(155, 155, 155);
     
 }
 
 #actionComment p {
-    padding-right : 10px;
+    padding-right: 10px;
 }
 
 #linkDeleteComment {
-    color : black;
-    margin-left  : 10px;
+    color: black;
+    margin-left : 10px;
 }
 
 #blocPagePost {
-    width : 90%;
-    margin : auto;
-    margin-top : 30px;
-    border-radius : 5px;
-    background-color : #333;
-    color :#fff;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #333;
+    color:#fff;
 }
 
 #report {
-    color : green;
+    color: green;
 }
 
 #reportSignal {
-    color :red;
+    color:red;
 }
 /*
 *
@@ -1006,98 +1006,98 @@ table tr:hover {
 *
 */
 .blockAdmin {
-    padding-bottom : 25px;
-    border-bottom : 3px solid #B7C9F3;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #B7C9F3;
 }
 
 .blockAdmin h3 {
-    font-size : 25px;
-    text-align : center;
+    font-size: 25px;
+    text-align: center;
 }
 
 #addPost, .fa-readme, .fa-keyboard, .fa-plus {
-    color : green;
+    color: green;
 }
 
 #addPost {
-    margin-left : 10%;
+    margin-left: 10%;
 }
 
 .fa-plus {
-    font-size : 20px;
-    margin-left : 8px;
+    font-size: 20px;
+    margin-left: 8px;
 }
 
 .welcomeAdmin {
-    text-align : center;
+    text-align: center;
 }
 
 .adminPage {
-    width : 90%;
-    margin : auto;
-    margin-top : 10px;
-    padding-left : 20px;
-    padding-right : 20px;
-    padding-bottom : 15px;
-    border : 1px solid #FF9656;
-    border-radius : 5px;
-    background-color : #333;
-    color : white;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border: 1px solid #FF9656;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
 }
 
 .buttonActionAdmin {
-    min-width : 80%;
-    padding-top : 5px;
-    padding-bottom : 5px;
+    min-width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .fab {
-    font-size : 20px;
+    font-size: 20px;
 }
 
 .fa-trash-alt {
-    color : red;
+    color: red;
 }
 
 .alertDelete {
-    color : red;
+    color: red;
 }
 
 .adminLinkDelete {
-    color : orangered;
+    color: orangered;
 }
 
 .adminLinkReport {
-    color : red;
+    color: red;
 }
 
 table th {
-    padding-top : 12px;
-    padding-bottom : 12px;
-    text-align : center;
-    background-color : #f05d03;
-    color : white;
-    font-size : 17px;
-    overflow : hidden;
-    font-weight : 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #f05d03;
+    color: white;
+    font-size: 17px;
+    overflow: hidden;
+    font-weight: 500;
 }
 
 .tableAdmin {
-    width : 100%;
-    border-collapse : collapse;
-    table-layout : fixed;
-    padding : 8px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 8px;
 }
 
 .tableAdminTd {
-    padding : 15px;
-    text-align : center;
-    vertical-align : middle;
-    font-size : 15px;
-    border-bottom : solid 1px rgba(255,255,255,0.1);
-    overflow : hidden;
-    padding-top : 15px;
-    padding-bottom : 15px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /*
 *
@@ -1105,14 +1105,14 @@ table th {
 *
 */
 #form form {
-    margin : 20px;
-    margin : 20px;
-    padding : 20px;
-    border : solid 1px white;
+    margin: 20px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px white;
 }
 
 #form form h2, .labelContent h3, .labelTitle label {
-    color : white;
+    color: white;
 }
 
 /*
@@ -1121,67 +1121,67 @@ table th {
 *
 */
 #infosFooter h2, #titleSectionPost {
-    display : none;
+    display: none;
 }
 
 footer {
-    color : white;
-    background-color : black;
+    color: white;
+    background-color: black;
 
 }
 
 footer section {
-    display : flex;
-    justify-content : space-around;
-    flex-wrap : wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footerIntro {
-    text-align : center;
-    width : 90%;
-    margin : auto;
-    margin-top : 20px;
-    border : 2px solid orange;
-    color : black;
-    background : white;
-    padding : 15px;
-    border-radius : 5px;
-    font-size : 15px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid orange;
+    color: black;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 #contactInfos {
-    margin : 20px;
+    margin: 20px;
 }
 
 .titleContact {
-    display : none;
+    display: none;
 }
 
 #contactInfos ul {
-    list-style-type : none;
-    font-size : 15px;
+    list-style-type: none;
+    font-size: 15px;
 }
 
 #contactInfos article{
-    width : auto;
-    padding : 0px;
-    display : flex;
-    flex-direction : column;
+    width: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact h4, #moreInfos h4 {
-    font-size : 20px;
-    margin-bottom : 0px;
-    display : flex;
-    align-items : flex-start ;
+    font-size: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: flex-start ;
 }
 
 F#webCreator {
-    font-size : 15px;
+    font-size: 15px;
 }
 
 #contactInfos li{
-    padding-bottom : 10px;
+    padding-bottom: 10px;
 }
 /*
 *
@@ -1189,19 +1189,19 @@ F#webCreator {
 *
 */
 #identification, #cookie {
-    background-color : white;
-    margin : 0;
-    padding : 20px;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
 }
 
 #identification h1, #cookie h1 {
-    font-size : 40px;
+    font-size: 40px;
 }
 
 #identification a, #cookie a {
-    text-decoration : underline;
+    text-decoration: underline;
 }
 
 #identification ul, #cookie ul {
-    list-style-type : none;
+    list-style-type: none;
 }
