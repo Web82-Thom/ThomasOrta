@@ -21,16 +21,16 @@
 		<div class="formInput">
             <form method="POST" action="index?objet=contact">
                 <label for="inputContactName">Votre nom :</label><br>
-                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" /><br>
+                <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" required="required" /><br>
                 <label for="inputContactFirstName">Votre Prenom :</label><br>
-				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" maxlength="20" /><br>
+				<input id="inputContactFirstName" type="text" placeholder="Entrez votre prénom" name="firstName" maxlength="20" required="required" /><br>
                 <label for="inputContactTitle">Titre de votre message :</label><br>
-                <input id="inputContactTitle" type="text" name="title" placeholder="Titre" maxlength="20"><br>
+                <input id="inputContactTitle" type="text" name="title" placeholder="Titre" maxlength="20" required="required"><br>
                 <label for="inputContactEmail"> Votre Em@il :</label><br>
-				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" /><br>
+				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" required="required"/><br>
                 <label for="inputContactMessage">Votre message :</label>
-                <textarea id="inputContactMessage" rows="4" placeholder="Message.." name="message" maxlength="150"></textarea>
-                <input id="inputContactCheck" type="checkbox" value="0" name="acceptSend">
+                <textarea id="inputContactMessage" rows="4" placeholder="Message.." name="message" maxlength="150" required="required"></textarea>
+                <input id="inputContactCheck" type="checkbox" value="0" name="acceptSend" required="required">
                 <label for="inputContactCheck">En cochant cette case vous acceptez de me communiquer vos informations.</label>
 				<button id="formButton" name="mailForm" type="submit"  title="Envoyer" >Envoyez votre message</button>
 			</form> 
