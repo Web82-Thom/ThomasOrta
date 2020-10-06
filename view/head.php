@@ -6,7 +6,6 @@
 	<!-- utilise pour simuler un en-tete de reponse HTTP -->
 	<meta http-equiv="refresh" content="3600" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta http-equiv="Content-Security-Policy" content="'self' https://apis.google.com">
 	<!-- @Media-Query -->
 	<link rel="stylesheet" media="screen and (max-width: 820px)" href="css/820resolution.css" type="text/css" />
 	<!-- viewport ecran mobile -->

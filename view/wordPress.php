@@ -18,7 +18,6 @@
             </div>
             <div class="postContent">
                 <?= substr($post->getContent(),0 ,500), ' ' ;?>
-                
                 <a class="more" href="/article-<?= $post->getId(); ?>">
                     ...afficher plus
                 </a>

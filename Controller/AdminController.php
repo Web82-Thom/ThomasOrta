@@ -10,7 +10,7 @@ class AdminController
 {   
     // TRAITEMENT DU LOGIN
     public function login()
-    {   $message = '';
+    {   
         $this->_adminManager = new AdminManager(); 
         if (!empty($_POST['email']) && !empty($_POST['password'])) { 
             $admins = $this->_adminManager->getAdmins();
