@@ -1,5 +1,3 @@
-#LoadModule rewrite_module modules/mod_rewrite.so
-
 # Le serveur doit suivre les liens symboliques :
 Options +FollowSymlinks
 
@@ -7,82 +5,61 @@ Options +FollowSymlinks
 RewriteEngine on
 
 # methode general
-#RewriteRule ^(.*)$ $1.php
+# RewriteRule ^(.*)$ $1.php
 
 # Force https
-    RewriteCond %{REQUEST_SCHEME} =http
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} !^localhost
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# URL accueil https://thomas-orta.com/index.php?
-# URL accueil https://thomas-orta.com/accueil
+
+# URL accueil 
     RewriteRule ^accueil$  /index.php? [L]
 
-# URL services https://thomas-orta.com/index.php?#mes-services
-# URL services https://thomas-orta.com/mes-services
-#   RewriteRule ^mes-services$  /#mes-services [L]
-
-
-# URL article showcase https://thomas-orta.com/index.php?objet=showcase
-# URL article https://thomas-orta.com/le-site-vitrine
+# URL article showcase
     RewriteRule ^le-site-vitrine$  /index.php?objet=showcase [L]
 
-# URL article integrator https://thomas-orta.com/index.php?objet=integrator
-# URL article https://thomas-orta.com/integrateur-web
+# URL article integrator 
    RewriteRule ^integrateur-web$  /index.php?objet=integrator [L]
 
-# URL article integrator https://thomas-orta.com/index.php?objet=blog
-# URL article https://thomas-orta.com/blog
+# URL article blog
    RewriteRule ^blog$  /index.php?objet=blog [L]
 
-# URL article integrator https://thomas-orta.com/index.php?objet=wordPress
-# URL article https://thomas-orta.com/wordPress
+# URL article wordPress
     RewriteRule ^wordPress$  /index.php?objet=wordPress [L]
 
-# URL article / id https://thomas-orta.com/index.php?objet=post&id=13
-# URL article / id https://thomas-orta.com/article-15
+# URL article / id 
     RewriteRule ^article-([0-9]+)$  /index.php?objet=post&id=$1 [L]
 
-# URL admin Login https://thomas-orta.com/index.php?objet=admin&action=login  
-# URL admin Login https://thomas-orta.com/login
+# URL admin Login 
     RewriteRule ^login$  /index.php?objet=admin&action=login [L]   
 
-# URL admin destroy https://thomas-orta.com/index.php?objet=admin&action=destroy
-# URL admin destroy https://thomas-orta.com/deconnecter
+# URL admin destroy 
     RewriteRule ^deconnecter$  /index.php?objet=admin&action=destroy [L]   
 
-# URL add article https://thomas-orta.com/index.php?objet=post&action=add
-# URL add article https://thomas-orta.com/edition-article
+# URL add article 
     RewriteRule ^edition-article$  /index.php?objet=post&action=add [L]
 
-# URL mod article https://thomas-orta.com/index.php?objet=post&action=update&id=13
-# URL mod article https://thomas-orta.com/modifier-article-13
+# URL mod article 
     RewriteRule ^modifier-article-([0-9]+)$  /index.php?objet=post&action=update&id=$1 [L]
 
-# URL del article https://thomas-orta.com/index.php?objet=post&action=delete&id=13
-# URL del article https://thomas-orta.com/supprimer-article-13
+# URL del article 
     RewriteRule ^supprimer-article-([0-9]+)$  /index.php?objet=post&action=delete&id=$1 [L]
 
-#URL mod comment https://thomas-orta.com/index.php?objet=post&&action=updateComment&id=25&postId=12
-#URL mod comment https://thomas-orta.com/modifier-commentaire-25-de-article-12
+#URL mod comment 
     RewriteRule ^modifier-commentaire-([0-9]+)-de-article-([0-9]+)$  /index.php?objet=post&action=updateComment&id=$1&postId=$2 [L]
 
-#URL repport comment https://thomas-orta.com/index.php?objet=post&amp;action=reportComment&id=26&postId=13
-#URL repport comment https://thomas-orta.com/signaler_commentaire-26-de-article-13
+#URL repport comment 
     RewriteRule ^signaler-commentaire-([0-9]+)-de-article-([0-9]+)$  /index.php?objet=post&action=reportComment&id=$1&postId=$2 [L]
 
-#URL del comment https://thomas-orta.com/index.php?objet=post&&action=deleteComment&id=27&postId=19  
-#URL del comment https://thomas-orta.com/supprimer-commentaire-27-de-article-19  
+#URL del comment   
     RewriteRule ^supprimer-commentaire-([0-9]+)-de-article-([0-9]+)$ /index.php?objet=post&&action=deleteComment&id=$1&postId=$2 [L]
 
-#URL formContact https://thomas-orta.com/index.php?objet=contact
-#URL formContact https://thomas-orta.com/formulaire-de-contact
+#URL formContact 
     RewriteRule ^formulaire-de-contact$ /index.php?objet=contact [L]
 
-#URL mentions legales https://thomas-orta.com/index.php?objet=mentionsLegales
-#URL mentions legales https://thomas-orta.com/mentions-legales
+#URL mentions legales 
     RewriteRule ^mentions-legales$ /index.php?objet=mentionsLegales [L]
 
-#URL protection des donnees https://thomas-orta.com/index.php?objet=mentionsCookies
-#URL protection des donnees https://thomas-orta.com/protection-des-donnees
+#URL protection des donnees 
     RewriteRule ^protection-des-donnees$ /index.php?objet=mentionsCookies [L]
-    
