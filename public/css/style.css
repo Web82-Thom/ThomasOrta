@@ -1,13 +1,23 @@
-/**
-*   TYPOGRAPHIE
-*       Element  principaux
-*       Menu navigation
-*       Slider
-*       Mes services
-*
-*
-*
-**/
+/* ___________________________________________________________
+* | TYPOGRAPHIE                                               |
+* |          . Element principaux                             |
+* |          . Section Hearder Menu navigation                |
+* |          . Page Home                                      |
+* |              - Section Slider                             |
+* |              - Section Weather                            |
+* |              - Section mes services                       |
+* |              - Section Portfolio                          |
+* |              - Section Mon cVitae                         |
+* |              - Section Contact and Form                   |
+* |          . Page DisplayPosts                              |
+* |          . Page DisplayPost                               |
+* |          . Page AdminLogin.php                            |
+* |          . Page Admin.php                                 |
+* |          . Formulaires create update delete               |
+* |          . Footer                                         |
+* |          . Pages réglementations                          |
+* |                                                           |
+* |__________________________________________________________*/
 /*
 *
 *   ELEMENT PRINCIPAUX
@@ -50,7 +60,6 @@ body {
 .fa-arrow-circle-up {
     font-size: 30px;
     text-shadow: #464646 1px 1px, #464646 -1px 1px, #464646 -1px -1px, #464646 1px -1px;
-    
 }
 
 .cookieAlert {
@@ -81,7 +90,7 @@ body {
 }
 /*
 *
-*   Header / Menu / navigation
+*       Header / Menu / navigation
 *
 */
 header {
@@ -97,7 +106,6 @@ header {
     height: auto;
     margin-right: 10px;
     z-index: 20;
-    
 }
 
 #littleMenu {
@@ -156,8 +164,12 @@ header {
 
 /* WebKit and Opera browsers */
 @-webkit-keyframes spinner {
-from { -webkit-transform: rotateY(0deg);    }
-to   { -webkit-transform: rotateY(-360deg); }
+    from {
+         -webkit-transform: rotateY(0deg);    
+    }
+    to   { 
+        -webkit-transform: rotateY(-360deg); 
+    }
 }
 
 /* all other browsers */
@@ -184,7 +196,6 @@ to   { -webkit-transform: rotateY(-360deg); }
     font-size: 30px;
 }
 
-
 #thomasOrta strong {
     font-size: 20px;
     color: white;
@@ -207,7 +218,7 @@ a {
 }
 /*
 *   
-*   SLIDER 
+*       SECTION SLIDER 
 *
 */
 #slider h2 {
@@ -219,14 +230,12 @@ a {
 
 #slider {
     width: 100%;
-    /*height: 678px;*/
     margin: auto;
     z-index: 4;
 }
 
 .slide{
     overflow: hidden;
-    /*height: 678px;*/
     display: none;
     position: relative;
 }
@@ -236,8 +245,12 @@ a {
     left: 20%;
     margin-top: 11%;
     width: auto;
-    animation: slide 5s infinite; /* version simplifié*/
+    animation: slide 5s infinite;
     animation-delay: 5s;
+}
+
+.slide img {
+    width: 100%;
 }
 
 @keyframes slide {
@@ -269,11 +282,64 @@ a {
         transform: translateX(-50%);
     }
 }
-
-.slide img {
+/*
+*
+*   SECTION WEATHER
+*
+*/
+#forecast {
+    margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
 }
 
+.input{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cityValue{
+    height: 30px;
+    width: auto;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+
+#button {
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.display {
+    text-align: center;
+}
+
+.displayWeather {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+}
+
+#imgWeather {
+    background-color: rgb(105, 105, 105);
+}
+
+#nameCity {
+    font-weight: bolder;
+}
 /*
 *
 *   SECTION MES SERVICES
@@ -308,10 +374,6 @@ a {
     font-size: 35px;
     color: white;
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-}
-
-.titleCVitae { 
-    display: none;
 }
 
 .service {
@@ -434,57 +496,16 @@ figure:hover figcaption {
     margin: 0;
     margin-left: 15px;
 }
-/**
-*
-*   adminLogin.php
-*
-*/
-#formConnection {
-    width: 70%;
-    margin: auto;
-    
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: white;
-    border: 1px solid #FF9656;
-    border-radius: 5px;
-    background-color: #333;
-}
 
-.titleFormConnection {
-    text-align: center;
-}
-
-#formConnectionContent {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-}
-
-#formButton {
-    display: flex;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #FF9656;
-}
 /*
 *
-*   formUpdateComment
+*   SECTION CV
 *
 */
-#mytextarea {
-    width: 50%;
-    height: 100px;
+.titleCVitae { 
+    display: none;
 }
-/*
-*
-*   CV
-*
-*/
+
 #cVitae {
     display: flex;
     flex-direction: column;
@@ -508,7 +529,6 @@ figure:hover figcaption {
 #infosMyCv ul {
     padding: 0px;
 }
-
 
 #infosMyCv h4 {
     font-size: 20px;
@@ -660,7 +680,7 @@ table tr:hover {
 }
 /*
 *
-*   CONTACT HOME
+*   SECTION CONTACT and FORM
 *
 */
 .formContact, #formContact {
@@ -693,7 +713,7 @@ table tr:hover {
 /*
 *
 *
-*   formulaire 
+*       Formulaire 
 *
 */
 .form{
@@ -743,7 +763,7 @@ table tr:hover {
 /*
 *
 *
-*   displayPosts.php
+*       PAGE displayPosts.php
 *
 */
 .posts {
@@ -780,82 +800,14 @@ table tr:hover {
     text-align: center;
 }
 
-
-
-.contentPosts {
-    width: 90%;
-    margin: auto;
-    margin-top: 40px;
-    border: 2px solid black;
-    margin-bottom: 20px;
-    background-color: rgb(155, 155, 155);
+.more {
+    color: green;
 }
 
-.postContent {
-    margin-left: 30px;
-    margin-right: 30px;
-}
+
 /*
 *
-*   WEATHER
-*
-*/
-#forecast {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: aliceblue;
-}
-
-.input{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#cityValue{
-    height: 30px;
-    width: auto;
-    background: #e7e7e7;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 10px;
-
-}
-
-#button {
-    height: 50px;
-    width: 100px;
-    background: #e7e7e7;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    border-radius: 5px;
-}
-
-.display {
-    text-align: center;
-}
-
-.displayWeather {
-    width: 50%;
-    text-align: center;
-    background-color: white;
-    margin: 20px;
-}
-
-#imgWeather {
-    background-color: rgb(105, 105, 105);
-}
-
-#nameCity {
-    font-weight: bolder;
-}
-/*
-*
-*       displayPost.php
+*       PAGE displayPost.php
 *
 */
 .titleSection {
@@ -907,7 +859,6 @@ table tr:hover {
     color: black;
     font-size: 20px;
     text-align: center;
-    
 }
 
 #formContent {
@@ -950,7 +901,6 @@ table tr:hover {
 
 #commentAuthor {
     padding-left: 5%;
-    
 }
 
 #commentAuthor strong {
@@ -972,7 +922,6 @@ table tr:hover {
     display: flex;
     justify-content: flex-end;
     background-color: rgb(155, 155, 155);
-    
 }
 
 #actionComment p {
@@ -1002,7 +951,43 @@ table tr:hover {
 }
 /*
 *
-*   ADMIN.PHP
+*       PAGE adminLogin.php
+*
+*/
+#formConnection {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+    border: 1px solid #FF9656;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.titleFormConnection {
+    text-align: center;
+}
+
+#formConnectionContent {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+#formButton {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF9656;
+}
+/*
+*
+*       PAGE admin.php
 *
 */
 .blockAdmin {
@@ -1101,9 +1086,28 @@ table th {
 }
 /*
 *
-*   formAddPost
+*   Formulaires create update delete
 *
 */
+#mytextarea {
+    width: 50%;
+    height: 100px;
+}
+
+.contentPosts {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: rgb(155, 155, 155);
+}
+
+.postContent {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 #form form {
     margin: 20px;
     margin: 20px;
@@ -1114,10 +1118,9 @@ table th {
 #form form h2, .labelContent h3, .labelTitle label {
     color: white;
 }
-
 /*
 *
-*       FOOTER
+*       SECTION FOOTER
 *
 */
 #infosFooter h2, #titleSectionPost {
@@ -1185,7 +1188,7 @@ F#webCreator {
 }
 /*
 *
-*       legalNotice.php /  cookie.php
+*       PAGES réglementations
 *
 */
 #identification, #cookie {
