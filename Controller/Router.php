@@ -8,8 +8,9 @@ class Router
     {
         $options = [
             'id'=> FILTER_VALIDATE_INT,
-            'objet'=> FILTER_SANITIZE_STRING,
-            'action'=> FILTER_SANITIZE_STRING,
+            'objet' => FILTER_SANITIZE_STRING,
+            'action' => FILTER_SANITIZE_STRING,
+            'postId' => FILTER_VALIDATE_INT,
         ];
         $getClean = filter_var_array($_GET, $options);
         $postClean = filter_var_array($_POST);
@@ -35,13 +36,13 @@ class Router
                             $commentController->add($getClean['id'], $postClean['author'], $postClean['comment'], $postClean);
                         // AFFICHAGE AVANT MODIFICATION D'UN COMMENTAIRE*/
                         } elseif ($getClean['action'] === 'updateComment' && isset($getClean['id'])) {
-                            $commentController->update($getClean['id'], $_GET['postId'], $postClean);
+                            $commentController->update($getClean['id'], $getClean['postId'], $postClean);
                         // AFFICHAGE AVANT SUPPRESSION D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'deleteComment' && isset($getClean['id'])) {
                             $commentController->delete($getClean['id'], $postClean);
                         // SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'reportComment' && isset($getClean['id'])) {
-                            $commentController->report($getClean['id'], $_GET['postId']);
+                            $commentController->report($getClean['id'], $getClean['postId']);
                         // ENLEVER LE SIGNALEMENT D'UN COMMENTAIRE
                         } elseif ($getClean['action'] === 'unReportComment' && isset($getClean['id'])) {
                             $commentController->unReport($getClean['id']);
