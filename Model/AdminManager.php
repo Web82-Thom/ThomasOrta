@@ -21,7 +21,7 @@ class AdminManager extends Database
         return $admin;
     }
     
-    // RECUPEARATION DES ADMINISTRATEURS
+    // RECUPERATION DES ADMINISTRATEURS
     public function getAdmins()
     {
         $req = $this->getDataBase()->prepare('SELECT id, pseudo, email, pass, first_admin FROM admins');
