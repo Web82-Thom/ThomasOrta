@@ -50,7 +50,7 @@
                 <a href="/login">Admin</a>
                 <ul class="sousMenu">
                     <li>
-                        <a href="/destroy">
+                        <a href="/deconnecter">
                             <?php if (isset($_SESSION['firstAdmin'])) {echo 'Se déconnecter';} ?>
                         </a>
                     </li>
