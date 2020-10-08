@@ -13,7 +13,7 @@
                         Thomas ORTA 06.12.14.92.55
                     </li>
                     <li>
-                        <a href="index.php?objet=contact">
+                        <a href="/formulaire-de-contact">
                             Formulaire de contact
                         </a>
                     </li>

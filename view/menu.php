@@ -28,6 +28,41 @@
             <strong>Freelance</strong>
         </p>
     </div>
+    <nav id="littleMenu">
+        <p><i class="fas fa-bars"></i> Menu</p> 
+        <ul class="menuNavigation">
+            <li class="listMenu">
+                <a class="link" href="/accueil"><i class="fas fa-home"></i> Accueil</a>
+            </li>
+            <li class="listMenu">
+                <a class="link" href="/accueil#mes-services">Mes services</a> 
+            </li>
+            <li class="listMenu">
+                <a class="link" href="/accueil#projects">Portfolio</a>
+            </li>
+            <li class="listMenu">
+                <a class="link" href="/accueil#cVitae">CV</a>
+            </li>
+            <li class="listMenu">
+                <a class="link" href="/accueil#formContact">Contact</a> 
+            </li>
+            <li class="menuAdmin">
+                <a href="/login">Admin</a>
+                <ul class="sousMenu">
+                    <li>
+                        <a href="/destroy">
+                            <?php if (isset($_SESSION['firstAdmin'])) {echo 'Se déconnecter';} ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/login">
+                            <?php if (!isset($_SESSION['firstAdmin'])) {echo 'Se connecter';}?>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <nav id="menu">
         <ul class="menuNavigation">
             <li class="listMenu">
@@ -50,41 +85,6 @@
                 <ul class="sousMenu">
                     <li>
                         <a href="/deconnecter">
-                            <?php if (isset($_SESSION['firstAdmin'])) {echo 'Se déconnecter';} ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/login">
-                            <?php if (!isset($_SESSION['firstAdmin'])) {echo 'Se connecter';}?>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <nav id="littleMenu">
-        <p><i class="fas fa-bars"></i> Menu</p> 
-        <ul class="menuNavigation">
-            <li class="listMenu">
-                <a class="link" href="/accueil"><i class="fas fa-home"></i> Accueil</a>
-            </li>
-            <li class="listMenu">
-                <a class="link" href="/accueil#mes-services">Mes services</a> 
-            </li>
-            <li class="listMenu">
-                <a class="link" href="#projects">Portfolio</a>
-            </li>
-            <li class="listMenu">
-                <a class="link" href="#cVitae">CV</a>
-            </li>
-            <li class="listMenu">
-                <a class="link" href="#formContact">Contact</a> 
-            </li>
-            <li class="menuAdmin">
-                <a href="/login">Admin</a>
-                <ul class="sousMenu">
-                    <li>
-                        <a href="/destroy">
                             <?php if (isset($_SESSION['firstAdmin'])) {echo 'Se déconnecter';} ?>
                         </a>
                     </li>

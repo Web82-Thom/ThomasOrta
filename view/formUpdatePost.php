@@ -1,4 +1,4 @@
-<?php $title = "Admin-Modification du chapitre " . $post->getTitle();; ?>
+<?php $title = "Admin-Modification de l'article " . $post->getTitle();; ?>
 
 <?php ob_start(); ?>
 
@@ -12,14 +12,14 @@
 
 <div id ="form">
 	<form method="post" action="index.php?objet=post&action=update&id=<?= $post->getId();?>">
-		<h2>Modification du chapitre</h2>
+		<h2>Modification de l'article</h2>
 		<div class="labelTitle">
 			<h3><label for="title">Titre :</label></h3>
 			<input type="text" placeholder="Titre" name ="title" <?php if (isset($post)) {echo 'value="' . $post->getTitle(). '"';} ?>>
 		</div>
 		<div class="labelContent">
 			<h3><label for="content">Contenu :</label></h3>
-			<textarea id="mytextarea" placeholder ="Rédiger votre chapitre" name ="content"><?php if (isset($post)) {echo $post->getContent();} ?></textarea>
+			<textarea id="mytextarea" placeholder ="Rédiger votre article" name ="content"><?php if (isset($post)) {echo $post->getContent();} ?></textarea>
 		</div>
 			<button id="formButton" type="submit" value ="Poster les modification">Poster les modification</button>
 	</form>

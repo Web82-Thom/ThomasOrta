@@ -254,7 +254,7 @@
                         38 ans, marié, 1 enfant
                     </li>
                     <li>
-                        Adresse : 31510 route de Genebrières 82 230 LEOJAC
+                        Adresse : 3150 route de Genebrières 82 230 LEOJAC
                     </li>
                     <li>
                         Tel : 06 . 12 .14 .92 .55
@@ -263,7 +263,7 @@
                         E-m@il : thom.orta@gmail.com	
                     </li>
                     <li>
-                        SiteWeb : <a href="index.php?objet=home">https://www.thomas-orta.com</a>
+                        SiteWeb : <a href="https://www.thomas-orta.com">https://www.thomas-orta.com</a>
                     <li>
                         Véhicule et Permis B, C, EB, EC
                     </li>
@@ -509,7 +509,7 @@
     <h2 class="titleFormContact">Formulaire de contact</h2>
     <article class="form ">
 		<div class="heddingTitle">
-			<h3><a href="index.php?objet=contact">Contactez moi !</a></h3>
+			<h3><a href="/formulaire-de-contact">Contactez moi !</a></h3>
 		</div>
 		<div class="heddingDescription">
             <p>
@@ -522,7 +522,7 @@
             </p>
 		</div>
 		<div class="formInput">
-            <form method="POST" action="index?objet=contact"><br>
+            <form method="POST" action="/formulaire-de-contact"><br>
                 <label for="inputContactName">Votre nom :</label><br>
                 <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" required="required"/><br>
                 <label for="inputContactFirstName">Votre Prénom :</label><br>
@@ -533,7 +533,7 @@
 				<input id="inputContactEmail" type="text" placeholder="Email..." name="email" maxlength="50" required="required"/><br>
                 <label for="inputContactMessage">Votre méssage :</label>
                 <textarea id="inputContactMessage" rows="4" placeholder="Méssage.." name="message" maxlength="150" required="required"></textarea>
-                <input id="inputContactCheck" type="checkbox" value="0" name="acceptSend">
+                <input id="inputContactCheck" type="checkbox" value="0" name="acceptSend" required="required">
                 <label for="inputContactCheck">En cochant cette case vous acceptez de me communiquer vos informations.</label>
 				<button id="formButton" type="submit" name="mailForm" title="Envoyer" >Envoyez votre message</button>
 			</form> 

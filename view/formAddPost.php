@@ -12,7 +12,7 @@
 
 <section id ="form">
 	<form method="post" action="index.php?objet=post&action=add">
-		<h2>Rédaction de vos chapitres</h2>
+		<h2>Rédaction de vos articles</h2>
 		<div class='labelCategory'>
             <h3><label for="category">Catégorie</label></h3>
             <select name="category" id="category">
@@ -29,7 +29,7 @@
 		</div>
 		<div class="labelContent">
 			<h3><label for="content">Contenu :</label></h3>
-			<textarea id="mytextarea" placeholder ="Rédiger votre chapitre" name ="content"><?php if (isset($post)) {echo $post->getContent();} ?></textarea>
+			<textarea id="mytextarea" placeholder ="Rédiger votre article" name ="content"><?php if (isset($post)) {echo $post->getContent();} ?></textarea>
 		</div>
 			<button id="formButton" type="submit" value ="Envoyer un nouveau post!">Envoyer un nouveau post!</button>
 	</form>

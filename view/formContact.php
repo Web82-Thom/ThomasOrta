@@ -6,11 +6,11 @@
     <h2 class="titleFormContact">Formulaire de contact</h2>
     <div class="form ">
 		<div class="heddingTitle">
-			<h2><a href="index.php?objet=contact">Contactez moi !</a></h2>
+			<h2><a href="/formulaire-de-contact">Contactez moi !</a></h2>
 		</div>
 		<div class="heddingDescription">
             <p>
-                <a href="index.php?objet=contact">
+                <a href="/formulaire-de-contact">
                     Ma mission est bien plus que le developpement de votre site internet, je suis là pour vous accompagner à la reussite de votre activitée. Nous étudirons ensemble votre projet! Contactez moi par ce formulaire ou par téléphone.
                 </a>
             </p>
@@ -19,7 +19,7 @@
             </p>
 		</div>
 		<div class="formInput">
-            <form method="POST" action="index?objet=contact">
+            <form method="POST" action="/formulaire-de-contact">
                 <label for="inputContactName">Votre nom :</label><br>
                 <input id="inputContactName" type="text" placeholder="Entrez votre nom" name="name" maxlength="20" required="required" /><br>
                 <label for="inputContactFirstName">Votre Prenom :</label><br>
