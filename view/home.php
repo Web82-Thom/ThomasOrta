@@ -175,7 +175,7 @@
             <img src="images/webAgency.jpg" alt="WebAgency" class="projet1">
             <figcaption>
                 <i class="fas fa-check-double"></i>
-                <h3><a href="http://webagency-thomas.com/" target="_blank">WebAgency</a></h3>
+                <h3><a href="http://webagency.thomasorta.fr/" target="_blank">WebAgency</a></h3>
                 <p>
                     Site vitrine pour une agence Web
                 </p> 
@@ -186,7 +186,7 @@
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3>
-                    <a href="http://office-ireki-projet-formation-thomas-orta.com/" target="_blank">
+                    <a href="" target="_blank">
                         Office du tourisme d'Ireki
                     </a>
                 </h3>
@@ -200,7 +200,7 @@
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3>
-                    <a href="http://www.location-velo-toulouse.com/" target="_blank">
+                    <a href="http://locationvelo.thomasorta.fr/" target="_blank">
                         Vélok 31
                     </a>
                 </h3>
@@ -214,7 +214,7 @@
             <figcaption>
                 <i class="fas fa-check-double"></i>
                 <h3>
-                    <a href="http://www.jf-blog.com/" target="_blank">
+                    <a href="https://jeanforteroche.thomasorta.fr/" target="_blank">
                         publier un livre
                     </a>
                 </h3>

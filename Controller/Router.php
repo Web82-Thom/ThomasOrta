@@ -8,8 +8,8 @@ class Router
     {
         $options = [
             'id'=> FILTER_VALIDATE_INT,
-            'objet' => FILTER_SANITIZE_STRING,
-            'action' => FILTER_SANITIZE_STRING,
+            'objet' => FILTER_SANITIZE_SPECIAL_CHARS,
+            'action' => FILTER_SANITIZE_SPECIAL_CHARS,
             'postId' => FILTER_VALIDATE_INT,
         ];
         $getClean = filter_var_array($_GET, $options);

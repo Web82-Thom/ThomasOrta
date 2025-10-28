@@ -8,6 +8,7 @@ class FormConnection {
 
     eventListenerMethod() {
         this.button = document.getElementById("formButton").addEventListener("click" , () => this.verification());
+        echo($document.getElementById("email").value.document);
     }
 
     verification() {

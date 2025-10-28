@@ -40,6 +40,6 @@
 	<!-- contrôler la façon dont les moteurs de recherches explorent et indexent une page -->
 	<meta name="robots" content="ndex" />
 	<script src="https://kit.fontawesome.com/67cbdf618e.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.tiny.cloud/1/zlz60md847scmftjlvg9i0ekftezuwbh8yqp2v076ujm04oe/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-	<script src="https://api.openweathermap.org/data/2.5/weather?q=France,fr&appid=7424467761a19cc2015304b9e49b5fad" referrerpolicy="origin"></script>
+	<script src="https://cdn.tiny.cloud/1/zlz60md847scmftjlvg9i0ekftezuwbh8yqp2v076ujm04oe/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://api.openweathermap.org/data/2.5/weather?q=France,fr&appid=7424467761a19cc2015304b9e49b5fad" referrerpolicy="origin"></script>
 </head>
