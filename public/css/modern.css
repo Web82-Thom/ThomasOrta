@@ -1,0 +1,46 @@
+/* --- Styles modernes complémentaires --- */
+
+/* HERO ANIMÉ */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hero-gradient {
+  background: linear-gradient(270deg, #2563eb, #7c3aed, #ec4899, #f97316);
+  background-size: 800% 800%;
+  animation: gradientMove 20s ease infinite;
+}
+
+/* MÉTÉO MODERNE */
+#weather {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8fafc, #e0e7ff);
+  color: #111;
+  text-align: center;
+}
+.dark #weather {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+#weather input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+#weather button {
+  padding: 10px 20px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#weather button:hover {
+  background: #333;
+}
+#weatherResult {
+  margin-top: 20px;
+  font-size: 18px;
+}

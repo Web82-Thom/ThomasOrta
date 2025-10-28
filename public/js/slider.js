@@ -1,3 +1,5 @@
+console.log("slider.js chargé ✅");
+
 class Slider {
     constructor(slider) {
         this.index = 0;

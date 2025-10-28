@@ -1,6 +1,6 @@
 <?php
 use Controller\Router;
-use Exception;
+// use Exception;
 
 session_start();
 

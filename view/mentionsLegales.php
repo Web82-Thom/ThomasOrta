@@ -69,10 +69,10 @@
                 Auto-Entrepreneur
             </li>
             <li>
-                Développeur Web Junior
+                Diplôme - Développeur Web Junior -
             </li>
             <li>
-                En cours de préparation à l'obtention
+                Développeur App-FLUTTER
                 <!--Le titre professionnel a été octroyé en FRANCE-->
             </li>
             <li>
