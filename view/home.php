@@ -167,7 +167,6 @@
   document.addEventListener("DOMContentLoaded", () => new Forecast());
 </script>
 
-
 <!-- SECTION SERVICES -->
 <section id="mes-services" 
   style="background:linear-gradient(180deg,#f9fafb,#f1f5f9);
@@ -309,7 +308,6 @@
   });
 </script>
 
-
 <script>
   // effet hover
   document.querySelectorAll('.service').forEach(card => {
@@ -324,8 +322,6 @@
   });
 </script>
 
-
-
 <script>
   // petit effet hover moderne
   document.querySelectorAll('.service').forEach(s => {
@@ -339,7 +335,6 @@
     });
   });
 </script>
-
 
 <!-- SECTION PROJETS -->
 <section id="projects"
@@ -488,7 +483,7 @@
       </p>
     </div>
 
-    <form method="POST" action="index?objet=contact"
+    <form method="POST" action="index?objet=home"
           style="display:flex; flex-direction:column; gap:15px;">
 
       <div>
@@ -570,22 +565,34 @@
   btn.addEventListener('mouseleave', () => btn.style.background = '#f59e0b');
 </script>
 
-
 <script>
-  // Effet hover du bouton
-  const btn = document.getElementById('formButton');
-  btn.addEventListener('mouseenter', () => btn.style.background = '#fde68a');
-  btn.addEventListener('mouseleave', () => btn.style.background = '#f59e0b');
+  document.addEventListener("DOMContentLoaded", () => {
+    const alert = document.getElementById('alertMessage');
+    if (alert) {
+      // Disparaît en douceur après 4 secondes
+      setTimeout(() => {
+        alert.style.transition = "opacity 0.8s ease";
+        alert.style.opacity = "0";
+        setTimeout(() => {
+          alert.remove();
+
+          // ✅ Supprime le paramètre success/error de l'URL
+          const url = new URL(window.location);
+          url.searchParams.delete('success');
+          url.searchParams.delete('error');
+          window.history.replaceState({}, document.title, url.pathname + url.search);
+        }, 800);
+      }, 4000);
+    }
+  });
 </script>
 
-
-<script>
-  // petit effet visuel sur le bouton
-  const btn = document.getElementById('formButton');
-  btn.addEventListener('mouseenter', ()=> btn.style.background='#fde68a');
-  btn.addEventListener('mouseleave', ()=> btn.style.background='#f59e0b');
-</script>
-
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+  }
+</style>
 
 <!-- JS -->
 <script>
@@ -608,6 +615,66 @@
       s.display();
     });
   });
+</script>
+
+<!-- ✅ TOAST ALERT -->
+<?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
+  <div class="toast success">
+    <span class="icon">✅</span>
+    <p>Votre message a bien été envoyé !</p>
+  </div>
+  <?php elseif (isset($_GET['error']) && $_GET['error'] == 1): ?>
+  <div class="toast error">
+    <span class="icon">❌</span>
+    <p>Une erreur est survenue. Veuillez réessayer.</p>
+  </div>
+<?php endif; ?>
+
+<style>
+.toast {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  min-width: 280px;
+  max-width: 90%;
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  opacity: 0;
+  animation: toastIn 0.5s forwards;
+}
+.toast.success { border-left: 6px solid #16a34a; }
+.toast.error { border-left: 6px solid #dc2626; }
+.toast .icon { font-size: 1.5rem; }
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px) scale(0.9); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+}
+@keyframes toastOut {
+  to { opacity: 0; transform: translateX(-50%) translateY(-10px) scale(0.9); }
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toast = document.querySelector('.toast');
+    if (toast) {
+      // auto-disparition après 4 secondes
+      setTimeout(() => {
+        toast.style.animation = "toastOut 0.5s forwards";
+        setTimeout(() => toast.remove(), 600);
+      }, 4000);
+    }
+});
 </script>
 
 <?php 

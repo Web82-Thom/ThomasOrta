@@ -2,39 +2,70 @@
 
 namespace Model;
 
-use Controller\Router;
-
 class ContactManager
 {
-    public function sendMail()
+    public function sendMail(): bool
     {
-        if (isset($_POST['mailForm'])) {
-            if (!empty($_POST['name']) AND !empty($_POST['firstName']) AND !empty($_POST['email']) AND !empty($_POST['title']) AND !empty($_POST['message'])) {
-                $header="MIME-Version: 1.0\r\n";
-                $header .='From:"thomas-orta.com"<support@thomas-orta.com>'."\n";
-                $header .='Content-Type:text/html; charset="uft-8"'."\n";
-                $header .='Content-Transfer-Encoding: 8bit';
-
-                $message='
-                <html>
-                    <body>
-                        <div align="center">
-                            <u>Nom et prenom de l\'expéditeur : </u>' . htmlspecialchars($_POST['name']) .' ' . htmlspecialchars($_POST['firstName']) .'<br />
-                            <u>Mail de l\'expéditeur : </u>' . $_POST['email'].'
-                            <br />
-                            <hr>
-                            <u>Titre : </u>'. htmlspecialchars(nl2br($_POST['title'])) .'
-                            <br />
-                            <u>Contenu du message : </u>'. htmlspecialchars(nl2br($_POST['message'])) .'
-                            <br />
-                        </div>
-                    </body>
-                </html>
-                ';
-
-                mail("thomasorta.forweb@gmail.com", "CONTACT - thomas-orta.com", $message, $header);
-            }
-            header('Location: index.php?objet=contact');
+        // Vérifie si le formulaire a été soumis
+        if (!isset($_POST['mailForm'])) {
+            return false;
         }
+
+        // Vérifie les champs requis
+        $required = ['name', 'firstName', 'email', 'title', 'message'];
+        foreach ($required as $field) {
+            if (empty($_POST[$field])) {
+                return false;
+            }
+        }
+
+        // Nettoyage et validation des données
+        $name = htmlspecialchars($_POST['name']);
+        $firstName = htmlspecialchars($_POST['firstName']);
+        $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+        $title = htmlspecialchars($_POST['title']);
+        $message = htmlspecialchars($_POST['message']);
+
+        if (!$email) {
+            return false; // Email invalide
+        }
+
+        // Construction du message HTML
+        $htmlMessage = "
+        <html>
+            <body style='font-family:Arial,sans-serif;background:#f9fafb;padding:20px;'>
+                <div style='background:#fff;padding:20px;border-radius:8px;'>
+                    <h2 style='color:#111;'>📩 Nouveau message depuis le site Thomas Orta</h2>
+                    <p><strong>Nom :</strong> {$name} {$firstName}</p>
+                    <p><strong>Email :</strong> {$email}</p>
+                    <hr>
+                    <p><strong>Titre :</strong> {$title}</p>
+                    <p><strong>Message :</strong><br>" . nl2br($message) . "</p>
+                </div>
+            </body>
+        </html>";
+
+        // Configuration des headers (expéditeur conforme à ton domaine)
+        $to = "thom.orta@gmail.com";
+        $subject = "CONTACT - thomas-orta.fr";
+        $headers = "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+        $headers .= "From: Thomas Orta <thomasorta@thomasorta.fr>\r\n";
+        $headers .= "Cc: thomasorta@thomasorta.fr\r\n";
+        $headers .= "Reply-To: {$email}\r\n";
+
+        // Envoi du mail
+        $success = mail($to, $subject, $htmlMessage, $headers);
+
+        // // Log du résultat
+        // $logFile = __DIR__ . '/mail_log.txt';
+        // file_put_contents(
+        //     $logFile,
+        //     date('Y-m-d H:i:s') . " | " . ($success ? '✅ OK' : '❌ FAIL') . " | {$email} | {$title}\n",
+        //     FILE_APPEND
+        // );
+
+        // Retourne toujours un booléen
+        return $success;
     }
 }
