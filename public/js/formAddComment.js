@@ -1,9 +1,6 @@
 class FormAddComment {
     constructor() {
         this.eventListenerMethod();
-
-        document.getElementById("author");
-        document.getElementById("comment");
     }
 
     eventListenerMethod() {

@@ -1,9 +1,6 @@
 class FormConnection {
     constructor() {
         this.eventListenerMethod();
-
-        document.getElementById("email");
-        document.getElementById("password");
     }
 
     eventListenerMethod() {

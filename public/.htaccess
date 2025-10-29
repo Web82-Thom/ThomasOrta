@@ -4,14 +4,10 @@ Options +FollowSymlinks
 # Activation du module de réécriture d'URL :
 RewriteEngine on
 
-# methode general
-# RewriteRule ^(.*)$ $1.php
-
 # Force https
     RewriteCond %{HTTPS} off
     RewriteCond %{HTTP_HOST} !^localhost
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
 
 # URL accueil 
     RewriteRule ^accueil$  /index.php? [L]
